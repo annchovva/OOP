@@ -1,0 +1,62 @@
+﻿<Window x:Class="FinancialSystem.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FinTech System - Dashboard" Height="600" Width="1000" WindowStartupLocation="CenterScreen">
+
+    <Grid Background="#F8F9FA">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <!-- Боковая панель -->
+            <ColumnDefinition Width="*"/>
+            <!-- Основной контент -->
+        </Grid.ColumnDefinitions>
+
+        <!-- Боковая панель (Sidebar) -->
+        <Border Grid.Column="0" Background="#1A73E8">
+            <StackPanel Margin="10">
+                <TextBlock Text="FINTECH" Foreground="White" FontSize="22" FontWeight="Bold" Margin="10,20,10,40" HorizontalAlignment="Center"/>
+
+                <!-- Кнопки для всех -->
+                <Button x:Name="BtnDashboard" Content="🏠 Дашборд" Style="{StaticResource SidebarButtonStyle}" Click="BtnDashboard_Click"/>
+
+                <!-- Кнопки только для Клиента -->
+                <StackPanel x:Name="ClientPanel" Visibility="Collapsed">
+                    <Button Content="💰 Мои счета" Style="{StaticResource SidebarButtonStyle}"/>
+                    <Button Content="↔ Переводы" Style="{StaticResource SidebarButtonStyle}"/>
+                </StackPanel>
+
+                <!-- Кнопки только для Менеджера/Админа -->
+                <StackPanel x:Name="AdminPanel" Visibility="Collapsed">
+                    <Button Content="👥 Пользователи" Style="{StaticResource SidebarButtonStyle}" Click="BtnUsers_Click"/>
+                    <Button Content="✅ Заявки" Style="{StaticResource SidebarButtonStyle}"/>
+                </StackPanel>
+
+                <Separator Margin="10,20" Background="#4A90E2"/>
+
+                <Button Content="🚪 Выход" Style="{StaticResource SidebarButtonStyle}" Click="Logout_Click"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Основная область -->
+        <Grid Grid.Column="1" Margin="30">
+            <StackPanel>
+                <TextBlock x:Name="WelcomeLabel" Text="Добро пожаловать, Пользователь!" FontSize="24" FontWeight="Bold" Foreground="#333"/>
+                <TextBlock x:Name="RoleLabel" Text="Роль: Клиент" FontSize="14" Foreground="Gray" Margin="0,5,0,30"/>
+
+                <!-- Сетка с карточками (пример данных) -->
+                <UniformGrid Columns="3" x:Name="StatusCards">
+                    <Border Background="White" CornerRadius="10" Padding="20" Margin="10" Height="120">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="15" Color="#EEE" ShadowDepth="2"/>
+                        </Border.Effect>
+                        <StackPanel VerticalAlignment="Center">
+                            <TextBlock Text="Ваш баланс" Foreground="Gray"/>
+                            <TextBlock Text="₽ 125,500" FontSize="24" FontWeight="Bold" Foreground="#2ECC71"/>
+                        </StackPanel>
+                    </Border>
+                    <!-- Здесь можно добавить еще карточки -->
+                </UniformGrid>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

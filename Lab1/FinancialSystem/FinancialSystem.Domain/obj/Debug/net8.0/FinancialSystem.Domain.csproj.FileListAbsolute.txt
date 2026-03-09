@@ -1,0 +1,11 @@
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.Domain\bin\Debug\net8.0\FinancialSystem.Domain.deps.json
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.Domain\bin\Debug\net8.0\FinancialSystem.Domain.dll
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.Domain\bin\Debug\net8.0\FinancialSystem.Domain.pdb
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.Domain\obj\Debug\net8.0\FinancialSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.Domain\obj\Debug\net8.0\FinancialSystem.Domain.AssemblyInfoInputs.cache
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.Domain\obj\Debug\net8.0\FinancialSystem.Domain.AssemblyInfo.cs
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.Domain\obj\Debug\net8.0\FinancialSystem.Domain.csproj.CoreCompileInputs.cache
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.Domain\obj\Debug\net8.0\FinancialSystem.Domain.dll
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.Domain\obj\Debug\net8.0\refint\FinancialSystem.Domain.dll
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.Domain\obj\Debug\net8.0\FinancialSystem.Domain.pdb
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.Domain\obj\Debug\net8.0\ref\FinancialSystem.Domain.dll
