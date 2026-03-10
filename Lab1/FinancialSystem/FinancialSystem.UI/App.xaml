@@ -20,7 +20,7 @@
             </Setter>
         </Style>
 
-        <!-- Стиль для основных кнопок (Войти, Зарегистрироваться) -->
+        <!-- Стиль для основных кнопок -->
         <Style x:Key="PrimaryButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="{StaticResource PrimaryColor}"/>
             <Setter Property="Foreground" Value="White"/>
@@ -60,6 +60,7 @@
             <Setter Property="Padding" Value="8,0"/>
         </Style>
 
+        <!-- Стиль кнопок бокового меню -->
         <Style x:Key="SidebarButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="Foreground" Value="White"/>
@@ -70,6 +71,15 @@
             <Setter Property="HorizontalContentAlignment" Value="Left"/>
             <Setter Property="Padding" Value="15,0,0,0"/>
             <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="Background" Value="#2A82F8"/>
@@ -77,13 +87,12 @@
             </Style.Triggers>
         </Style>
 
-        <!-- Стиль для текстовых кнопок-ссылок и иконок (без рамок и фона) -->
+        <!-- Текстовые кнопки -->
         <Style x:Key="GhostButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="Foreground" Value="{StaticResource PrimaryColor}"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="Cursor" Value="Hand"/>
-            <!-- Убираем стандартный шаблон WPF, чтобы не было синих рамок -->
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
@@ -95,11 +104,63 @@
             </Setter>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <!-- При наведении просто делаем текст чуть темнее или ярче -->
                     <Setter Property="Foreground" Value="#0D47A1"/>
                 </Trigger>
-                <Trigger Property="IsPressed" Value="True">
-                    <Setter Property="Opacity" Value="0.7"/>
+            </Style.Triggers>
+        </Style>
+
+        <!-- СТИЛЬ ДЛЯ ТАБЛИЦ -->
+        <Style TargetType="DataGrid">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="RowHeight" Value="40"/>
+            <Setter Property="GridLinesVisibility" Value="Horizontal"/>
+            <Setter Property="HorizontalGridLinesBrush" Value="#F0F2F5"/>
+            <Setter Property="CanUserAddRows" Value="False"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="SelectionMode" Value="Single"/>
+            <Setter Property="SelectionUnit" Value="FullRow"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+
+        <!-- Стиль заголовков колонок -->
+        <Style TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#777"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Padding" Value="10,0,10,10"/>
+            <Setter Property="BorderThickness" Value="0,0,0,1"/>
+            <Setter Property="BorderBrush" Value="#DDD"/>
+            <Setter Property="Height" Value="40"/>
+        </Style>
+
+        <!-- Стиль ячеек (ИСПРАВЛЕНО: добавлен Setter для Template) -->
+        <Style TargetType="DataGridCell">
+            <Setter Property="Padding" Value="10,0"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="DataGridCell">
+                        <Border Padding="{TemplateBinding Padding}" Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Стиль строк -->
+        <Style TargetType="DataGridRow">
+            <Setter Property="Background" Value="Transparent"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#F9FAFB"/>
+                </Trigger>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="Background" Value="#F0F7FF"/>
+                    <Setter Property="Foreground" Value="{StaticResource PrimaryColor}"/>
                 </Trigger>
             </Style.Triggers>
         </Style>

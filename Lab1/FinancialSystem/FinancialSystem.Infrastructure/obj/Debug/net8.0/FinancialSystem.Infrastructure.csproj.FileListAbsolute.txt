@@ -15,3 +15,4 @@ C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialS
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.Infrastructure\obj\Debug\net8.0\ref\FinancialSystem.Infrastructure.dll
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.Infrastructure\bin\Debug\net8.0\FinancialSystem.Infrastructure.runtimeconfig.json
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.Infrastructure\obj\Debug\net8.0\FinancialSystem.Infrastructure.genruntimeconfig.cache
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.Infrastructure\obj\Debug\net8.0\FinancialSystem.Infrastructure.sourcelink.json

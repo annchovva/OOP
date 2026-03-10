@@ -122,7 +122,9 @@ namespace FinancialSystem.UI
                         Username = username,
                         PasswordHash = password,
                         Role = role,
-                        IsApproved = (role != UserRole.Client)
+                        //Потом убрать этот комментарий
+                        //IsApproved = (role != UserRole.Client)
+                        IsApproved = true
                     });
                     db.SaveChanges();
                 }

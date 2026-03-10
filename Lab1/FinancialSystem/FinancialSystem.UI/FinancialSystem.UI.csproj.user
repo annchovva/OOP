@@ -8,5 +8,8 @@
     <Compile Update="RegisterWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="СlientWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
