@@ -2,7 +2,13 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="DashboardWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ManagerWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

@@ -132,3 +132,7 @@ C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialS
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\bin\Debug\net8.0-windows\FinancialSystem.Application.pdb
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\DashboardWindow.baml
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\DashboardWindow.g.cs
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\ManagerWindow.baml
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\ManagerWindow.g.cs

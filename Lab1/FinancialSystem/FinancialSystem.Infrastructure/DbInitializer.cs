@@ -28,7 +28,8 @@ namespace FinancialSystem.Infrastructure
                 Login = "admin",
                 PasswordHash = "admin123", // В реале тут должен быть хэш!
                 Role = UserRole.Admin,
-                Status = UserStatus.Active
+                Status = UserStatus.Active,
+                IsApproved = true
             });
 
             // Добавляем Менеджера

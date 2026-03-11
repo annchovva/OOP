@@ -1,0 +1,50 @@
+﻿<Window x:Class="FinancialSystem.UI.DashboardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Панель управления" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Левая панель -->
+        <Border Grid.Column="0" Background="#F0F0F0" Padding="10">
+            <StackPanel>
+                <TextBlock x:Name="UserInfoLabel" Text="Пользователь" FontWeight="Bold" Margin="0,0,0,20" TextWrapping="Wrap"/>
+                <Button x:Name="AccountsBtn" Content="Мои счета" Margin="0,5" Click="AccountsBtn_Click"/>
+                <Button x:Name="TransactionsBtn" Content="Переводы" Margin="0,5" Click="TransactionsBtn_Click"/>
+                <Separator Margin="0,10"/>
+                <Button x:Name="AdminBtn" Content="Управление (Админ)" Margin="0,5" Visibility="Collapsed" Click="AdminBtn_Click"/>
+                <Button Content="Выход" VerticalAlignment="Bottom" Margin="0,100,0,0" Click="Logout_Click"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Основная область -->
+        <Grid Grid.Column="1" Margin="20">
+            <StackPanel x:Name="WelcomeArea" Visibility="Visible">
+                <TextBlock Text="Добро пожаловать в финансовую систему!" FontSize="20" Margin="0,0,0,10"/>
+                <TextBlock x:Name="UserStatusText" Text="Статус: Клиент" Foreground="Gray"/>
+            </StackPanel>
+
+            <Grid x:Name="AccountsPanel" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Button Content="Открыть новый счет" Click="OpenAccountBtn_Click" Padding="10,5" Margin="0,0,10,0"/>
+                    <Button Content="Просмотреть банки" Click="ViewBanksBtn_Click" Padding="10,5"/>
+                </StackPanel>
+                <DataGrid x:Name="AccountsList" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Номер счета" Binding="{Binding AccountNumber}" Width="*"/>
+                        <DataGridTextColumn Header="Тип" Binding="{Binding Type}" Width="100"/>
+                        <DataGridTextColumn Header="Баланс" Binding="{Binding Balance, StringFormat={}{0:N2} руб.}" Width="120"/>
+                        <DataGridTextColumn Header="Банк" Binding="{Binding Bank.Name}" Width="150"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

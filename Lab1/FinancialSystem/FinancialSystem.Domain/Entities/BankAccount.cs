@@ -16,9 +16,10 @@ namespace FinancialSystem.Domain.Entities
         public int BankId { get; set; }
         public virtual Bank Bank { get; set; } = null!;
 
+        public string AccountNumber { get; set; } = string.Empty; // Добавь это!
         public AccountType Type { get; set; }
         public decimal Balance { get; set; }
-        public bool IsBlocked { get; set; }
+        public bool IsBlocked { get; set; } // У тебя IsBlocked вместо IsActive
         public DateTime CreatedAt { get; set; } = DateTime.Now;
     }
 }

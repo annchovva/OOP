@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Reflection.Emit;
-using FinancialSystem.Domain.Entities;
+﻿using FinancialSystem.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace FinancialSystem.Infrastructure
@@ -14,9 +12,11 @@ namespace FinancialSystem.Infrastructure
         public DbSet<TransactionRecord> Transactions { get; set; }
         public DbSet<ActionLog> ActionLogs { get; set; }
 
+        // Добавляем таблицу для заявок на зарплатные проекты
+        public DbSet<SalaryRequest> SalaryRequests { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            // Настраиваем SQLite и прокси для ленивой загрузки
             optionsBuilder
                 .UseLazyLoadingProxies()
                 .UseSqlite("Data Source=FinancialSystem.db");
@@ -26,11 +26,27 @@ namespace FinancialSystem.Infrastructure
         {
             base.OnModelCreating(modelBuilder);
 
-            // Уникальный логин для пользователей
+            // Уникальный логин
             modelBuilder.Entity<User>()
                 .HasIndex(u => u.Login)
                 .IsUnique();
+
+            // Настройка связи "Многие-ко-многим" для сотрудников предприятия (если нужно)
+            // Но обычно в простых лабах достаточно связи Один-ко-многим или через SalaryRequest
+
+            // Настройка транзакций (связь с аккаунтами может быть цикличной, 
+            // поэтому отключаем каскадное удаление для безопасности)
+            modelBuilder.Entity<TransactionRecord>()
+                .HasOne<BankAccount>()
+                .WithMany()
+                .HasForeignKey(t => t.FromAccountId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<TransactionRecord>()
+                .HasOne<BankAccount>()
+                .WithMany()
+                .HasForeignKey(t => t.ToAccountId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
-

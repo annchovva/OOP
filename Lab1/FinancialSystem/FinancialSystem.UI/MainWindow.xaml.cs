@@ -1,20 +1,27 @@
 ﻿using System;
 using System.Windows;
+using FinancialSystem.Application.Interfaces; // Добавили интерфейсы
 using FinancialSystem.Application.Services;
 using FinancialSystem.Domain.Entities;
+using FinancialSystem.Domain.Interfaces;
 using FinancialSystem.Infrastructure;
 
-namespace FinancialSystem.WPF
+namespace FinancialSystem.UI
 {
     public partial class MainWindow : Window
     {
-        private readonly AuthService _authService;
+        // Используем интерфейс вместо конкретного класса
+        private readonly IAuthService _authService;
 
         public MainWindow()
         {
             InitializeComponent();
-            // Создаем контекст и сервис (в идеале тут нужен Dependency Injection, но для лабы так проще)
+
+            // Создаем контекст БД
             var db = new FinanceDbContext();
+            DbInitializer.Initialize(db);
+
+            // Инициализируем сервис через интерфейс
             _authService = new AuthService(db);
         }
 
@@ -28,10 +35,11 @@ namespace FinancialSystem.WPF
                 var user = _authService.Login(login, password);
                 if (user != null)
                 {
-                    MessageBox.Show($"Добро пожаловать, {user.Login}!\nВаша роль: {user.Role}", "Успех");
-                    
-                    // Тут мы позже откроем новое окно в зависимости от роли
-                    // Например: OpenDashboard(user);
+                    // Передаем объект пользователя в следующее окно
+                    DashboardWindow dashboard = new DashboardWindow(user);
+                    dashboard.Show();
+
+                    this.Close();
                 }
                 else
                 {
@@ -40,7 +48,8 @@ namespace FinancialSystem.WPF
             }
             catch (Exception ex)
             {
-                StatusLabel.Text = ex.Message; // Выведет "Ваша регистрация еще не подтверждена"
+                // Сообщение об ошибке (например, если аккаунт не подтвержден)
+                StatusLabel.Text = ex.Message;
             }
         }
 
@@ -69,4 +78,5 @@ namespace FinancialSystem.WPF
         }
     }
 }
+
 

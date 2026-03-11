@@ -3,44 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.ui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|solutionrelative:financialsystem.ui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{900857C9-80D4-43A2-B7CB-0403C59619AE}|FinancialSystem.Infrastructure\\FinancialSystem.Infrastructure.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.infrastructure\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{900857C9-80D4-43A2-B7CB-0403C59619AE}|FinancialSystem.Infrastructure\\FinancialSystem.Infrastructure.csproj|solutionrelative:financialsystem.infrastructure\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|solutionrelative:financialsystem.ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.ui\\dashboardwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|solutionrelative:financialsystem.ui\\dashboardwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.ui\\managerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|solutionrelative:financialsystem.ui\\managerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.ui\\managerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|solutionrelative:financialsystem.ui\\managerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.ui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|solutionrelative:financialsystem.ui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.ui\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|solutionrelative:financialsystem.ui\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.ui\\dashboardwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|solutionrelative:financialsystem.ui\\dashboardwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.ui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|solutionrelative:financialsystem.ui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C4393F00-188A-4B12-828F-E7A20160139F}|FinancialSystem.Application\\FinancialSystem.Application.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.application\\services\\bankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4393F00-188A-4B12-828F-E7A20160139F}|FinancialSystem.Application\\FinancialSystem.Application.csproj|solutionrelative:financialsystem.application\\services\\bankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C4393F00-188A-4B12-828F-E7A20160139F}|FinancialSystem.Application\\FinancialSystem.Application.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C4393F00-188A-4B12-828F-E7A20160139F}|FinancialSystem.Application\\FinancialSystem.Application.csproj|solutionrelative:financialsystem.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0FA96975-7713-4DD5-9EDC-CC7C62B9BA91}|FinancialSystem.Domain\\FinancialSystem.Domain.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.domain\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0FA96975-7713-4DD5-9EDC-CC7C62B9BA91}|FinancialSystem.Domain\\FinancialSystem.Domain.csproj|solutionrelative:financialsystem.domain\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Infrastructure\\Migrations\\20260311111916_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FinancialSystem.Infrastructure\\Migrations\\20260311111916_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{900857C9-80D4-43A2-B7CB-0403C59619AE}|FinancialSystem.Infrastructure\\FinancialSystem.Infrastructure.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.infrastructure\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{900857C9-80D4-43A2-B7CB-0403C59619AE}|FinancialSystem.Infrastructure\\FinancialSystem.Infrastructure.csproj|solutionrelative:financialsystem.infrastructure\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0FA96975-7713-4DD5-9EDC-CC7C62B9BA91}|FinancialSystem.Domain\\FinancialSystem.Domain.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.domain\\entities\\salaryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FA96975-7713-4DD5-9EDC-CC7C62B9BA91}|FinancialSystem.Domain\\FinancialSystem.Domain.csproj|solutionrelative:financialsystem.domain\\entities\\salaryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{900857C9-80D4-43A2-B7CB-0403C59619AE}|FinancialSystem.Infrastructure\\FinancialSystem.Infrastructure.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.infrastructure\\financedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{900857C9-80D4-43A2-B7CB-0403C59619AE}|FinancialSystem.Infrastructure\\FinancialSystem.Infrastructure.csproj|solutionrelative:financialsystem.infrastructure\\financedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FA96975-7713-4DD5-9EDC-CC7C62B9BA91}|FinancialSystem.Domain\\FinancialSystem.Domain.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.domain\\interfaces\\ibankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FA96975-7713-4DD5-9EDC-CC7C62B9BA91}|FinancialSystem.Domain\\FinancialSystem.Domain.csproj|solutionrelative:financialsystem.domain\\interfaces\\ibankservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FA96975-7713-4DD5-9EDC-CC7C62B9BA91}|FinancialSystem.Domain\\FinancialSystem.Domain.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.domain\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FA96975-7713-4DD5-9EDC-CC7C62B9BA91}|FinancialSystem.Domain\\FinancialSystem.Domain.csproj|solutionrelative:financialsystem.domain\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0FA96975-7713-4DD5-9EDC-CC7C62B9BA91}|FinancialSystem.Domain\\FinancialSystem.Domain.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.domain\\enums\\userstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,6 +91,18 @@
       "RelativeMoniker": "D:0:0:{0FA96975-7713-4DD5-9EDC-CC7C62B9BA91}|FinancialSystem.Domain\\FinancialSystem.Domain.csproj|solutionrelative:financialsystem.domain\\entities\\actionlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.ui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|solutionrelative:financialsystem.ui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|solutionrelative:financialsystem.ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.ui\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{745E7F38-B73E-4042-A9A2-D5E964A579F0}|FinancialSystem.UI\\FinancialSystem.UI.csproj|solutionrelative:financialsystem.ui\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{900857C9-80D4-43A2-B7CB-0403C59619AE}|FinancialSystem.Infrastructure\\FinancialSystem.Infrastructure.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.infrastructure\\financialsystem.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{900857C9-80D4-43A2-B7CB-0403C59619AE}|FinancialSystem.Infrastructure\\FinancialSystem.Infrastructure.csproj|solutionrelative:financialsystem.infrastructure\\financialsystem.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -103,6 +127,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Infrastructure\\DbInitialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FinancialSystem.Infrastructure\\DbInitialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{900857C9-80D4-43A2-B7CB-0403C59619AE}|FinancialSystem.Infrastructure\\FinancialSystem.Infrastructure.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab1\\financialsystem\\financialsystem.infrastructure\\migrations\\20260311111916_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{900857C9-80D4-43A2-B7CB-0403C59619AE}|FinancialSystem.Infrastructure\\FinancialSystem.Infrastructure.csproj|solutionrelative:financialsystem.infrastructure\\migrations\\20260311111916_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -117,134 +145,160 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\App.xaml",
-              "RelativeDocumentMoniker": "FinancialSystem.UI\\App.xaml",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\App.xaml*",
-              "RelativeToolTip": "FinancialSystem.UI\\App.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-07T14:12:26.573Z",
-              "EditorCaption": ""
+              "Title": "DashboardWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\DashboardWindow.xaml.cs",
+              "RelativeDocumentMoniker": "FinancialSystem.UI\\DashboardWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\DashboardWindow.xaml.cs",
+              "RelativeToolTip": "FinancialSystem.UI\\DashboardWindow.xaml.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAQwGEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T11:39:47.951Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\App.xaml.cs",
-              "RelativeDocumentMoniker": "FinancialSystem.UI\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\App.xaml.cs*",
-              "RelativeToolTip": "FinancialSystem.UI\\App.xaml.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T14:24:26.095Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "FinancialSystem.UI\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\MainWindow.xaml*",
-              "RelativeToolTip": "FinancialSystem.UI\\MainWindow.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-11T11:28:39.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "FinancialSystem.UI\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\AssemblyInfo.cs",
-              "RelativeToolTip": "FinancialSystem.UI\\AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T14:12:25.01Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "FinancialSystem.UI\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "FinancialSystem.UI\\MainWindow.xaml.cs*",
-              "ViewState": "AgIAABUAAAAAAAAAAADwvyUAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T11:29:05.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Application\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "FinancialSystem.Application\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Application\\Services\\AuthService.cs*",
-              "RelativeToolTip": "FinancialSystem.Application\\Services\\AuthService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T11:25:03.843Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Domain\\Interfaces\\IAuthService.cs",
-              "RelativeDocumentMoniker": "FinancialSystem.Domain\\Interfaces\\IAuthService.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Domain\\Interfaces\\IAuthService.cs*",
-              "RelativeToolTip": "FinancialSystem.Domain\\Interfaces\\IAuthService.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T11:23:30.5Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "20260311111916_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Infrastructure\\Migrations\\20260311111916_InitialCreate.cs",
-              "RelativeDocumentMoniker": "FinancialSystem.Infrastructure\\Migrations\\20260311111916_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Infrastructure\\Migrations\\20260311111916_InitialCreate.cs",
-              "RelativeToolTip": "FinancialSystem.Infrastructure\\Migrations\\20260311111916_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T11:19:16.58Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FinanceDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Infrastructure\\FinanceDbContext.cs",
-              "RelativeDocumentMoniker": "FinancialSystem.Infrastructure\\FinanceDbContext.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Infrastructure\\FinanceDbContext.cs",
-              "RelativeToolTip": "FinancialSystem.Infrastructure\\FinanceDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T11:04:03.545Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "DbInitializer.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Infrastructure\\DbInitializer.cs",
               "RelativeDocumentMoniker": "FinancialSystem.Infrastructure\\DbInitializer.cs",
               "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Infrastructure\\DbInitializer.cs",
               "RelativeToolTip": "FinancialSystem.Infrastructure\\DbInitializer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-11T11:05:21.821Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ManagerWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\ManagerWindow.xaml",
+              "RelativeDocumentMoniker": "FinancialSystem.UI\\ManagerWindow.xaml",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\ManagerWindow.xaml",
+              "RelativeToolTip": "FinancialSystem.UI\\ManagerWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-11T12:35:37.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ManagerWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\ManagerWindow.xaml.cs",
+              "RelativeDocumentMoniker": "FinancialSystem.UI\\ManagerWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\ManagerWindow.xaml.cs",
+              "RelativeToolTip": "FinancialSystem.UI\\ManagerWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T12:35:52.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "FinancialSystem.UI\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\MainWindow.xaml",
+              "RelativeToolTip": "FinancialSystem.UI\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-11T11:28:39.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DashboardWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\DashboardWindow.xaml",
+              "RelativeDocumentMoniker": "FinancialSystem.UI\\DashboardWindow.xaml",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\DashboardWindow.xaml",
+              "RelativeToolTip": "FinancialSystem.UI\\DashboardWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-11T11:39:32.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "FinancialSystem.UI\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\MainWindow.xaml.cs",
+              "RelativeToolTip": "FinancialSystem.UI\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T11:29:05.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BankService.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Application\\Services\\BankService.cs",
+              "RelativeDocumentMoniker": "FinancialSystem.Application\\Services\\BankService.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Application\\Services\\BankService.cs",
+              "RelativeToolTip": "FinancialSystem.Application\\Services\\BankService.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAowEAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T11:38:49.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "FinancialSystem.Application\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "FinancialSystem.Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T11:25:03.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SalaryRequest.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Domain\\Entities\\SalaryRequest.cs",
+              "RelativeDocumentMoniker": "FinancialSystem.Domain\\Entities\\SalaryRequest.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Domain\\Entities\\SalaryRequest.cs",
+              "RelativeToolTip": "FinancialSystem.Domain\\Entities\\SalaryRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T12:10:30.491Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "FinanceDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Infrastructure\\FinanceDbContext.cs",
+              "RelativeDocumentMoniker": "FinancialSystem.Infrastructure\\FinanceDbContext.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Infrastructure\\FinanceDbContext.cs",
+              "RelativeToolTip": "FinancialSystem.Infrastructure\\FinanceDbContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAzwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T11:04:03.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IBankService.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Domain\\Interfaces\\IBankService.cs",
+              "RelativeDocumentMoniker": "FinancialSystem.Domain\\Interfaces\\IBankService.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Domain\\Interfaces\\IBankService.cs",
+              "RelativeToolTip": "FinancialSystem.Domain\\Interfaces\\IBankService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T11:40:53.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Domain\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "FinancialSystem.Domain\\Interfaces\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Domain\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "FinancialSystem.Domain\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T11:23:30.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "UserStatus.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Domain\\Enums\\UserStatus.cs",
               "RelativeDocumentMoniker": "FinancialSystem.Domain\\Enums\\UserStatus.cs",
@@ -252,12 +306,11 @@
               "RelativeToolTip": "FinancialSystem.Domain\\Enums\\UserStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T14:08:36.197Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-09T14:08:36.197Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "UserRole.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Domain\\Enums\\UserRole.cs",
               "RelativeDocumentMoniker": "FinancialSystem.Domain\\Enums\\UserRole.cs",
@@ -265,12 +318,11 @@
               "RelativeToolTip": "FinancialSystem.Domain\\Enums\\UserRole.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T14:09:06.747Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-09T14:09:06.747Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "AccountType.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Domain\\Enums\\AccountType.cs",
               "RelativeDocumentMoniker": "FinancialSystem.Domain\\Enums\\AccountType.cs",
@@ -278,38 +330,35 @@
               "RelativeToolTip": "FinancialSystem.Domain\\Enums\\AccountType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T14:08:15.723Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-09T14:08:15.723Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "FinancialSystem.Domain\\Entities\\User.cs",
               "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Domain\\Entities\\User.cs",
               "RelativeToolTip": "FinancialSystem.Domain\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T14:16:59.766Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-07T14:16:59.766Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "TransactionRecord.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Domain\\Entities\\TransactionRecord.cs",
               "RelativeDocumentMoniker": "FinancialSystem.Domain\\Entities\\TransactionRecord.cs",
               "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Domain\\Entities\\TransactionRecord.cs",
               "RelativeToolTip": "FinancialSystem.Domain\\Entities\\TransactionRecord.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T14:19:26.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-07T14:19:26.718Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "Enterprise.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Domain\\Entities\\Enterprise.cs",
               "RelativeDocumentMoniker": "FinancialSystem.Domain\\Entities\\Enterprise.cs",
@@ -317,25 +366,23 @@
               "RelativeToolTip": "FinancialSystem.Domain\\Entities\\Enterprise.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T13:42:04.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-09T13:42:04.473Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "BankAccount.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Domain\\Entities\\BankAccount.cs",
               "RelativeDocumentMoniker": "FinancialSystem.Domain\\Entities\\BankAccount.cs",
               "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Domain\\Entities\\BankAccount.cs",
               "RelativeToolTip": "FinancialSystem.Domain\\Entities\\BankAccount.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T13:42:23.56Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T11:58:30.391Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Bank.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Domain\\Entities\\Bank.cs",
               "RelativeDocumentMoniker": "FinancialSystem.Domain\\Entities\\Bank.cs",
@@ -343,12 +390,11 @@
               "RelativeToolTip": "FinancialSystem.Domain\\Entities\\Bank.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T13:41:27.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-09T13:41:27.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "ActionLog.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Domain\\Entities\\ActionLog.cs",
               "RelativeDocumentMoniker": "FinancialSystem.Domain\\Entities\\ActionLog.cs",
@@ -356,25 +402,70 @@
               "RelativeToolTip": "FinancialSystem.Domain\\Entities\\ActionLog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-07T14:22:27.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-07T14:22:27.596Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "FinancialSystem.Infrastructure",
+              "DocumentIndex": 22,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\App.xaml.cs",
+              "RelativeDocumentMoniker": "FinancialSystem.UI\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\App.xaml.cs",
+              "RelativeToolTip": "FinancialSystem.UI\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T14:24:26.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\App.xaml",
+              "RelativeDocumentMoniker": "FinancialSystem.UI\\App.xaml",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\App.xaml",
+              "RelativeToolTip": "FinancialSystem.UI\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-07T14:12:26.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "FinancialSystem.UI\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\AssemblyInfo.cs",
+              "RelativeToolTip": "FinancialSystem.UI\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-07T14:12:25.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20260311111916_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Infrastructure\\Migrations\\20260311111916_InitialCreate.cs",
+              "RelativeDocumentMoniker": "FinancialSystem.Infrastructure\\Migrations\\20260311111916_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Infrastructure\\Migrations\\20260311111916_InitialCreate.cs",
+              "RelativeToolTip": "FinancialSystem.Infrastructure\\Migrations\\20260311111916_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T11:19:16.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FinancialSystem.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Infrastructure\\FinancialSystem.Infrastructure.csproj",
               "RelativeDocumentMoniker": "FinancialSystem.Infrastructure\\FinancialSystem.Infrastructure.csproj",
               "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Infrastructure\\FinancialSystem.Infrastructure.csproj",
               "RelativeToolTip": "FinancialSystem.Infrastructure\\FinancialSystem.Infrastructure.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-11T11:02:54.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T11:02:54.014Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "DbInitialize.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Infrastructure\\DbInitialize.cs",
               "RelativeDocumentMoniker": "FinancialSystem.Infrastructure\\DbInitialize.cs",
@@ -382,25 +473,23 @@
               "RelativeToolTip": "FinancialSystem.Infrastructure\\DbInitialize.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T10:40:22.299Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T10:40:22.299Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "FinancialSystem.Application.csproj",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Application\\FinancialSystem.Application.csproj",
               "RelativeDocumentMoniker": "FinancialSystem.Application\\FinancialSystem.Application.csproj",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Application\\FinancialSystem.Application.csproj*",
-              "RelativeToolTip": "FinancialSystem.Application\\FinancialSystem.Application.csproj*",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Application\\FinancialSystem.Application.csproj",
+              "RelativeToolTip": "FinancialSystem.Application\\FinancialSystem.Application.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-07T14:05:55.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-07T14:05:55.033Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "20260311103942_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.Infrastructure\\Migrations\\20260311103942_InitialCreate.cs",
               "RelativeDocumentMoniker": "FinancialSystem.Infrastructure\\Migrations\\20260311103942_InitialCreate.cs",
@@ -411,7 +500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "XamlReader.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\.vsdbgsrc\\5917cbb70f9b28a245decce13428c9b8b0242b7bced3975c23780bdc4e8c9caa\\XamlReader.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5917cbb70f9b28a245decce13428c9b8b0242b7bced3975c23780bdc4e8c9caa\\XamlReader.cs",
@@ -419,25 +508,23 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\5917cbb70f9b28a245decce13428c9b8b0242b7bced3975c23780bdc4e8c9caa\\XamlReader.cs",
               "ViewState": "AgIAAOsBAAAAAAAAAAAjwP4BAAACAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T04:52:38.664Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T04:52:38.664Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "FinancialSystem.UI.csproj",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\FinancialSystem.UI.csproj",
               "RelativeDocumentMoniker": "FinancialSystem.UI\\FinancialSystem.UI.csproj",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\FinancialSystem.UI.csproj*",
-              "RelativeToolTip": "FinancialSystem.UI\\FinancialSystem.UI.csproj*",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\Lab1\\FinancialSystem\\FinancialSystem.UI\\FinancialSystem.UI.csproj",
+              "RelativeToolTip": "FinancialSystem.UI\\FinancialSystem.UI.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-07T08:39:39.98Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-07T08:39:39.98Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "ResourcePart.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
@@ -445,8 +532,7 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAABHAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T08:21:18.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-09T08:21:18.202Z"
             }
           ]
         }

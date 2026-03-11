@@ -8,33 +8,30 @@ namespace FinancialSystem.Application.Services
 {
     public class AuthService : IAuthService
     {
-        private readonly FinanceDbContext _context;
+        private readonly FinanceDbContext _db;
 
         public AuthService(FinanceDbContext context)
         {
-            _context = context;
+            _db = context;
         }
 
         public User? Login(string login, string password)
         {
-            // Ищем пользователя по логину и паролю
-            // ВАЖНО: В реальных проектах пароли хэшируются, но для лабы сделаем простое сравнение
-            var user = _context.Users.FirstOrDefault(u => u.Login == login && u.PasswordHash == password);
+            var user = _db.Users.FirstOrDefault(u => u.Login == login && u.PasswordHash == password);
 
-            if (user == null) return null;
-
-            // Если это клиент, проверяем, подтвердил ли его менеджер
-            if (user.Role == UserRole.Client && user.Status == UserStatus.Pending)
+            if (user != null)
             {
-                throw new Exception("Ваша регистрация еще не подтверждена менеджером.");
+                if (user.Status == UserStatus.Pending)
+                    throw new Exception("Ваша учетная запись ожидает подтверждения.");
+                if (user.Status == UserStatus.Blocked)
+                    throw new Exception("Ваш аккаунт заблокирован.");
             }
-
             return user;
         }
 
         public bool Register(string login, string password)
         {
-            if (_context.Users.Any(u => u.Login == login))
+            if (_db.Users.Any(u => u.Login == login))
                 return false; // Логин занят
 
             var newUser = new User
@@ -45,8 +42,8 @@ namespace FinancialSystem.Application.Services
                 Status = UserStatus.Pending // Ждет подтверждения менеджера (по условию лабы)
             };
 
-            _context.Users.Add(newUser);
-            _context.SaveChanges();
+            _db.Users.Add(newUser);
+            _db.SaveChanges();
             return true;
         }
     }

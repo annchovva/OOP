@@ -10,12 +10,10 @@ namespace FinancialSystem.Domain.Entities
     public class TransactionRecord
     {
         public int Id { get; set; }
-        // Откуда (может быть null, если это пополнение наличными/зарплата извне)
-        public int? FromAccountId { get; set; }
-        // Куда (может быть null, если это снятие)
-        public int? ToAccountId { get; set; }
-
+        public int? FromAccountId { get; set; } // У тебя From
+        public int? ToAccountId { get; set; }   // У тебя To
         public decimal Amount { get; set; }
+        public string Description { get; set; } = string.Empty; // Добавь это для описания
         public DateTime Date { get; set; } = DateTime.Now;
     }
 }
