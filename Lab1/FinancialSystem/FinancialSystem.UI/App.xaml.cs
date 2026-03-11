@@ -1,20 +1,25 @@
 ﻿using System.Windows;
+using FinancialSystem.Infrastructure;
 
-namespace FinancialSystem
+namespace FinancialSystem.WPF
 {
-    public partial class App : Application
+    /// <summary>
+    /// Логика взаимодействия для App.xaml
+    /// </summary>
+    public partial class App : System.Windows.Application
     {
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
 
-            // Ловим все необработанные ошибки
-            this.DispatcherUnhandledException += (s, ex) =>
+            // Инициализируем базу данных (создаем файл и таблицы, если их нет)
+            using (var db = new FinanceDbContext())
             {
-                MessageBox.Show($"Произошла ошибка: {ex.Exception.Message}\n\n{ex.Exception.InnerException?.Message}", "Критическая ошибка");
-                ex.Handled = true;
-            };
+                // Это создаст таблицы и добавит начальных пользователей (админа/менеджера)
+                DbInitializer.Initialize(db);
+            }
         }
     }
 }
+
 

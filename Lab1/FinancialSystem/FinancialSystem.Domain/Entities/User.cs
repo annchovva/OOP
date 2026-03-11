@@ -11,15 +11,15 @@ namespace FinancialSystem.Domain.Entities
     public class User
     {
         public int Id { get; set; }
-        public string Username { get; set; } = string.Empty;
+        public string Login { get; set; } = string.Empty;
         public string PasswordHash { get; set; } = string.Empty;
         public UserRole Role { get; set; }
+        public UserStatus Status { get; set; }
 
-        // Статус подтверждения 
-        public bool IsApproved { get; set; }
+        // Для связи с предприятием (может быть null, если клиент не сотрудник)
+        public int? EnterpriseId { get; set; }
+        public virtual Enterprise? Enterprise { get; set; }
 
-        // Связи
-        public virtual ICollection<Account> Accounts { get; set; } = new List<Account>();
-        public virtual ICollection<Deposit> Deposits { get; set; } = new List<Deposit>();
+        public virtual ICollection<BankAccount> BankAccounts { get; set; } = new List<BankAccount>();
     }
 }

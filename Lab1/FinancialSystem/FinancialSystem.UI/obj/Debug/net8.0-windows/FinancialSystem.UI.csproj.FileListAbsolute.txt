@@ -1,5 +1,4 @@
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\FinancialSystem.UI.csproj.AssemblyReference.cache
-C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\FinancialSystem.UI_MarkupCompile.cache
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\bin\Debug\net8.0-windows\FinancialSystem.UI.exe
@@ -49,7 +48,6 @@ C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialS
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\bin\Debug\net8.0-windows\FinancialSystem.Infrastructure.dll
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\bin\Debug\net8.0-windows\FinancialSystem.Domain.pdb
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\bin\Debug\net8.0-windows\FinancialSystem.Infrastructure.pdb
-C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\FinancialSystem.UI.g.resources
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\FinancialSystem.UI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\FinancialSystem.UI.AssemblyInfoInputs.cache
@@ -127,13 +125,10 @@ C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialS
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\LoginWindow.g.cs
-C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\LoginWindow.baml
-C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\RegisterWindow.baml
-C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\RegisterWindow.g.cs
-C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\App.baml
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\bin\Debug\net8.0-windows\Castle.Core.dll
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Proxies.dll
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\FinancialSystem.UI.sourcelink.json
-C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\СlientWindow.baml
-C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\СlientWindow.g.cs
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\bin\Debug\net8.0-windows\FinancialSystem.Application.dll
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\bin\Debug\net8.0-windows\FinancialSystem.Application.pdb
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\MainWindow.g.cs

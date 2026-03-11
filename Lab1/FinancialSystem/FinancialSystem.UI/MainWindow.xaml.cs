@@ -1,53 +1,72 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
+using FinancialSystem.Application.Services;
 using FinancialSystem.Domain.Entities;
-using FinancialSystem.Domain.Enums;
+using FinancialSystem.Infrastructure;
 
-namespace FinancialSystem.UI
+namespace FinancialSystem.WPF
 {
     public partial class MainWindow : Window
     {
-        private User _currentUser;
+        private readonly AuthService _authService;
 
-        public MainWindow(User user)
+        public MainWindow()
         {
             InitializeComponent();
-            _currentUser = user;
-            SetupInterface();
+            // Создаем контекст и сервис (в идеале тут нужен Dependency Injection, но для лабы так проще)
+            var db = new FinanceDbContext();
+            _authService = new AuthService(db);
         }
 
-        private void SetupInterface()
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            WelcomeLabel.Text = $"Добро пожаловать, {_currentUser.Username}!";
-            RoleLabel.Text = $"Роль в системе: {_currentUser.Role}";
+            string login = LoginBox.Text;
+            string password = PasswordBox.Password;
 
-            // Настройка видимости в зависимости от роли
-            if (_currentUser.Role == UserRole.Administrator || _currentUser.Role == UserRole.Manager)
+            try
             {
-                AdminPanel.Visibility = Visibility.Visible;
+                var user = _authService.Login(login, password);
+                if (user != null)
+                {
+                    MessageBox.Show($"Добро пожаловать, {user.Login}!\nВаша роль: {user.Role}", "Успех");
+                    
+                    // Тут мы позже откроем новое окно в зависимости от роли
+                    // Например: OpenDashboard(user);
+                }
+                else
+                {
+                    StatusLabel.Text = "Неверный логин или пароль.";
+                }
+            }
+            catch (Exception ex)
+            {
+                StatusLabel.Text = ex.Message; // Выведет "Ваша регистрация еще не подтверждена"
+            }
+        }
+
+        private void RegisterButton_Click(object sender, RoutedEventArgs e)
+        {
+            string login = LoginBox.Text;
+            string password = PasswordBox.Password;
+
+            if (string.IsNullOrWhiteSpace(login) || string.IsNullOrWhiteSpace(password))
+            {
+                StatusLabel.Text = "Введите логин и пароль для регистрации.";
+                return;
             }
 
-            if (_currentUser.Role == UserRole.Client)
+            if (_authService.Register(login, password))
             {
-                ClientPanel.Visibility = Visibility.Visible;
+                MessageBox.Show("Регистрация успешна! Дождитесь подтверждения менеджером.", "Инфо");
+                StatusLabel.Foreground = System.Windows.Media.Brushes.Green;
+                StatusLabel.Text = "Регистрация прошла успешно.";
             }
-        }
-
-        private void BtnDashboard_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Вы на главной странице дашборда");
-        }
-
-        private void BtnUsers_Click(object sender, RoutedEventArgs e)
-        {
-            // Здесь позже откроем список пользователей
-            MessageBox.Show("Раздел управления пользователями");
-        }
-
-        private void Logout_Click(object sender, RoutedEventArgs e)
-        {
-            LoginWindow loginWin = new LoginWindow();
-            loginWin.Show();
-            this.Close();
+            else
+            {
+                StatusLabel.Foreground = System.Windows.Media.Brushes.Red;
+                StatusLabel.Text = "Логин уже занят.";
+            }
         }
     }
 }
+

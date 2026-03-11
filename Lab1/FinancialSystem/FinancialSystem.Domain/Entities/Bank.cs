@@ -11,8 +11,6 @@ namespace FinancialSystem.Domain.Entities
     {
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
-        public string BIC { get; set; } = string.Empty;
-
-        public virtual ICollection<Account> Accounts { get; set; } = new List<Account>();
+        public virtual ICollection<BankAccount> BankAccounts { get; set; } = new List<BankAccount>();
     }
 }

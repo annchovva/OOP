@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinancialSystem.Domain.Enums
 {
-    public enum UserRole
-    {
-        Client,
-        Manager,
-        Administrator
+    public enum UserRole 
+    { 
+        Client = 1, 
+        Manager = 2, 
+        Admin = 3 
     }
 }
