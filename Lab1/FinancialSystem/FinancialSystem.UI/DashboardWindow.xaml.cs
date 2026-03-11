@@ -7,7 +7,7 @@ using FinancialSystem.Domain.Entities;
 using FinancialSystem.Domain.Enums;
 using FinancialSystem.Infrastructure;
 
-namespace FinancialSystem.UI // Проверь, чтобы это совпадало с x:Class в XAML
+namespace FinancialSystem.UI
 {
     public partial class DashboardWindow : Window
     {
@@ -19,18 +19,24 @@ namespace FinancialSystem.UI // Проверь, чтобы это совпада
             InitializeComponent();
             _user = user;
 
-            // Инициализация сервиса
             var db = new FinanceDbContext();
             _bankService = new BankService(db);
 
-            // Настройка текста
-            UserInfoLabel.Text = $"Пользователь: {_user.Login}";
-            UserStatusText.Text = $"Ваша роль: {_user.Role}";
+            // 1. Настройка информации о пользователе
+            UserInfoLabel.Text = $"Привет, {_user.Login}";
+            UserRoleLabel.Text = $"Ваша роль: {_user.Role}";
+            UserStatusText.Text = $"Статус: {_user.Status}";
 
-            // Показываем кнопку админа, если роль позволяет
-            if (_user.Role == UserRole.Admin || _user.Role == UserRole.Manager)
+            // 2. Разделение доступа к кнопкам (Строго по ТЗ)
+            if (_user.Role == UserRole.Manager)
             {
-                AdminBtn.Visibility = Visibility.Visible;
+                ManagerPanelBtn.Visibility = Visibility.Visible;
+            }
+            else if (_user.Role == UserRole.Admin)
+            {
+                AdminPanelBtn.Visibility = Visibility.Visible;
+                // По желанию: Админ тоже может видеть панель менеджера
+                // ManagerPanelBtn.Visibility = Visibility.Visible; 
             }
         }
 
@@ -59,11 +65,11 @@ namespace FinancialSystem.UI // Проверь, чтобы это совпада
             var banks = _bankService.GetAllBanks();
             if (banks.Count == 0)
             {
-                MessageBox.Show("Сначала добавьте банки в базу данных!");
+                MessageBox.Show("В системе еще нет банков.");
                 return;
             }
 
-            // Открываем счет в первом банке для теста
+            // Для примера открываем в первом доступном банке
             _bankService.OpenAccount(_user.Id, banks[0].Id, AccountType.Current);
             RefreshData();
             MessageBox.Show("Счет успешно открыт!");
@@ -72,30 +78,36 @@ namespace FinancialSystem.UI // Проверь, чтобы это совпада
         private void ViewBanksBtn_Click(object sender, RoutedEventArgs e)
         {
             var banks = _bankService.GetAllBanks();
-            string names = string.Join("\n", banks.Select(b => b.Name));
-            MessageBox.Show(names, "Список банков");
+            string names = string.Join("\n", banks.Select(b => $"• {b.Name}"));
+            MessageBox.Show(names, "Доступные банки");
+        }
+
+        private void ManagerPanelBtn_Click(object sender, RoutedEventArgs e)
+        {
+            // Открываем окно менеджера (подтверждение регистраций, управление фирмами)
+            ManagerWindow managerWin = new ManagerWindow();
+            managerWin.ShowDialog();
+            RefreshData();
+        }
+
+        private void AdminPanelBtn_Click(object sender, RoutedEventArgs e)
+        {
+            // Сюда добавим окно логов для Админа (FunctionalAdmin.ViewLogs)
+            MessageBox.Show("Окно логов и отмены действий в разработке");
+            // AdminLogsWindow adminWin = new AdminLogsWindow();
+            // adminWin.ShowDialog();
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow loginWin = new MainWindow(); // Вместо LoginWindow
+            MainWindow loginWin = new MainWindow();
             loginWin.Show();
             this.Close();
         }
 
         private void TransactionsBtn_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Раздел переводов в разработке");
-        }
-
-        private void AdminBtn_Click(object sender, RoutedEventArgs e)
-        {
-            // Открываем окно управления
-            ManagerWindow managerWin = new ManagerWindow();
-            managerWin.ShowDialog(); // ShowDialog заблокирует основное окно, пока это открыто
-
-            // После закрытия окна менеджера можно обновить данные
-            RefreshData();
+            MessageBox.Show("Раздел переводов будет доступен в следующей итерации");
         }
     }
 }

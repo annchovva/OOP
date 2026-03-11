@@ -9,10 +9,20 @@ namespace FinancialSystem.Domain.Entities
     public class ActionLog
     {
         public int Id { get; set; }
+        public DateTime Timestamp { get; set; } = DateTime.Now;
+
+        // Тип действия: "Transfer", "OpenAccount", "CloseAccount"
+        public string ActionType { get; set; }
+
+        // Описание для человека: "Перевод 500 руб со счета 123 на 456"
+        public string Details { get; set; }
+
         public int UserId { get; set; }
-        public string ActionType { get; set; } = string.Empty; // Имя класса команды
-        public string SerializedCommandData { get; set; } = string.Empty; // JSON с данными для отмены
-        public DateTime Date { get; set; } = DateTime.Now;
-        public bool IsUndone { get; set; } // Отменено ли это действие
+
+        // Флаг: было ли действие уже отменено
+        public bool IsReversed { get; set; } = false;
+
+        // Технические данные для "отката" (например: "FromAccId;ToAccId;Amount")
+        public string TechnicalData { get; set; }
     }
 }

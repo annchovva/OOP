@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using FinancialSystem.Domain.Entities;
 
-namespace FinancialSystem.Domain.Interfaces
+namespace FinancialSystem.Application.Interfaces
 {
     public interface IAuthService
     {

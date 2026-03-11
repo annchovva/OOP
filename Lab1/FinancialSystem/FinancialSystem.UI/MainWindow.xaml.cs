@@ -3,7 +3,7 @@ using System.Windows;
 using FinancialSystem.Application.Interfaces; // Добавили интерфейсы
 using FinancialSystem.Application.Services;
 using FinancialSystem.Domain.Entities;
-using FinancialSystem.Domain.Interfaces;
+using FinancialSystem.Application.Interfaces;
 using FinancialSystem.Infrastructure;
 
 namespace FinancialSystem.UI

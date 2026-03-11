@@ -136,3 +136,7 @@ C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialS
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\DashboardWindow.g.cs
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\ManagerWindow.baml
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\ManagerWindow.g.cs
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\AdminLogsWindow.baml
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\AdminLogsWindow.g.cs
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\FinancialSystem.UI_MarkupCompile.lref
