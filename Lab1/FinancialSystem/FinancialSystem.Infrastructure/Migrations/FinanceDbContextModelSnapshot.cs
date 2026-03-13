@@ -31,14 +31,18 @@ namespace FinancialSystem.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime>("Date")
+                    b.Property<string>("Details")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<bool>("IsUndone")
+                    b.Property<bool>("IsReversed")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("SerializedCommandData")
+                    b.Property<string>("TechnicalData")
                         .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("Timestamp")
                         .HasColumnType("TEXT");
 
                     b.Property<int>("UserId")
@@ -69,6 +73,10 @@ namespace FinancialSystem.Infrastructure.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("AccountNumber")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.Property<decimal>("Balance")
                         .HasColumnType("TEXT");
@@ -112,6 +120,39 @@ namespace FinancialSystem.Infrastructure.Migrations
                     b.ToTable("Enterprises");
                 });
 
+            modelBuilder.Entity("FinancialSystem.Domain.Entities.SalaryRequest", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("EnterpriseId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("RequestedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Type")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EnterpriseId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("SalaryRequests");
+                });
+
             modelBuilder.Entity("FinancialSystem.Domain.Entities.TransactionRecord", b =>
                 {
                     b.Property<int>("Id")
@@ -124,6 +165,10 @@ namespace FinancialSystem.Infrastructure.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<int?>("FromAccountId")
                         .HasColumnType("INTEGER");
 
@@ -131,6 +176,10 @@ namespace FinancialSystem.Infrastructure.Migrations
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("FromAccountId");
+
+                    b.HasIndex("ToAccountId");
 
                     b.ToTable("Transactions");
                 });
@@ -142,6 +191,9 @@ namespace FinancialSystem.Infrastructure.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<int?>("EnterpriseId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("IsApproved")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Login")
@@ -185,6 +237,42 @@ namespace FinancialSystem.Infrastructure.Migrations
                     b.Navigation("Bank");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("FinancialSystem.Domain.Entities.SalaryRequest", b =>
+                {
+                    b.HasOne("FinancialSystem.Domain.Entities.Enterprise", "Enterprise")
+                        .WithMany()
+                        .HasForeignKey("EnterpriseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("FinancialSystem.Domain.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Enterprise");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("FinancialSystem.Domain.Entities.TransactionRecord", b =>
+                {
+                    b.HasOne("FinancialSystem.Domain.Entities.BankAccount", "FromAccount")
+                        .WithMany()
+                        .HasForeignKey("FromAccountId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("FinancialSystem.Domain.Entities.BankAccount", "ToAccount")
+                        .WithMany()
+                        .HasForeignKey("ToAccountId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.Navigation("FromAccount");
+
+                    b.Navigation("ToAccount");
                 });
 
             modelBuilder.Entity("FinancialSystem.Domain.Entities.User", b =>

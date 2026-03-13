@@ -1,0 +1,41 @@
+﻿<Window x:Class="FinancialSystem.UI.SalaryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Зарплатный проект" Height="450" Width="600" WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="Управление зарплатой" FontSize="22" FontWeight="Bold" Margin="0,0,0,20"/>
+
+            <!-- СЕКЦИЯ 1: Если пользователь еще НЕ в штате -->
+            <StackPanel x:Name="NotEmployedPanel" Visibility="Collapsed">
+                <TextBlock Text="Вы еще не привязаны к предприятию. Выберите из списка:" Margin="0,0,0,10"/>
+                <ComboBox x:Name="EnterpriseComboBox" DisplayMemberPath="Name" Margin="0,0,0,10" Height="30"/>
+                <Button Content="Отправить заявку на вступление" Click="JoinEnterprise_Click" Height="35" Background="#2196F3" Foreground="White"/>
+            </StackPanel>
+
+            <!-- СЕКЦИЯ 2: Если пользователь уже сотрудник -->
+            <StackPanel x:Name="EmployedPanel" Visibility="Collapsed">
+                <TextBlock x:Name="CurrentEnterpriseText" Text="Ваше предприятие: ..." FontSize="16" Margin="0,0,0,10"/>
+                <Button Content="💳 Запросить выплату зарплаты" Click="RequestPayment_Click" Height="35" Background="#4CAF50" Foreground="White" Margin="0,0,0,20"/>
+
+                <TextBlock Text="Доступные к зачислению выплаты:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <DataGrid x:Name="ApprovedPaymentsGrid" AutoGenerateColumns="False" IsReadOnly="True" Height="150">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Сумма" Binding="{Binding Amount, StringFormat={}{0:N2} ₽}" Width="100"/>
+                        <DataGridTextColumn Header="Дата одобрения" Binding="{Binding RequestedAt}" Width="*"/>
+                        <DataGridTemplateColumn Header="Действие" Width="150">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Content="Получить на счет" Click="ClaimSalary_Click" Background="#E3F2FD"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+
+                <TextBlock Text="Выберите счет для зачисления:" Margin="0,15,0,5"/>
+                <ComboBox x:Name="AccountsComboBox" DisplayMemberPath="AccountNumber" Height="30"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

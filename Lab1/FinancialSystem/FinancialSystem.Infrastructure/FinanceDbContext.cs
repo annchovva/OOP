@@ -26,27 +26,26 @@ namespace FinancialSystem.Infrastructure
         {
             base.OnModelCreating(modelBuilder);
 
-            // Уникальный логин
+            // Уникальный логин (оставляем как есть)
             modelBuilder.Entity<User>()
                 .HasIndex(u => u.Login)
                 .IsUnique();
 
-            // Настройка связи "Многие-ко-многим" для сотрудников предприятия (если нужно)
-            // Но обычно в простых лабах достаточно связи Один-ко-многим или через SalaryRequest
+            // НАСТРОЙКА ТРАНЗАКЦИЙ (ОБНОВЛЕННАЯ)
+            modelBuilder.Entity<TransactionRecord>(entity =>
+            {
+                // Связь для отправителя
+                entity.HasOne(t => t.FromAccount) // Указываем на свойство-объект
+                      .WithMany()                 // У одного счета может быть много исходящих транзакций
+                      .HasForeignKey(t => t.FromAccountId)
+                      .OnDelete(DeleteBehavior.Restrict);
 
-            // Настройка транзакций (связь с аккаунтами может быть цикличной, 
-            // поэтому отключаем каскадное удаление для безопасности)
-            modelBuilder.Entity<TransactionRecord>()
-                .HasOne<BankAccount>()
-                .WithMany()
-                .HasForeignKey(t => t.FromAccountId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder.Entity<TransactionRecord>()
-                .HasOne<BankAccount>()
-                .WithMany()
-                .HasForeignKey(t => t.ToAccountId)
-                .OnDelete(DeleteBehavior.Restrict);
+                // Связь для получателя
+                entity.HasOne(t => t.ToAccount)   // Указываем на свойство-объект
+                      .WithMany()                 // У одного счета может быть много входящих транзакций
+                      .HasForeignKey(t => t.ToAccountId)
+                      .OnDelete(DeleteBehavior.Restrict);
+            });
         }
     }
 }

@@ -28,6 +28,14 @@ namespace FinancialSystem.UI
             UserStatusText.Text = $"Статус: {_user.Status}";
 
             // 2. Разделение доступа к кнопкам (Строго по ТЗ)
+            SetupAccess();
+        }
+
+        private void SetupAccess()
+        {
+            // Кнопка зарплаты видна только обычным клиентам
+            SalaryBtn.Visibility = _user.Role == UserRole.Client ? Visibility.Visible : Visibility.Collapsed;
+
             if (_user.Role == UserRole.Manager)
             {
                 ManagerPanelBtn.Visibility = Visibility.Visible;
@@ -35,8 +43,8 @@ namespace FinancialSystem.UI
             else if (_user.Role == UserRole.Admin)
             {
                 AdminPanelBtn.Visibility = Visibility.Visible;
-                // По желанию: Админ тоже может видеть панель менеджера
-                // ManagerPanelBtn.Visibility = Visibility.Visible; 
+                // Админ может всё, поэтому даем ему и панель менеджера для тестов
+                ManagerPanelBtn.Visibility = Visibility.Visible;
             }
         }
 
@@ -51,6 +59,14 @@ namespace FinancialSystem.UI
             {
                 MessageBox.Show("Ошибка при обновлении данных: " + ex.Message);
             }
+        }
+
+        // Обработчик для Зарплатного проекта
+        private void SalaryBtn_Click(object sender, RoutedEventArgs e)
+        {
+            SalaryWindow salaryWin = new SalaryWindow(_user);
+            salaryWin.ShowDialog();
+            RefreshData(); // Обновляем баланс, если клиент получил деньги
         }
 
         private void AccountsBtn_Click(object sender, RoutedEventArgs e)
@@ -69,7 +85,7 @@ namespace FinancialSystem.UI
                 return;
             }
 
-            // Для примера открываем в первом доступном банке
+            // Открываем Текущий счет в первом банке (для упрощения)
             _bankService.OpenAccount(_user.Id, banks[0].Id, AccountType.Current);
             RefreshData();
             MessageBox.Show("Счет успешно открыт!");
@@ -84,7 +100,6 @@ namespace FinancialSystem.UI
 
         private void ManagerPanelBtn_Click(object sender, RoutedEventArgs e)
         {
-            // Открываем окно менеджера (подтверждение регистраций, управление фирмами)
             ManagerWindow managerWin = new ManagerWindow();
             managerWin.ShowDialog();
             RefreshData();
@@ -92,10 +107,10 @@ namespace FinancialSystem.UI
 
         private void AdminPanelBtn_Click(object sender, RoutedEventArgs e)
         {
-            // Сюда добавим окно логов для Админа (FunctionalAdmin.ViewLogs)
-            MessageBox.Show("Окно логов и отмены действий в разработке");
-            // AdminLogsWindow adminWin = new AdminLogsWindow();
-            // adminWin.ShowDialog();
+            // Окно логов теперь активно!
+            AdminLogsWindow adminWin = new AdminLogsWindow();
+            adminWin.ShowDialog();
+            RefreshData();
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)
@@ -107,7 +122,131 @@ namespace FinancialSystem.UI
 
         private void TransactionsBtn_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Раздел переводов будет доступен в следующей итерации");
+            ShowHistory();
         }
+
+        private void TransferBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedAccount = AccountsList.SelectedItem as BankAccount;
+
+            if (selectedAccount == null)
+            {
+                MessageBox.Show("Выберите счет для перевода.");
+                return;
+            }
+
+            // ПРОВЕРКА БЛОКИРОВКИ
+            if (selectedAccount.IsBlocked)
+            {
+                MessageBox.Show("Этот счет заблокирован менеджером. Вы не можете переводить с него средства.");
+                return;
+            }
+
+            TransferWindow transferWin = new TransferWindow(selectedAccount.Id, _bankService);
+            transferWin.Owner = this;
+
+            if (transferWin.ShowDialog() == true)
+            {
+                RefreshData();
+            }
+        }
+
+
+        // 3. Логика открытия истории
+        private void HistoryBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ShowHistory();
+        }
+
+        // Вспомогательный метод для показа истории
+        private void ShowHistory()
+        {
+            var historyWin = new HistoryWindow();
+            historyWin.Owner = this;
+
+            // Получаем историю транзакций через сервис
+            var transactions = _bankService.GetTransactionHistory(_user.Id);
+            historyWin.SetHistoryData(transactions);
+
+            historyWin.ShowDialog();
+        }
+
+        // НАКОПЛЕНИЕ (Начисление процентов)
+
+        private void OpenDepositBtn_Click(object sender, RoutedEventArgs e)
+        {
+            // Создаем экземпляр окна, которое мы правили в прошлом шаге
+            OpenDepositWindow openDepWin = new OpenDepositWindow(_user.Id, _bankService);
+
+            // Указываем владельца окна, чтобы оно открылось по центру родителя
+            openDepWin.Owner = this;
+
+            // Показываем окно. Если пользователь нажмет "Открыть вклад", ShowDialog вернет true
+            if (openDepWin.ShowDialog() == true)
+            {
+                // Обновляем таблицу, чтобы новый вклад появился в списке
+                RefreshData();
+            }
+        }
+
+        private void AccrueBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var selected = AccountsList.SelectedItem as BankAccount;
+            if (selected == null || selected.Type != AccountType.Deposit)
+            {
+                MessageBox.Show("Выберите вклад (депозит) для начисления процентов.");
+                return;
+            }
+
+            // ПРОВЕРКА БЛОКИРОВКИ
+            if (selected.IsBlocked)
+            {
+                MessageBox.Show("Счет заблокирован банком. Начисление процентов приостановлено.", "Отказ", MessageBoxButton.OK, MessageBoxImage.Stop);
+                return;
+            }
+
+            _bankService.AccrueInterest(selected.Id);
+            RefreshData();
+            MessageBox.Show("Проценты успешно начислены!");
+        }
+
+        private void CloseBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedAccount = AccountsList.SelectedItem as BankAccount;
+            if (selectedAccount == null)
+            {
+                MessageBox.Show("Выберите счет для закрытия.");
+                return;
+            }
+
+            // ПРОВЕРКА БЛОКИРОВКИ
+            if (selectedAccount.IsBlocked)
+            {
+                MessageBox.Show("Нельзя закрыть заблокированный счет. Обратитесь к менеджеру для разблокировки.");
+                return;
+            }
+
+            if (selectedAccount.Balance > 0)
+            {
+                MessageBox.Show($"На счету осталось {selectedAccount.Balance:N2} ₽. Сначала выведите средства.");
+                return;
+            }
+
+            var result = MessageBox.Show($"Вы действительно хотите закрыть счет {selectedAccount.AccountNumber}?",
+                         "Подтверждение", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+
+            if (result == MessageBoxResult.Yes)
+            {
+                _bankService.CloseAccount(selectedAccount.Id);
+                RefreshData();
+            }
+        }
+
+        // ЗАКРЫТИЕ (Уже работает через CloseBtn_Click, так как вклад — это BankAccount)
+
+        // ПЕРЕВОД (Уже работает через TransferBtn_Click)
+        // Так как и счет, и вклад — это BankAccount, метод TransferMoney 
+        // автоматически позволяет переводить деньги между ними.
+
     }
 }

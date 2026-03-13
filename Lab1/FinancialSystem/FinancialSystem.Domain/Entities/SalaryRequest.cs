@@ -1,4 +1,5 @@
 ﻿using FinancialSystem.Domain.Entities;
+using FinancialSystem.Domain.Enums;
 
 namespace FinancialSystem.Domain.Entities // Добавь это!
 {
@@ -11,7 +12,12 @@ namespace FinancialSystem.Domain.Entities // Добавь это!
         public int EnterpriseId { get; set; }
         public virtual Enterprise Enterprise { get; set; } = null!;
 
-        public bool IsApproved { get; set; } = false;
+        public SalaryRequestType Type { get; set; }
+        public SalaryRequestStatus Status { get; set; } = SalaryRequestStatus.Pending;
+
+        // Сумма (заполняется менеджером при одобрении выплаты)
+        public decimal Amount { get; set; }
+
         public DateTime RequestedAt { get; set; } = DateTime.Now;
     }
 }

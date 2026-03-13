@@ -140,3 +140,13 @@ C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialS
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\AdminLogsWindow.g.cs
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\FinancialSystem.UI_MarkupCompile.lref
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\SalaryWindow.baml
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\SalaryWindow.g.cs
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\HistoryWindow.baml
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\TransferWindow.baml
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\HistoryWindow.g.cs
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\TransferWindow.g.cs
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\OpenDepositWindow.baml
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\OpenDepositWindow.g.cs
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\AccountHystoryWindow.baml
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\AccountHystoryWindow.g.cs

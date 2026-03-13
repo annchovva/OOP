@@ -20,6 +20,9 @@
                     <Button x:Name="AccountsBtn" Content="🏠 Мои счета" Margin="0,5" Padding="8" Click="AccountsBtn_Click" HorizontalContentAlignment="Left"/>
                     <Button x:Name="TransactionsBtn" Content="💸 Переводы" Margin="0,5" Padding="8" Click="TransactionsBtn_Click" HorizontalContentAlignment="Left"/>
 
+                    <!-- НОВАЯ КНОПКА: Зарплатный проект -->
+                    <Button x:Name="SalaryBtn" Content="💼 Зарплатный проект" Margin="0,5" Padding="8" Click="SalaryBtn_Click" HorizontalContentAlignment="Left"/>
+
                     <Separator Margin="0,15"/>
 
                     <!-- Кнопка Менеджера (Синяя) -->
@@ -45,23 +48,24 @@
             </DockPanel>
         </Border>
 
-        <!-- Основная область контента -->
+        <!-- Основная область контента (без изменений) -->
         <Grid Grid.Column="1" Margin="25">
-            <!-- Приветствие -->
             <StackPanel x:Name="WelcomeArea" Visibility="Visible" VerticalAlignment="Center" HorizontalAlignment="Center">
                 <TextBlock Text="Добро пожаловать!" FontSize="28" FontWeight="Light" HorizontalAlignment="Center"/>
                 <TextBlock x:Name="UserStatusText" Text="Ваш аккаунт активен" Foreground="#4CAF50" Margin="0,10,0,0" HorizontalAlignment="Center"/>
             </StackPanel>
 
-            <!-- Панель счетов -->
             <Grid x:Name="AccountsPanel" Visibility="Collapsed">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-                <StackPanel Orientation="Horizontal" Margin="0,0,0,15">
+                <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,15">
                     <Button Content="+ Открыть счет" Click="OpenAccountBtn_Click" Padding="12,6" Background="#4CAF50" Foreground="White" BorderThickness="0" Margin="0,0,10,0"/>
+                    <Button Content="💰 Открыть вклад" Click="OpenDepositBtn_Click" Padding="12,6" Background="#2196F3" Foreground="White" BorderThickness="0" Margin="0,0,10,0"/>
+                    <Button Content="📈 Начислить %" Click="AccrueBtn_Click" Padding="15,10" Margin="0,0,10,0" Background="#FFF9C4"/>
                     <Button Content="Список банков" Click="ViewBanksBtn_Click" Padding="12,6"/>
                 </StackPanel>
 
@@ -77,8 +81,30 @@
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
                         <DataGridTextColumn Header="Банк" Binding="{Binding Bank.Name}" Width="150"/>
-                        </DataGrid.Columns>
+
+                        <!-- НОВАЯ КОЛОНКА СТАТУСА -->
+                        <DataGridTemplateColumn Header="Статус" Width="130">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock x:Name="StatusTxt" Text="✅ Активен" Foreground="Green" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                    <DataTemplate.Triggers>
+                                        <DataTrigger Binding="{Binding IsBlocked}" Value="True">
+                                            <Setter TargetName="StatusTxt" Property="Text" Value="🚫 ЗАБЛОКИРОВАН"/>
+                                            <Setter TargetName="StatusTxt" Property="Foreground" Value="Red"/>
+                                            <Setter TargetName="StatusTxt" Property="FontWeight" Value="Bold"/>
+                                        </DataTrigger>
+                                    </DataTemplate.Triggers>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
                 </DataGrid>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,15,0,0" VerticalAlignment="Top">
+                    <Button Content="💸 Перевести" Click="TransferBtn_Click" Padding="15,10" Margin="0,0,10,0" Background="#E3F2FD" BorderBrush="#2196F3"/>
+                    <Button Content="📜 История операций" Click="HistoryBtn_Click" Padding="15,10" Margin="0,0,10,0"/>
+                    <Button Content="❌ Закрыть счет" Click="CloseBtn_Click" Padding="15,10" Background="#FFEBEE" BorderBrush="#F44336"/>
+                </StackPanel>
             </Grid>
         </Grid>
     </Grid>
