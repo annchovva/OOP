@@ -21,6 +21,7 @@ namespace FinancialSystem.UI
             InitializeComponent();
             _db = new FinanceDbContext();
 
+            // Инициализация сервисов
             var logService = new LogService(_db);
             _enterpriseService = new EnterpriseService(_db, logService);
             _bankService = new BankService(_db);
@@ -30,70 +31,98 @@ namespace FinancialSystem.UI
 
         private void RefreshAll()
         {
-            PendingUsersGrid.ItemsSource = _db.Users.Where(u => u.Status == UserStatus.Pending).ToList();
-            JoinRequestsGrid.ItemsSource = _enterpriseService.GetPendingJoinRequests();
-            SalaryRequestsGrid.ItemsSource = _enterpriseService.GetPendingPaymentRequests();
-            EnterprisesGrid.ItemsSource = _enterpriseService.GetEnterprisesWithEmployees();
-
-            if (AllAccountsGrid != null)
+            try
             {
-                AllAccountsGrid.ItemsSource = _bankService.GetAllAccounts();
+                PendingUsersGrid.ItemsSource = _db.Users.Where(u => u.Status == UserStatus.Pending).ToList();
+                JoinRequestsGrid.ItemsSource = _enterpriseService.GetPendingJoinRequests();
+                SalaryRequestsGrid.ItemsSource = _enterpriseService.GetPendingPaymentRequests();
+
+                if (AllAccountsGrid != null)
+                {
+                    AllAccountsGrid.ItemsSource = _bankService.GetAllAccounts();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при обновлении данных: {ex.Message}");
             }
         }
 
         private void MainTabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (MainTabControl?.SelectedItem is TabItem selectedTab && selectedTab.Header.ToString() == "Счета клиентов")
+            // Это критически важная проверка: если UI еще не загружен, выходим
+            if (!this.IsLoaded) return;
+
+            // Обновляем данные только если событие пришло именно от TabControl
+            if (e.Source is TabControl)
             {
                 RefreshAll();
+            }
+        }
+
+        private void ApproveUser_Click(object sender, RoutedEventArgs e)
+        {
+            if ((sender as Button)?.DataContext is User user)
+            {
+                var dbUser = _db.Users.Find(user.Id);
+                if (dbUser != null)
+                {
+                    dbUser.Status = UserStatus.Active;
+                    dbUser.IsApproved = true;
+                    _db.SaveChanges();
+                    RefreshAll();
+                }
+            }
+        }
+
+        private void ApproveJoin_Click(object sender, RoutedEventArgs e)
+        {
+            if ((sender as Button)?.DataContext is SalaryRequest req)
+            {
+                _enterpriseService.ApproveJoinRequest(req.Id);
+                RefreshAll();
+            }
+        }
+
+        private void ApproveSalary_Click(object sender, RoutedEventArgs e)
+        {
+            if ((sender as Button)?.DataContext is SalaryRequest req)
+            {
+                // По ТЗ сумма выплаты может быть фиксированной или браться из заявки
+                _enterpriseService.ApprovePaymentRequest(req.Id, 50000);
+                RefreshAll();
+                MessageBox.Show("Зарплата успешно выплачена.");
             }
         }
 
         private void ToggleBlock_Click(object sender, RoutedEventArgs e)
         {
-            var selectedAccount = AllAccountsGrid.SelectedItem as BankAccount;
-            if (selectedAccount == null) return;
-
-            try
+            if (AllAccountsGrid.SelectedItem is BankAccount selectedAccount)
             {
-                _bankService.ToggleBlock(selectedAccount.Id);
-                RefreshAll();
-                MessageBox.Show("Статус счета изменен.");
+                try
+                {
+                    _bankService.ToggleBlock(selectedAccount.Id);
+                    RefreshAll();
+                }
+                catch (Exception ex) { MessageBox.Show(ex.Message); }
             }
-            catch (Exception ex) { MessageBox.Show(ex.Message); }
+            else
+            {
+                MessageBox.Show("Выберите счет для блокировки/разблокировки.");
+            }
         }
 
         private void ViewHistory_Click(object sender, RoutedEventArgs e)
         {
-            var selectedAccount = AllAccountsGrid.SelectedItem as BankAccount;
-            if (selectedAccount == null) return;
-
-            var historyWin = new AccountHistoryWindow(selectedAccount.Id, _bankService);
-            historyWin.Owner = this;
-            historyWin.ShowDialog();
+            if (AllAccountsGrid.SelectedItem is BankAccount selectedAccount)
+            {
+                // Предполагается, что окно AccountHistoryWindow создано по аналогии с HistoryWindow
+                var historyWin = new HistoryWindow();
+                var history = _bankService.GetTransactionHistory(selectedAccount.Id);
+                historyWin.SetHistoryData(history);
+                historyWin.Owner = this;
+                historyWin.ShowDialog();
+            }
         }
-
-        // Старые методы одобрения
-        private void ApproveUser_Click(object sender, RoutedEventArgs e)
-        {
-            var user = (sender as Button)?.DataContext as User;
-            if (user == null) return;
-            var dbUser = _db.Users.Find(user.Id);
-            if (dbUser != null) { dbUser.Status = UserStatus.Active; dbUser.IsApproved = true; _db.SaveChanges(); RefreshAll(); }
-        }
-
-        private void ApproveJoin_Click(object sender, RoutedEventArgs e)
-        {
-            var req = (sender as Button)?.DataContext as SalaryRequest;
-            if (req != null) { _enterpriseService.ApproveJoinRequest(req.Id); RefreshAll(); }
-        }
-
-        private void ApproveSalary_Click(object sender, RoutedEventArgs e)
-        {
-            var req = (sender as Button)?.DataContext as SalaryRequest;
-            if (req != null) { _enterpriseService.ApprovePaymentRequest(req.Id, 50000); RefreshAll(); }
-        }
-
-        private void Close_Click(object sender, RoutedEventArgs e) => this.Close();
     }
 }

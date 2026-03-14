@@ -33,20 +33,20 @@ namespace FinancialSystem.UI
 
         private void SetupAccess()
         {
-            // Кнопка зарплаты видна только обычным клиентам
             SalaryBtn.Visibility = _user.Role == UserRole.Client ? Visibility.Visible : Visibility.Collapsed;
 
-            if (_user.Role == UserRole.Manager)
+            if (_user.Role == UserRole.Manager || _user.Role == UserRole.Admin)
             {
+                AdminSectionHeader.Visibility = Visibility.Visible;
                 ManagerPanelBtn.Visibility = Visibility.Visible;
             }
-            else if (_user.Role == UserRole.Admin)
+
+            if (_user.Role == UserRole.Admin)
             {
                 AdminPanelBtn.Visibility = Visibility.Visible;
-                // Админ может всё, поэтому даем ему и панель менеджера для тестов
-                ManagerPanelBtn.Visibility = Visibility.Visible;
             }
         }
+
 
         private void RefreshData()
         {
@@ -241,12 +241,5 @@ namespace FinancialSystem.UI
                 RefreshData();
             }
         }
-
-        // ЗАКРЫТИЕ (Уже работает через CloseBtn_Click, так как вклад — это BankAccount)
-
-        // ПЕРЕВОД (Уже работает через TransferBtn_Click)
-        // Так как и счет, и вклад — это BankAccount, метод TransferMoney 
-        // автоматически позволяет переводить деньги между ними.
-
     }
 }

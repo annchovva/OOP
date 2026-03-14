@@ -13,54 +13,63 @@ namespace FinancialSystem.UI
         private readonly User _user;
         private readonly IEnterpriseService _enterpriseService;
         private readonly IBankService _bankService;
+        private readonly FinanceDbContext _db;
 
         public SalaryWindow(User user)
         {
             InitializeComponent();
             _user = user;
-            var db = new FinanceDbContext();
+            _db = new FinanceDbContext();
 
-            // Инициализируем сервисы
-            var logService = new LogService(db);
-            _enterpriseService = new EnterpriseService(db, logService);
-            _bankService = new BankService(db);
+            // Инициализируем сервисы с общим контекстом
+            var logService = new LogService(_db);
+            _enterpriseService = new EnterpriseService(_db, logService);
+            _bankService = new BankService(_db);
 
             RefreshUI();
         }
 
         private void RefreshUI()
         {
-            // Проверяем, есть ли у юзера предприятие
-            if (_user.EnterpriseId == null)
+            try
             {
-                NotEmployedPanel.Visibility = Visibility.Visible;
-                EmployedPanel.Visibility = Visibility.Collapsed;
-                EnterpriseComboBox.ItemsSource = _enterpriseService.GetAllEnterprises();
+                // Перезагружаем пользователя из БД, чтобы иметь актуальный EnterpriseId
+                var currentUser = _db.Users.Find(_user.Id);
+
+                if (currentUser.EnterpriseId == null)
+                {
+                    NotEmployedPanel.Visibility = Visibility.Visible;
+                    EmployedPanel.Visibility = Visibility.Collapsed;
+                    EnterpriseComboBox.ItemsSource = _enterpriseService.GetAllEnterprises();
+                }
+                else
+                {
+                    NotEmployedPanel.Visibility = Visibility.Collapsed;
+                    EmployedPanel.Visibility = Visibility.Visible;
+
+                    var myEnt = _db.Enterprises.Find(currentUser.EnterpriseId);
+                    CurrentEnterpriseText.Text = $"Ваше предприятие: {myEnt?.Name}";
+
+                    // Загружаем данные для списков
+                    AccountsComboBox.ItemsSource = _bankService.GetUserAccounts(currentUser.Id);
+                    var payments = _enterpriseService.GetMyApprovedPayments(currentUser.Id);
+                    ApprovedPaymentsGrid.ItemsSource = payments;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                NotEmployedPanel.Visibility = Visibility.Collapsed;
-                EmployedPanel.Visibility = Visibility.Visible;
-
-                var enterprises = _enterpriseService.GetAllEnterprises();
-                var myEnt = enterprises.FirstOrDefault(e => e.Id == _user.EnterpriseId);
-                CurrentEnterpriseText.Text = $"Ваше предприятие: {myEnt?.Name}";
-
-                // Загружаем счета для выбора
-                AccountsComboBox.ItemsSource = _bankService.GetUserAccounts(_user.Id);
-                // Загружаем одобренные выплаты
-                ApprovedPaymentsGrid.ItemsSource = _enterpriseService.GetMyApprovedPayments(_user.Id);
+                MessageBox.Show("Ошибка при обновлении данных: " + ex.Message);
             }
         }
 
         private void JoinEnterprise_Click(object sender, RoutedEventArgs e)
         {
-            var selected = EnterpriseComboBox.SelectedItem as Enterprise;
-            if (selected == null) return;
-
-            _enterpriseService.SendJoinRequest(_user.Id, selected.Id);
-            MessageBox.Show("Заявка отправлена менеджеру!");
-            this.Close();
+            if (EnterpriseComboBox.SelectedItem is Enterprise selected)
+            {
+                _enterpriseService.SendJoinRequest(_user.Id, selected.Id);
+                MessageBox.Show("Заявка на вступление отправлена менеджеру. Ожидайте подтверждения.");
+                this.Close();
+            }
         }
 
         private void RequestPayment_Click(object sender, RoutedEventArgs e)
@@ -68,7 +77,8 @@ namespace FinancialSystem.UI
             try
             {
                 _enterpriseService.SendSalaryPaymentRequest(_user.Id);
-                MessageBox.Show("Запрос на выплату отправлен. Ожидайте одобрения менеджером.");
+                MessageBox.Show("Запрос на выплату (50 000 ₽) отправлен менеджеру.");
+                RefreshUI();
             }
             catch (Exception ex)
             {
@@ -78,26 +88,24 @@ namespace FinancialSystem.UI
 
         private void ClaimSalary_Click(object sender, RoutedEventArgs e)
         {
-            var request = (sender as System.Windows.Controls.Button).DataContext as SalaryRequest;
-            var targetAcc = AccountsComboBox.SelectedItem as BankAccount;
-
-            if (request == null || targetAcc == null)
+            if (ApprovedPaymentsGrid.SelectedItem is SalaryRequest request)
             {
-                MessageBox.Show("Сначала выберите счет в списке внизу!");
-                return;
-            }
-
-            try
-            {
-                if (_enterpriseService.ClaimSalary(request.Id, targetAcc.Id))
+                if (AccountsComboBox.SelectedItem is BankAccount targetAcc)
                 {
-                    MessageBox.Show("Деньги успешно зачислены на ваш счет!");
-                    RefreshUI();
+                    try
+                    {
+                        if (_enterpriseService.ClaimSalary(request.Id, targetAcc.Id))
+                        {
+                            MessageBox.Show("Деньги успешно зачислены на ваш счет!");
+                            RefreshUI();
+                        }
+                    }
+                    catch (Exception ex) { MessageBox.Show(ex.Message); }
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+                else
+                {
+                    MessageBox.Show("Пожалуйста, сначала выберите счет для зачисления внизу окна.");
+                }
             }
         }
     }

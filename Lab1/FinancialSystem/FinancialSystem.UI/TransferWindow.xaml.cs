@@ -1,41 +1,67 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using FinancialSystem.Application.Interfaces;
 
 namespace FinancialSystem.UI
 {
     public partial class TransferWindow : Window
     {
-        private readonly int _fromId;
+        private readonly int _fromAccountId;
         private readonly IBankService _bankService;
 
         public TransferWindow(int fromId, IBankService bankService)
         {
             InitializeComponent();
-            _fromId = fromId;
+            _fromAccountId = fromId;
             _bankService = bankService;
+
+            // Установка фокуса на поле номера счета при открытии
+            ToAccountTextBox.Focus();
         }
 
         private void Transfer_Click(object sender, RoutedEventArgs e)
         {
-            if (decimal.TryParse(AmountTextBox.Text, out decimal amount))
+            string recipientNumber = ToAccountTextBox.Text.Trim();
+            string amountText = AmountTextBox.Text.Replace(".", ",");
+
+            // 1. Проверка номера счета
+            if (string.IsNullOrWhiteSpace(recipientNumber))
             {
-                bool success = _bankService.TransferMoney(_fromId, ToAccountTextBox.Text, amount);
-                if (success) { MessageBox.Show("Успешно!"); DialogResult = true; }
-                else MessageBox.Show("Ошибка: проверьте баланс или номер счета.");
+                MessageBox.Show("Введите номер счета получателя.", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            // 2. Проверка суммы
+            if (!decimal.TryParse(amountText, out decimal amount) || amount <= 0)
+            {
+                MessageBox.Show("Введите корректную сумму перевода.", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            try
+            {
+                // 3. Выполнение операции через сервис
+                bool success = _bankService.TransferMoney(_fromAccountId, recipientNumber, amount);
+
+                if (success)
+                {
+                    MessageBox.Show($"Перевод на сумму {amount:N2} ₽ успешно выполнен!",
+                                    "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                    DialogResult = true;
+                }
+                else
+                {
+                    MessageBox.Show("Ошибка перевода. Возможные причины:\n" +
+                                    "— Недостаточно средств на счете\n" +
+                                    "— Счет получателя не найден\n" +
+                                    "— Один из счетов заблокирован",
+                                    "Ошибка операции", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Произошла системная ошибка: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }
-
 }

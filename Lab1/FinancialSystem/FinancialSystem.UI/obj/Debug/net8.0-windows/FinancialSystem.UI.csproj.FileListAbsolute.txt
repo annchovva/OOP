@@ -150,3 +150,4 @@ C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialS
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\OpenDepositWindow.g.cs
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\AccountHystoryWindow.baml
 C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\AccountHystoryWindow.g.cs
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\Lab1\FinancialSystem\FinancialSystem.UI\obj\Debug\net8.0-windows\App.baml

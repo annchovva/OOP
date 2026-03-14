@@ -12,50 +12,59 @@ namespace FinancialSystem.UI
 
         public OpenDepositWindow(int userId, IBankService bankService)
         {
-            InitializeComponent(); // Теперь эта команда будет работать без ошибок
+            InitializeComponent();
             _userId = userId;
             _bankService = bankService;
 
-            // Заполняем список банков из базы
+            LoadBanks();
+        }
+
+        private void LoadBanks()
+        {
             try
             {
-                BankComboBox.ItemsSource = _bankService.GetAllBanks();
+                var banks = _bankService.GetAllBanks();
+                BankComboBox.ItemsSource = banks;
+                if (banks != null && banks.Count > 0)
+                    BankComboBox.SelectedIndex = 0;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ошибка загрузки банков: " + ex.Message);
+                MessageBox.Show("Ошибка загрузки списка банков: " + ex.Message);
             }
         }
 
         private void OpenDeposit_Click(object sender, RoutedEventArgs e)
         {
-            // 1. Проверка выбора банка
-            var bank = BankComboBox.SelectedItem as Bank;
-            if (bank == null)
+            // 1. Валидация выбора банка
+            if (BankComboBox.SelectedItem is not Bank selectedBank)
             {
-                MessageBox.Show("Пожалуйста, выберите банк.");
+                MessageBox.Show("Пожалуйста, выберите банк из списка.");
                 return;
             }
 
-            // 2. Проверка введенной суммы
-            if (!decimal.TryParse(AmountBox.Text, out decimal amount) || amount <= 0)
+            // 2. Валидация суммы
+            if (!decimal.TryParse(AmountBox.Text.Replace(".", ","), out decimal amount) || amount <= 0)
             {
-                MessageBox.Show("Введите корректную сумму вклада (больше 0).");
+                MessageBox.Show("Введите корректную сумму вклада (положительное число).");
+                AmountBox.Focus();
                 return;
             }
 
             try
             {
-                // 3. Вызываем метод создания вклада (мы добавили его в BankService ранее)
-                _bankService.OpenDeposit(_userId, bank.Id, amount, RateSlider.Value);
+                // 3. Вызов сервиса
+                _bankService.OpenDeposit(_userId, selectedBank.Id, amount, (double)RateSlider.Value);
 
-                MessageBox.Show($"Вклад успешно открыт!\nСумма: {amount:N2} ₽\nСтавка: {RateSlider.Value}%");
+                MessageBox.Show($"Поздравляем!\nВклад в банке «{selectedBank.Name}» успешно открыт.\n" +
+                                $"Сумма: {amount:N2} ₽\nСтавка: {RateSlider.Value}%",
+                                "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                this.DialogResult = true; // Закрываем окно с успехом
+                this.DialogResult = true;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ошибка при открытии вклада: " + ex.Message);
+                MessageBox.Show("Не удалось открыть вклад: " + ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }
