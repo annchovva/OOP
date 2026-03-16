@@ -14,6 +14,8 @@ namespace FinancialSystem.UI
         public MainWindow()
         {
             InitializeComponent();
+
+            // Инициализация БД и сервисов
             var db = new FinanceDbContext();
             DbInitializer.Initialize(db);
             _authService = new AuthService(db);
@@ -21,55 +23,62 @@ namespace FinancialSystem.UI
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            StatusLabel.Text = ""; // Сброс текста
-            string login = LoginBox.Text;
+            StatusLabel.Text = "";
+            string login = LoginBox.Text.Trim(); // Добавил Trim для чистоты данных
             string password = PasswordBox.Password;
 
             try
             {
                 var user = _authService.Login(login, password);
+
                 if (user != null)
                 {
+                    // Переход в личный кабинет
                     DashboardWindow dashboard = new DashboardWindow(user);
                     dashboard.Show();
                     this.Close();
                 }
                 else
                 {
-                    StatusLabel.Foreground = new SolidColorBrush(Color.FromRgb(231, 76, 60)); // Красный E74C3C
+                    // Ошибка ввода (выводим текст в StatusLabel)
+                    StatusLabel.Foreground = new SolidColorBrush(Color.FromRgb(231, 76, 60));
                     StatusLabel.Text = "Неверный логин или пароль.";
                 }
             }
             catch (Exception ex)
             {
-                StatusLabel.Foreground = new SolidColorBrush(Color.FromRgb(231, 76, 60));
-                StatusLabel.Text = ex.Message;
+                // Техническая ошибка (выводим через CustomMessageBox)
+                CustomMessageBox.Show("Ошибка при попытке входа: " + ex.Message, "Системная ошибка", this);
             }
         }
 
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
-            string login = LoginBox.Text;
-            string password = PasswordBox.Password;
+            RegisterWindow regWindow = new RegisterWindow(_authService);
+            regWindow.Owner = this; // Чтобы окно регистрации открылось ровно по центру этого окна
+            regWindow.ShowDialog();
+        }
 
-            if (string.IsNullOrWhiteSpace(login) || string.IsNullOrWhiteSpace(password))
-            {
-                StatusLabel.Foreground = new SolidColorBrush(Color.FromRgb(231, 76, 60));
-                StatusLabel.Text = "Введите логин и пароль для регистрации.";
-                return;
-            }
+        // Логика "глазика" для показа пароля
+        private void BtnShowPass_PreviewMouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            PasswordVisibleBox.Text = PasswordBox.Password;
+            PasswordBox.Visibility = Visibility.Collapsed;
+            PasswordVisibleBox.Visibility = Visibility.Visible;
+        }
 
-            if (_authService.Register(login, password))
-            {
-                MessageBox.Show("Регистрация успешна! Дождитесь подтверждения менеджером.", "Успех");
-                StatusLabel.Foreground = (SolidColorBrush)System.Windows.Application.Current.Resources["EmeraldAccent"];
-                StatusLabel.Text = "Регистрация прошла успешно. Ожидайте активации.";
-            }
-            else
-            {
-                StatusLabel.Foreground = new SolidColorBrush(Color.FromRgb(231, 76, 60));
-                StatusLabel.Text = "Логин уже занят.";
-            }
+        private void BtnShowPass_PreviewMouseUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            PasswordVisibleBox.Visibility = Visibility.Collapsed;
+            PasswordBox.Visibility = Visibility.Visible;
+            PasswordBox.Focus();
+        }
+
+        // Полезное дополнение: если мышка ушла с кнопки, пароль должен снова скрыться
+        private void BtnShowPass_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            PasswordVisibleBox.Visibility = Visibility.Collapsed;
+            PasswordBox.Visibility = Visibility.Visible;
         }
     }
 }

@@ -12,72 +12,71 @@ namespace FinancialSystem.Infrastructure
             // 1. Создаем базу, если её нет
             context.Database.EnsureCreated();
 
-            // 2. Если в базе уже есть пользователи, выходим (чтобы не дублировать данные)
+            // 2. Если в базе уже есть пользователи, значит данные инициализированы — выходим
             if (context.Users.Any()) return;
 
             // --- ДОБАВЛЯЕМ БАНКИ ---
             var banks = new List<Bank>
             {
-                new Bank { Name = "ГосБанк РФ" },
-                new Bank { Name = "Альфа-Система" },
-                new Bank { Name = "Тинькофф Инвест" },
-                new Bank { Name = "ВТБ-Групп" }
+                new Bank { Name = "Беларусбанк" },
+                new Bank { Name = "Альфа-Банк" },
+                new Bank { Name = "Приорбанк" },
             };
             context.Banks.AddRange(banks);
 
             // --- ДОБАВЛЯЕМ ПРЕДПРИЯТИЯ (РАЗНЫЕ ОТРАСЛИ) ---
             var enterprises = new List<Enterprise>
             {
-                new Enterprise { Name = "ООО 'ТехноПроект'" },      // IT
-                new Enterprise { Name = "ПАО 'ГазДобыча'" },        // Энергетика
-                new Enterprise { Name = "ЗАО 'СтройИнвест'" },      // Строительство
-                new Enterprise { Name = "Сеть РитейлМаркет" }        // Торговля
+                new Enterprise { Name = "ООО 'ТехноПроект'" },       // IT
+                new Enterprise { Name = "Сеть 'МаркетРитейл'" },      // Торговля
+                new Enterprise { Name = "ООО 'ЭнергоСеть'" },        // Энергетика
+                new Enterprise { Name = "СтройМастер Групп" },        // Строительство
             };
             context.Enterprises.AddRange(enterprises);
 
-            // --- ДОБАВЛЯЕМ СЛУЖЕБНЫХ ПОЛЬЗОВАТЕЛЕЙ ---
+            // --- ДОБАВЛЯЕМ СЛУЖЕБНЫХ ПОЛЬЗОВАТЕЛЕЙ (С ХЭШИРОВАНИЕМ) ---
 
-            // 1. АДМИНИСТРАТОР (Полный доступ)
+            // 1. АДМИНИСТРАТОР
             context.Users.Add(new User
             {
                 Login = "admin",
-                PasswordHash = "admin123",
+                PasswordHash = PasswordHasher.HashPassword("admin123"),
                 Role = UserRole.Admin,
                 Status = UserStatus.Active,
                 IsApproved = true
             });
 
-            // 2. МЕНЕДЖЕР (Для одобрения заявок)
+            // 2. МЕНЕДЖЕР
             context.Users.Add(new User
             {
                 Login = "manager",
-                PasswordHash = "manager123",
+                PasswordHash = PasswordHasher.HashPassword("manager123"),
                 Role = UserRole.Manager,
                 Status = UserStatus.Active,
                 IsApproved = true
             });
 
-            // 3. ТЕСТОВЫЙ КЛИЕНТ (Уже активен, для быстрых тестов)
+            // 3. ТЕСТОВЫЙ КЛИЕНТ
             context.Users.Add(new User
             {
                 Login = "user",
-                PasswordHash = "user123",
+                PasswordHash = PasswordHasher.HashPassword("user123"),
                 Role = UserRole.Client,
                 Status = UserStatus.Active,
                 IsApproved = true
             });
 
-            // 4. КЛИЕНТ В ОЖИДАНИИ (Чтобы менеджеру было кого одобрять)
+            // 4. КЛИЕНТ В ОЖИДАНИИ
             context.Users.Add(new User
             {
                 Login = "new_client",
-                PasswordHash = "12345",
+                PasswordHash = PasswordHasher.HashPassword("12345"),
                 Role = UserRole.Client,
                 Status = UserStatus.Pending,
                 IsApproved = false
             });
 
-            // Сохраняем все изменения в БД
+            // Сохраняем всё в БД
             context.SaveChanges();
         }
     }

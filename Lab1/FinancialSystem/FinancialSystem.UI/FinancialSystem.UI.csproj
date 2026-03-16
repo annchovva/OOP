@@ -21,4 +21,10 @@
     <ProjectReference Include="..\FinancialSystem.Infrastructure\FinancialSystem.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="MainWindow.xaml.cs">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
 </Project>

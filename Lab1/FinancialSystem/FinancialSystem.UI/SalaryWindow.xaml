@@ -72,7 +72,7 @@
                                Foreground="{StaticResource TextSecondary}" TextWrapping="Wrap" Margin="0,0,0,20"/>
 
                     <TextBlock Text="ДОСТУПНЫЕ ПРЕДПРИЯТИЯ" Foreground="{StaticResource TextSecondary}" FontSize="10" FontWeight="Bold" Margin="0,0,0,5"/>
-                    <ComboBox x:Name="EnterpriseComboBox" DisplayMemberPath="Name" Margin="0,0,0,20" Height="40" VerticalContentAlignment="Center"/>
+                    <ComboBox x:Name="EnterpriseComboBox" DisplayMemberPath="Name" Style="{StaticResource ModernComboBoxStyle}" Margin="0,0,0,20" Height="40" VerticalContentAlignment="Center"/>
 
                     <Button Content="ОТПРАВИТЬ ЗАЯВКУ" Click="JoinEnterprise_Click" 
                             Style="{StaticResource EmeraldButtonStyle}" Height="45"/>
@@ -94,6 +94,18 @@
                             <TextBlock x:Name="CurrentEnterpriseText" Text="Ваше предприятие: Название" FontSize="16" FontWeight="Bold"/>
                             <TextBlock Text="Статус: Активный сотрудник" Foreground="{StaticResource EmeraldAccent}" FontSize="12"/>
                         </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <!-- Новая кнопка увольнения -->
+                            <Button Content="УВОЛИТЬСЯ" Click="Resign_Click" 
+                    Style="{StaticResource SecondaryButtonStyle}" 
+                    Foreground="#E74C3C" BorderBrush="#E74C3C" 
+                    Padding="15,5" Margin="0,0,10,0"/>
+
+                            <Button Content="ЗАПРОСИТЬ ВЫПЛАТУ" Click="RequestPayment_Click" 
+                    Style="{StaticResource SecondaryButtonStyle}" Padding="15,5"/>
+                        </StackPanel>
+                        
                         <Button Content="ЗАПРОСИТЬ ВЫПЛАТУ" Click="RequestPayment_Click" 
                                 HorizontalAlignment="Right" Style="{StaticResource SecondaryButtonStyle}" Padding="15,5"/>
                     </Grid>
@@ -131,7 +143,7 @@
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="СЧЕТ ДЛЯ ЗАЧИСЛЕНИЯ:" VerticalAlignment="Center" Margin="0,0,15,0" 
                                    Foreground="{StaticResource TextSecondary}" FontSize="11" FontWeight="Bold"/>
-                        <ComboBox x:Name="AccountsComboBox" DisplayMemberPath="AccountNumber" Width="250" Height="35" VerticalContentAlignment="Center"/>
+                        <ComboBox x:Name="AccountsComboBox" DisplayMemberPath="AccountNumber" Style="{StaticResource ModernComboBoxStyle}"  Width="250" Height="35" VerticalContentAlignment="Center"/>
                     </StackPanel>
                 </Border>
             </Grid>

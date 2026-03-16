@@ -100,21 +100,12 @@
                 <!-- Список счетов -->
                 <Border Grid.Row="1" Style="{StaticResource CardStyle}">
                     <DataGrid x:Name="AccountsList" 
-                              AutoGenerateColumns="False" IsReadOnly="True" 
-                              Background="Transparent" BorderThickness="0" 
-                              RowBackground="Transparent" Foreground="White"
-                              HeadersVisibility="Column" GridLinesVisibility="None">
-
-                        <DataGrid.Resources>
-                            <Style TargetType="DataGridColumnHeader">
-                                <Setter Property="Background" Value="Transparent"/>
-                                <Setter Property="Foreground" Value="{StaticResource EmeraldAccent}"/>
-                                <Setter Property="Padding" Value="10"/>
-                                <Setter Property="FontWeight" Value="Bold"/>
-                                <Setter Property="BorderThickness" Value="0,0,0,1"/>
-                                <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}"/>
-                            </Style>
-                        </DataGrid.Resources>
+                              Style="{StaticResource ModernDataGridStyle}"
+                              Foreground="{StaticResource TextPrimary}"
+                              RowBackground="Transparent"
+                              SelectionUnit="FullRow"
+                              SelectionMode="Single"
+                              IsReadOnly="True">
 
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="НОМЕР СЧЕТА" Binding="{Binding AccountNumber}" Width="150"/>

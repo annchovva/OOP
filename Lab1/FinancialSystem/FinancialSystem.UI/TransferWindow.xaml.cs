@@ -27,14 +27,16 @@ namespace FinancialSystem.UI
             // 1. Проверка номера счета
             if (string.IsNullOrWhiteSpace(recipientNumber))
             {
-                MessageBox.Show("Введите номер счета получателя.", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                CustomMessageBox.Show("Пожалуйста, введите номер счета получателя.", "Внимание", this);
+                ToAccountTextBox.Focus();
                 return;
             }
 
             // 2. Проверка суммы
             if (!decimal.TryParse(amountText, out decimal amount) || amount <= 0)
             {
-                MessageBox.Show("Введите корректную сумму перевода.", "Внимание", MessageBoxButton.OK, MessageBoxImage.Warning);
+                CustomMessageBox.Show("Введите корректную сумму перевода (положительное число).", "Ошибка ввода", this);
+                AmountTextBox.Focus();
                 return;
             }
 
@@ -45,22 +47,32 @@ namespace FinancialSystem.UI
 
                 if (success)
                 {
-                    MessageBox.Show($"Перевод на сумму {amount:N2} ₽ успешно выполнен!",
-                                    "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
-                    DialogResult = true;
+                    CustomMessageBox.Show(
+                        $"Перевод на сумму {amount:N2} ₽ успешно выполнен!",
+                        "Успех",
+                        this);
+
+                    DialogResult = true; // Закрываем окно перевода
                 }
                 else
                 {
-                    MessageBox.Show("Ошибка перевода. Возможные причины:\n" +
-                                    "— Недостаточно средств на счете\n" +
-                                    "— Счет получателя не найден\n" +
-                                    "— Один из счетов заблокирован",
-                                    "Ошибка операции", MessageBoxButton.OK, MessageBoxImage.Error);
+                    // Детальное перечисление причин неудачи с акцентом на блокировку
+                    CustomMessageBox.Show(
+                        "Не удалось выполнить перевод. Возможные причины:\n\n" +
+                        "• Недостаточно средств на вашем счете\n" +
+                        "• Счет получателя не найден в системе\n" +
+                        "• Счет получателя заблокирован (переводы на такие счета запрещены)\n" +
+                        "• Ваш счет был заблокирован или ограничен банком",
+                        "Ошибка операции",
+                        this);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Произошла системная ошибка: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                CustomMessageBox.Show(
+                    $"Произошла непредвиденная ошибка: {ex.Message}",
+                    "Системная ошибка",
+                    this);
             }
         }
     }

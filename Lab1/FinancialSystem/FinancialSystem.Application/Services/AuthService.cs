@@ -1,8 +1,10 @@
-﻿using FinancialSystem.Domain.Entities;
-using FinancialSystem.Domain.Enums;
-using FinancialSystem.Infrastructure;
-using FinancialSystem.Application.Interfaces;
+﻿using System;
 using System.Linq;
+using FinancialSystem.Application.Interfaces;
+using FinancialSystem.Domain.Entities;
+using FinancialSystem.Domain.Enums;
+using FinancialSystem.Infrastructure; // Не забудьте подключить неймспейс, где лежит Hasher
+using Microsoft.EntityFrameworkCore;
 
 namespace FinancialSystem.Application.Services
 {
@@ -15,31 +17,33 @@ namespace FinancialSystem.Application.Services
             _db = context;
         }
 
-        public User? Login(string login, string password)
+        public User Login(string login, string password)
         {
-            var user = _db.Users.FirstOrDefault(u => u.Login == login && u.PasswordHash == password);
+            // Хэшируем то, что ввел пользователь прямо сейчас
+            string enteredHash = PasswordHasher.HashPassword(password);
 
-            if (user != null)
-            {
-                if (user.Status == UserStatus.Pending)
-                    throw new Exception("Ваша учетная запись ожидает подтверждения.");
-                if (user.Status == UserStatus.Blocked)
-                    throw new Exception("Ваш аккаунт заблокирован.");
-            }
-            return user;
+            // Ищем в базе пользователя, у которого совпадает логин И хэш
+            return _db.Users.FirstOrDefault(u =>
+                u.Login == login &&
+                u.PasswordHash == enteredHash &&
+                u.IsApproved);
         }
+
 
         public bool Register(string login, string password)
         {
             if (_db.Users.Any(u => u.Login == login))
                 return false; // Логин занят
 
+            // 1. Хэшируем пароль ПЕРЕД сохранением в базу
+            string hashedPassword = PasswordHasher.HashPassword(password);
+
             var newUser = new User
             {
                 Login = login,
-                PasswordHash = password,
+                PasswordHash = hashedPassword, // Сохраняем уже зашифрованный вид
                 Role = UserRole.Client,
-                Status = UserStatus.Pending // Ждет подтверждения менеджера (по условию лабы)
+                Status = UserStatus.Pending
             };
 
             _db.Users.Add(newUser);
@@ -48,4 +52,3 @@ namespace FinancialSystem.Application.Services
         }
     }
 }
-

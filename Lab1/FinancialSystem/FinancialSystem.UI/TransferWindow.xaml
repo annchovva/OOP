@@ -1,7 +1,7 @@
 ﻿<Window x:Class="FinancialSystem.UI.TransferWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Новый перевод" Height="380" Width="380" 
+        Title="Новый перевод" Height="453" Width="440" 
         Background="{StaticResource BackgroundDark}"
         WindowStartupLocation="CenterOwner"
         ResizeMode="NoResize">

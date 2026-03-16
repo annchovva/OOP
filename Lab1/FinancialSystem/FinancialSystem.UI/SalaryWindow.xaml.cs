@@ -4,7 +4,9 @@ using System.Windows;
 using FinancialSystem.Application.Interfaces;
 using FinancialSystem.Application.Services;
 using FinancialSystem.Domain.Entities;
+using FinancialSystem.Domain.Enums; // Добавлено для статусов
 using FinancialSystem.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 
 namespace FinancialSystem.UI
 {
@@ -13,6 +15,7 @@ namespace FinancialSystem.UI
         private readonly User _user;
         private readonly IEnterpriseService _enterpriseService;
         private readonly IBankService _bankService;
+        private readonly ILogService _logService; // Вынес в поле
         private readonly FinanceDbContext _db;
 
         public SalaryWindow(User user)
@@ -21,10 +24,10 @@ namespace FinancialSystem.UI
             _user = user;
             _db = new FinanceDbContext();
 
-            // Инициализируем сервисы с общим контекстом
-            var logService = new LogService(_db);
-            _enterpriseService = new EnterpriseService(_db, logService);
-            _bankService = new BankService(_db);
+            // Инициализируем сервисы
+            _logService = new LogService(_db);
+            _enterpriseService = new EnterpriseService(_db, _logService);
+            _bankService = new BankService(_db, _logService);
 
             RefreshUI();
         }
@@ -33,8 +36,11 @@ namespace FinancialSystem.UI
         {
             try
             {
-                // Перезагружаем пользователя из БД, чтобы иметь актуальный EnterpriseId
-                var currentUser = _db.Users.Find(_user.Id);
+                var currentUser = _db.Users
+                    .AsNoTracking()
+                    .FirstOrDefault(u => u.Id == _user.Id);
+
+                if (currentUser == null) return;
 
                 if (currentUser.EnterpriseId == null)
                 {
@@ -50,7 +56,6 @@ namespace FinancialSystem.UI
                     var myEnt = _db.Enterprises.Find(currentUser.EnterpriseId);
                     CurrentEnterpriseText.Text = $"Ваше предприятие: {myEnt?.Name}";
 
-                    // Загружаем данные для списков
                     AccountsComboBox.ItemsSource = _bankService.GetUserAccounts(currentUser.Id);
                     var payments = _enterpriseService.GetMyApprovedPayments(currentUser.Id);
                     ApprovedPaymentsGrid.ItemsSource = payments;
@@ -58,7 +63,7 @@ namespace FinancialSystem.UI
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ошибка при обновлении данных: " + ex.Message);
+                CustomMessageBox.Show($"Ошибка при обновлении данных: {ex.Message}", "Ошибка", this);
             }
         }
 
@@ -66,9 +71,35 @@ namespace FinancialSystem.UI
         {
             if (EnterpriseComboBox.SelectedItem is Enterprise selected)
             {
-                _enterpriseService.SendJoinRequest(_user.Id, selected.Id);
-                MessageBox.Show("Заявка на вступление отправлена менеджеру. Ожидайте подтверждения.");
-                this.Close();
+                try
+                {
+                    _enterpriseService.SendJoinRequest(_user.Id, selected.Id);
+
+                    // Ищем созданную заявку, чтобы получить её ID для лога
+                    var request = _db.SalaryRequests
+                        .OrderByDescending(r => r.Id)
+                        .FirstOrDefault(r => r.UserId == _user.Id);
+
+                    if (request != null)
+                    {
+                        _logService.Log(_user.Id, "JoinRequest",
+                            $"Заявка в организацию {selected.Name}",
+                            $"{request.Id}");
+                    }
+
+                    CustomMessageBox.Show(
+                        "Заявка на вступление успешно отправлена менеджеру организации.",
+                        "Заявка отправлена", this);
+                    this.Close();
+                }
+                catch (Exception ex)
+                {
+                    CustomMessageBox.Show(ex.Message, "Ошибка", this);
+                }
+            }
+            else
+            {
+                CustomMessageBox.Show("Пожалуйста, выберите организацию из списка.", "Внимание", this);
             }
         }
 
@@ -77,12 +108,27 @@ namespace FinancialSystem.UI
             try
             {
                 _enterpriseService.SendSalaryPaymentRequest(_user.Id);
-                MessageBox.Show("Запрос на выплату (50 000 ₽) отправлен менеджеру.");
+
+                // Ищем созданную заявку на выплату
+                var request = _db.SalaryRequests
+                    .OrderByDescending(r => r.Id)
+                    .FirstOrDefault(r => r.UserId == _user.Id);
+
+                if (request != null)
+                {
+                    _logService.Log(_user.Id, "SalaryRequest",
+                        "Запрос на стандартную выплату (50 000 ₽)",
+                        $"{request.Id}");
+                }
+
+                CustomMessageBox.Show(
+                    "Запрос на стандартную выплату (50 000 ₽) успешно сформирован.",
+                    "Запрос выплаты", this);
                 RefreshUI();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                CustomMessageBox.Show(ex.Message, "Ошибка запроса", this);
             }
         }
 
@@ -96,15 +142,57 @@ namespace FinancialSystem.UI
                     {
                         if (_enterpriseService.ClaimSalary(request.Id, targetAcc.Id))
                         {
-                            MessageBox.Show("Деньги успешно зачислены на ваш счет!");
+                            // ЛОГ: Зачисление зарплаты (для отмены)
+                            // ТехДанные: ID_Счета;Сумма;ID_Заявки
+                            _logService.Log(_user.Id, "ClaimSalary",
+                                $"Зачисление зарплаты {request.Amount} на счет {targetAcc.AccountNumber}",
+                                $"{targetAcc.Id};{request.Amount.ToString(System.Globalization.CultureInfo.InvariantCulture)};{request.Id}");
+
+                            CustomMessageBox.Show("Средства успешно зачислены!", "Успех", this);
                             RefreshUI();
                         }
                     }
-                    catch (Exception ex) { MessageBox.Show(ex.Message); }
+                    catch (Exception ex)
+                    {
+                        CustomMessageBox.Show(ex.Message, "Ошибка зачисления", this);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Пожалуйста, сначала выберите счет для зачисления внизу окна.");
+                    CustomMessageBox.Show("Пожалуйста, сначала выберите счет.", "Выбор счета", this);
+                }
+            }
+        }
+
+        private void Resign_Click(object sender, RoutedEventArgs e)
+        {
+            bool result = CustomMessageBox.ShowQuestion(
+                "Вы уверены, что хотите уволиться? Все текущие заявки будут аннулированы.",
+                "Подтверждение увольнения", this);
+
+            if (result)
+            {
+                try
+                {
+                    var currentUser = _db.Users.AsNoTracking().FirstOrDefault(u => u.Id == _user.Id);
+                    int? oldEntId = currentUser?.EnterpriseId;
+
+                    if (oldEntId != null)
+                    {
+                        _enterpriseService.ResignFromEnterprise(_user.Id);
+
+                        // ЛОГ: Увольнение
+                        _logService.Log(_user.Id, "Resign",
+                            "Пользователь уволился по собственному желанию",
+                            $"{_user.Id};{oldEntId}");
+
+                        CustomMessageBox.Show("Вы успешно уволились.", "Готово", this);
+                        RefreshUI();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    CustomMessageBox.Show("Ошибка: " + ex.Message, "Ошибка", this);
                 }
             }
         }

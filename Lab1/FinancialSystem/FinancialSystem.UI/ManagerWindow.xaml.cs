@@ -7,6 +7,7 @@ using FinancialSystem.Application.Services;
 using FinancialSystem.Domain.Entities;
 using FinancialSystem.Domain.Enums;
 using FinancialSystem.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 
 namespace FinancialSystem.UI
 {
@@ -21,10 +22,9 @@ namespace FinancialSystem.UI
             InitializeComponent();
             _db = new FinanceDbContext();
 
-            // Инициализация сервисов
             var logService = new LogService(_db);
             _enterpriseService = new EnterpriseService(_db, logService);
-            _bankService = new BankService(_db);
+            _bankService = new BankService(_db, logService);
 
             RefreshAll();
         }
@@ -33,10 +33,24 @@ namespace FinancialSystem.UI
         {
             try
             {
+                _db.ChangeTracker.Clear();
+
+                // 1. Новые пользователи
                 PendingUsersGrid.ItemsSource = _db.Users.Where(u => u.Status == UserStatus.Pending).ToList();
+
+                // 2. Заявки на трудоустройство
                 JoinRequestsGrid.ItemsSource = _enterpriseService.GetPendingJoinRequests();
+
+                // 3. Заявки на выплату
                 SalaryRequestsGrid.ItemsSource = _enterpriseService.GetPendingPaymentRequests();
 
+                // 4. Список штата
+                EnterpriseStaffGrid.ItemsSource = _db.Users
+                    .Include(u => u.Enterprise)
+                    .Where(u => u.EnterpriseId != null)
+                    .ToList();
+
+                // 5. Все счета
                 if (AllAccountsGrid != null)
                 {
                     AllAccountsGrid.ItemsSource = _bankService.GetAllAccounts();
@@ -44,16 +58,13 @@ namespace FinancialSystem.UI
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ошибка при обновлении данных: {ex.Message}");
+                CustomMessageBox.Show($"Ошибка при обновлении данных: {ex.Message}", "Ошибка", this);
             }
         }
 
         private void MainTabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            // Это критически важная проверка: если UI еще не загружен, выходим
             if (!this.IsLoaded) return;
-
-            // Обновляем данные только если событие пришло именно от TabControl
             if (e.Source is TabControl)
             {
                 RefreshAll();
@@ -70,6 +81,13 @@ namespace FinancialSystem.UI
                     dbUser.Status = UserStatus.Active;
                     dbUser.IsApproved = true;
                     _db.SaveChanges();
+
+                    var logService = new LogService(_db);
+                    logService.Log(user.Id, "ConfirmUser",
+                        $"Регистрация пользователя {user.Login} подтверждена",
+                        user.Id.ToString());
+
+                    CustomMessageBox.Show($"Пользователь {user.Login} успешно активирован.", "Активация", this);
                     RefreshAll();
                 }
             }
@@ -80,6 +98,7 @@ namespace FinancialSystem.UI
             if ((sender as Button)?.DataContext is SalaryRequest req)
             {
                 _enterpriseService.ApproveJoinRequest(req.Id);
+                CustomMessageBox.Show("Заявка на вступление в штат одобрена.", "Персонал", this);
                 RefreshAll();
             }
         }
@@ -88,12 +107,13 @@ namespace FinancialSystem.UI
         {
             if ((sender as Button)?.DataContext is SalaryRequest req)
             {
-                // По ТЗ сумма выплаты может быть фиксированной или браться из заявки
                 _enterpriseService.ApprovePaymentRequest(req.Id, 50000);
                 RefreshAll();
-                MessageBox.Show("Зарплата успешно выплачена.");
+                CustomMessageBox.Show("Выплата одобрена и ожидает зачисления пользователем.", "Зарплата", this);
             }
         }
+
+        // ... (остальной код ManagerWindow) ...
 
         private void ToggleBlock_Click(object sender, RoutedEventArgs e)
         {
@@ -102,26 +122,82 @@ namespace FinancialSystem.UI
                 try
                 {
                     _bankService.ToggleBlock(selectedAccount.Id);
+
+                    // ЛОГ: Переключение блокировки
+                    var logService = new LogService(_db);
+                    logService.Log(selectedAccount.UserId, "ToggleBlock",
+                        $"Статус счета {selectedAccount.AccountNumber} изменен (Блок: {!selectedAccount.IsBlocked})",
+                        selectedAccount.Id.ToString());
+
                     RefreshAll();
+                    string status = !selectedAccount.IsBlocked ? "заблокирован" : "разблокирован";
+                    CustomMessageBox.Show($"Счет успешно {status}.", "Статус счета", this);
                 }
-                catch (Exception ex) { MessageBox.Show(ex.Message); }
-            }
-            else
-            {
-                MessageBox.Show("Выберите счет для блокировки/разблокировки.");
+                catch (Exception ex)
+                {
+                    CustomMessageBox.Show(ex.Message, "Ошибка", this);
+                }
             }
         }
+
+        private void RemoveEmployee_Click(object sender, RoutedEventArgs e)
+        {
+            if ((sender as Button)?.DataContext is User employee)
+            {
+                bool result = CustomMessageBox.ShowQuestion(
+                    $"Вы уверены, что хотите уволить сотрудника {employee.Login}?",
+                    "Подтверждение увольнения", this);
+
+                if (result)
+                {
+                    try
+                    {
+                        var dbUser = _db.Users.Find(employee.Id);
+                        if (dbUser != null && dbUser.EnterpriseId != null)
+                        {
+                            int oldEntId = dbUser.EnterpriseId.Value; // Сохраняем для лога
+
+                            // ЛОГ: Увольнение менеджером
+                            var logService = new LogService(_db);
+                            logService.Log(dbUser.Id, "Resign",
+                                $"Сотрудник {dbUser.Login} уволен менеджером",
+                                $"{dbUser.Id};{oldEntId}");
+
+                            dbUser.EnterpriseId = null;
+
+                            // Удаляем текущие заявки, которые еще не выплачены
+                            var pendingRequests = _db.SalaryRequests
+                                .Where(r => r.UserId == employee.Id && r.Status != SalaryRequestStatus.Completed);
+                            _db.SalaryRequests.RemoveRange(pendingRequests);
+
+                            _db.SaveChanges();
+
+                            CustomMessageBox.Show($"Сотрудник {employee.Login} успешно уволен.", "Готово", this);
+                            RefreshAll();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        CustomMessageBox.Show($"Ошибка при увольнении: {ex.Message}", "Ошибка", this);
+                    }
+                }
+            }
+        }
+
 
         private void ViewHistory_Click(object sender, RoutedEventArgs e)
         {
             if (AllAccountsGrid.SelectedItem is BankAccount selectedAccount)
             {
-                // Предполагается, что окно AccountHistoryWindow создано по аналогии с HistoryWindow
                 var historyWin = new HistoryWindow();
-                var history = _bankService.GetTransactionHistory(selectedAccount.Id);
-                historyWin.SetHistoryData(history);
                 historyWin.Owner = this;
+                var history = _bankService.GetAccountHistory(selectedAccount.Id);
+                historyWin.SetHistoryData(history);
                 historyWin.ShowDialog();
+            }
+            else
+            {
+                CustomMessageBox.Show("Выберите счет в таблице для просмотра истории.", "Внимание", this);
             }
         }
     }

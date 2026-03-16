@@ -62,17 +62,27 @@
                     <DataGridTextColumn Header="ДАТА И ВРЕМЯ" 
                                         Binding="{Binding Date, StringFormat={}{0:dd.MM.yyyy HH:mm}}" 
                                         Width="150"/>
-
                     <!-- Отправитель -->
                     <DataGridTemplateColumn Header="ОТКУДА" Width="*">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock Text="{Binding FromAccount.AccountNumber}" 
-                                           Foreground="{StaticResource TextSecondary}"
-                                           VerticalAlignment="Center"/>
+                                <TextBlock x:Name="FromText" 
+                       Text="{Binding FromAccount.AccountNumber}" 
+                       Foreground="{StaticResource TextSecondary}"
+                       VerticalAlignment="Center"/>
+
+                                <DataTemplate.Triggers>
+                                    <!-- Если FromAccount == null, значит это системная операция (Зарплата/Проценты) -->
+                                    <DataTrigger Binding="{Binding FromAccount}" Value="{x:Null}">
+                                        <Setter TargetName="FromText" Property="Text" Value="💳 ЗАРПЛАТА / СИСТЕМА"/>
+                                        <Setter TargetName="FromText" Property="Foreground" Value="{StaticResource EmeraldAccent}"/>
+                                        <Setter TargetName="FromText" Property="FontWeight" Value="Bold"/>
+                                    </DataTrigger>
+                                </DataTemplate.Triggers>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
+
 
                     <!-- Стрелочка -->
                     <DataGridTemplateColumn Width="40">

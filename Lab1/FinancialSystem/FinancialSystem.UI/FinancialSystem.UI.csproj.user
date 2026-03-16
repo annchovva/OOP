@@ -2,10 +2,10 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="AccountHystoryWindow.xaml.cs">
+    <Compile Update="AdminLogsWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="AdminLogsWindow.xaml.cs">
+    <Compile Update="CustomMassageBox.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="DashboardWindow.xaml.cs">
@@ -14,10 +14,10 @@
     <Compile Update="HistoryWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="MainWindow.xaml.cs">
+    <Compile Update="ManagerWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ManagerWindow.xaml.cs">
+    <Compile Update="OpenAccountWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="OpenDepositWindow.xaml.cs">

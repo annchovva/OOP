@@ -2,16 +2,16 @@
 using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
-using System.Windows.Media; // Добавьте для работы с цветами (SolidColorBrush)
+using System.Windows.Media;
 
 namespace FinancialSystem.UI
 {
-    // --- ВАШИ СТАРЫЕ КОНВЕРТЕРЫ ---
-
+    // 1. Скрывает кнопку, если действие уже отменено
     public class InverseBoolToVisConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
+            // Если IsReversed == true, возвращаем Collapsed (скрываем)
             if (value is bool isReversed && isReversed)
                 return Visibility.Collapsed;
             return Visibility.Visible;
@@ -19,35 +19,42 @@ namespace FinancialSystem.UI
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) => throw new NotImplementedException();
     }
 
+    // 2. Текст для логов администратора
     public class StatusTextConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return (bool)value ? "❌ Отменено" : "✅ Активно";
+            if (value is bool isReversed)
+                return isReversed ? "❌ Отменено" : "✅ Активно";
+            return "Неизвестно";
         }
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) => throw new NotImplementedException();
     }
 
-    // --- НОВЫЕ КОНВЕРТЕРЫ (НУЖНЫ ДЛЯ ОКНА МЕНЕДЖЕРА) ---
-
+    // 3. Текст для статуса блокировки счета (для окна менеджера)
     public class BlockStatusConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             if (value is bool isBlocked)
-                return isBlocked ? "ЗАБЛОКИРОВАН" : "АКТИВЕН";
+                return isBlocked ? "⛔ ЗАБЛОКИРОВАН" : "💳 АКТИВЕН";
             return "НЕИЗВЕСТНО";
         }
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) => throw new NotImplementedException();
     }
 
+    // 4. Цвет для статуса блокировки
     public class BlockColorConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             if (value is bool isBlocked)
-                // Возвращаем Красный для заблокированных и Изумрудный для активных
-                return isBlocked ? new SolidColorBrush(Color.FromRgb(231, 76, 60)) : new SolidColorBrush(Color.FromRgb(46, 204, 113));
+            {
+                // Используем цвета из вашей палитры (Красный vs Изумрудный)
+                return isBlocked
+                    ? new SolidColorBrush(Color.FromRgb(231, 76, 60))  // #E74C3C
+                    : new SolidColorBrush(Color.FromRgb(46, 204, 113)); // #2ECC71
+            }
             return Brushes.Gray;
         }
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) => throw new NotImplementedException();

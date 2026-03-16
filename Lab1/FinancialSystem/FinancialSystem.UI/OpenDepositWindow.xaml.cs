@@ -30,7 +30,7 @@ namespace FinancialSystem.UI
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ошибка загрузки списка банков: " + ex.Message);
+                CustomMessageBox.Show("Ошибка загрузки списка банков: " + ex.Message, "Ошибка", this);
             }
         }
 
@@ -39,32 +39,36 @@ namespace FinancialSystem.UI
             // 1. Валидация выбора банка
             if (BankComboBox.SelectedItem is not Bank selectedBank)
             {
-                MessageBox.Show("Пожалуйста, выберите банк из списка.");
+                CustomMessageBox.Show("Пожалуйста, выберите банк из списка.", "Внимание", this);
                 return;
             }
 
-            // 2. Валидация суммы
-            if (!decimal.TryParse(AmountBox.Text.Replace(".", ","), out decimal amount) || amount <= 0)
+            // 2. Валидация суммы (заменяем точку на запятую для корректного парсинга)
+            string amountText = AmountBox.Text.Replace(".", ",");
+            if (!decimal.TryParse(amountText, out decimal amount) || amount <= 0)
             {
-                MessageBox.Show("Введите корректную сумму вклада (положительное число).");
+                CustomMessageBox.Show("Введите корректную сумму вклада (положительное число).", "Ошибка ввода", this);
                 AmountBox.Focus();
                 return;
             }
 
             try
             {
-                // 3. Вызов сервиса
-                _bankService.OpenDeposit(_userId, selectedBank.Id, amount, (double)RateSlider.Value);
+                // 3. Вызов сервиса открытия вклада
+                _bankService.OpenDeposit(_userId, selectedBank.Id, amount, (decimal)RateSlider.Value);
 
-                MessageBox.Show($"Поздравляем!\nВклад в банке «{selectedBank.Name}» успешно открыт.\n" +
-                                $"Сумма: {amount:N2} ₽\nСтавка: {RateSlider.Value}%",
-                                "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                CustomMessageBox.Show(
+                    $"Поздравляем!\nВклад в банке «{selectedBank.Name}» успешно открыт.\n" +
+                    $"Сумма: {amount:N2} ₽\nСтавка: {RateSlider.Value}%",
+                    "Успех",
+                    this);
 
-                this.DialogResult = true;
+                this.DialogResult = true; // Закрываем окно с успехом
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Не удалось открыть вклад: " + ex.Message, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                // ИСПРАВЛЕНО: Заменен стандартный MessageBox на CustomMessageBox
+                CustomMessageBox.Show("Не удалось открыть вклад: " + ex.Message, "Ошибка", this);
             }
         }
     }

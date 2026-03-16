@@ -18,7 +18,7 @@ namespace FinancialSystem.Application.Interfaces
         bool TransferMoney(int fromAccountId, string toAccountNumber, decimal amount);
         List<TransactionRecord> GetTransactionHistory(int userId);
         void AccrueInterest(int accountId); // Накопление (начисление %)
-        void OpenDeposit(int userId, int bankId, decimal initialAmount, double interestRate);
+        void OpenDeposit(int userId, int bankId, decimal initialAmount, decimal interestRate);
         List<BankAccount> GetAllAccounts(); // Для менеджера
         void ToggleBlock(int accountId);      // Блокировка/разблокировка
         List<TransactionRecord> GetAccountHistory(int accountId);

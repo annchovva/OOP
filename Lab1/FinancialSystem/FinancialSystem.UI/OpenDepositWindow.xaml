@@ -1,7 +1,7 @@
 ﻿<Window x:Class="FinancialSystem.UI.OpenDepositWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Новый вклад" Height="420" Width="380" 
+        Title="Новый вклад" Height="464" Width="407" 
         Background="{StaticResource BackgroundDark}"
         WindowStartupLocation="CenterOwner"
         ResizeMode="NoResize">
@@ -15,7 +15,7 @@
 
                 <!-- Выбор банка -->
                 <TextBlock Text="ВЫБЕРИТЕ БАНК" Foreground="{StaticResource TextSecondary}" FontSize="10" FontWeight="Bold" Margin="0,0,0,5"/>
-                <ComboBox x:Name="BankComboBox" DisplayMemberPath="Name" Margin="0,0,0,15" Height="35"
+                <ComboBox x:Name="BankComboBox" DisplayMemberPath="Name" Style="{StaticResource ModernComboBoxStyle}" Margin="0,0,0,15" Height="35"
                           VerticalContentAlignment="Center" Padding="10,0"/>
 
                 <!-- Сумма -->
