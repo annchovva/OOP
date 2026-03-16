@@ -55,8 +55,6 @@ namespace FinancialSystem.Application.Services
                     case "ConfirmUser": success = UndoConfirmUser(parts); break;
                     case "ApproveJoin": success = UndoApproveJoin(parts); break;
                     case "ClaimSalary": success = UndoClaimSalary(parts); break;
-
-                    // НОВЫЕ ТИПЫ:
                     case "Resign": success = UndoResign(parts); break;
                     case "JoinRequest": success = UndoJoinRequest(parts); break;
                     case "SalaryRequest": success = UndoSalaryRequest(parts); break;
@@ -73,16 +71,13 @@ namespace FinancialSystem.Application.Services
             catch { return false; }
         }
 
-        // --- Новые методы отмены ---
-
         private bool UndoResign(string[] parts)
         {
-            // ТехДанные: UserId;EnterpriseId
             int userId = int.Parse(parts[0]);
             int entId = int.Parse(parts[1]);
 
             var user = _db.Users.Find(userId);
-            if (user != null && user.EnterpriseId == null) // Восстанавливаем только если еще никуда не вступил
+            if (user != null && user.EnterpriseId == null)
             {
                 user.EnterpriseId = entId;
                 return true;
@@ -92,9 +87,8 @@ namespace FinancialSystem.Application.Services
 
         private bool UndoJoinRequest(string[] parts)
         {
-            // ТехДанные: RequestId
             int requestId = int.Parse(parts[0]);
-            var request = _db.SalaryRequests.Find(requestId); // Используем таблицу заявок
+            var request = _db.SalaryRequests.Find(requestId); 
             if (request != null)
             {
                 _db.SalaryRequests.Remove(request);
@@ -105,7 +99,6 @@ namespace FinancialSystem.Application.Services
 
         private bool UndoSalaryRequest(string[] parts)
         {
-            // ТехДанные: RequestId
             int requestId = int.Parse(parts[0]);
             var request = _db.SalaryRequests.Find(requestId);
             if (request != null && request.Status == SalaryRequestStatus.Pending)
@@ -115,8 +108,6 @@ namespace FinancialSystem.Application.Services
             }
             return false;
         }
-
-        // --- Вспомогательные методы логики отмены ---
 
         private bool UndoTransfer(string[] parts)
         {
@@ -129,7 +120,16 @@ namespace FinancialSystem.Application.Services
 
             if (source != null && target != null)
             {
-                target.Balance -= amount;
+                if (target.Balance >= amount)
+                {
+                    target.Balance -= amount;
+                }
+                else
+                {
+                    target.Balance = 0;
+                    target.IsBlocked = true;
+                }
+
                 source.Balance += amount;
                 return true;
             }
@@ -140,7 +140,6 @@ namespace FinancialSystem.Application.Services
         {
             int accId = int.Parse(parts[0]);
             var account = _db.BankAccounts.Find(accId);
-            // Удаляем только если на счету 0 и он существует
             if (account != null && account.Balance == 0)
             {
                 _db.BankAccounts.Remove(account);
@@ -157,7 +156,15 @@ namespace FinancialSystem.Application.Services
             var account = _db.BankAccounts.Find(accId);
             if (account != null)
             {
-                account.Balance -= amount;
+                if (account.Balance >= amount)
+                {
+                    account.Balance -= amount;
+                }
+                else
+                {
+                    account.Balance = 0;
+                    account.IsBlocked = true;
+                }
                 return true;
             }
             return false;
@@ -181,7 +188,6 @@ namespace FinancialSystem.Application.Services
             var user = _db.Users.Find(userId);
             if (user != null)
             {
-                user.Status = UserStatus.Pending;
                 user.IsApproved = false;
                 return true;
             }
@@ -198,7 +204,7 @@ namespace FinancialSystem.Application.Services
 
             if (user != null)
             {
-                user.EnterpriseId = null; // Увольняем обратно
+                user.EnterpriseId = null;
                 if (request != null) request.Status = SalaryRequestStatus.Pending;
                 return true;
             }
@@ -216,11 +222,19 @@ namespace FinancialSystem.Application.Services
 
             if (account != null && request != null)
             {
-                account.Balance -= amount; // Забираем деньги со счета
-                request.Status = SalaryRequestStatus.Approved; // Возвращаем статус "Одобрено менеджером"
+                if (account.Balance >= amount)
+                {
+                    account.Balance -= amount;
+                }
+                else
+                {
+                    account.Balance = 0;
+                }
+                request.Status = SalaryRequestStatus.Approved;
                 return true;
             }
             return false;
         }
     }
 }
+

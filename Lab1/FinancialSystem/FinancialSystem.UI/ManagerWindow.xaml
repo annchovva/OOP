@@ -6,11 +6,9 @@
         Background="{StaticResource BackgroundDark}"
         WindowStartupLocation="CenterScreen">
     <Window.Resources>
-        <!-- 1. Конвертеры (уже были) -->
         <local:BlockStatusConverter x:Key="BlockStatusConverter"/>
         <local:BlockColorConverter x:Key="BlockColorConverter"/>
 
-        <!-- 2. ТОТ САМЫЙ НЕДОСТАЮЩИЙ СТИЛЬ ModernDataGridStyle -->
         <Style x:Key="ModernDataGridStyle" TargetType="DataGrid">
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="0"/>
@@ -23,7 +21,6 @@
             <Setter Property="CanUserAddRows" Value="False"/>
             <Setter Property="IsReadOnly" Value="True"/>
             <Style.Resources>
-                <!-- Стиль заголовков колонок внутри таблицы -->
                 <Style TargetType="DataGridColumnHeader">
                     <Setter Property="Background" Value="Transparent"/>
                     <Setter Property="Foreground" Value="{StaticResource EmeraldAccent}"/>
@@ -34,7 +31,6 @@
                     <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}"/>
                     <Setter Property="Height" Value="35"/>
                 </Style>
-                <!-- Стиль ячеек -->
                 <Style TargetType="DataGridCell">
                     <Setter Property="Padding" Value="10,0"/>
                     <Setter Property="Template">
@@ -57,7 +53,6 @@
             </Style.Resources>
         </Style>
 
-        <!-- 3. Стиль вкладок (ваш старый код) -->
         <Style TargetType="TabItem">
             <Setter Property="Template">
                 <Setter.Value>
@@ -82,15 +77,12 @@
         </Style>
     </Window.Resources>
 
-
-
     <Grid Margin="25">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- Заголовок системы -->
         <StackPanel Grid.Row="0" Margin="0,0,0,20">
             <TextBlock Text="CORE BANKING SYSTEM" Foreground="{StaticResource EmeraldAccent}" FontSize="12" FontWeight="Bold"/>
             <TextBlock Text="ПАНЕЛЬ АДМИНИСТРИРОВАНИЯ" Style="{StaticResource HeaderStyle}" Margin="0,-5,0,0"/>
@@ -98,7 +90,7 @@
 
         <TabControl Grid.Row="1" Background="Transparent" BorderThickness="0" x:Name="MainTabControl" SelectionChanged="MainTabControl_SelectionChanged">
 
-            <!-- Вкладка 1: Регистрация -->
+            <!-- вкладка 1: регистрация -->
             <TabItem Header="НОВЫЕ КЛИЕНТЫ">
                 <Border Style="{StaticResource CardStyle}" Margin="0,10,0,0">
                     <DataGrid x:Name="PendingUsersGrid" AutoGenerateColumns="False" IsReadOnly="True" Style="{StaticResource ModernDataGridStyle}">
@@ -117,7 +109,7 @@
                 </Border>
             </TabItem>
 
-            <!-- Вкладка 2: Заявки на работу -->
+            <!-- вкладка 2: заявки на работу -->
             <TabItem Header="ТРУДОУСТРОЙСТВО">
                 <Border Style="{StaticResource CardStyle}" Margin="0,10,0,0">
                     <DataGrid x:Name="JoinRequestsGrid" AutoGenerateColumns="False" IsReadOnly="True" Style="{StaticResource ModernDataGridStyle}">
@@ -137,7 +129,7 @@
                 </Border>
             </TabItem>
 
-            <!-- Вкладка 3: Зарплата -->
+            <!-- вкладка 3: зарплата -->
             <TabItem Header="ВЫПЛАТЫ">
                 <Border Style="{StaticResource CardStyle}" Margin="0,10,0,0">
                     <DataGrid x:Name="SalaryRequestsGrid" AutoGenerateColumns="False" IsReadOnly="True" Style="{StaticResource ModernDataGridStyle}">
@@ -157,7 +149,7 @@
                 </Border>
             </TabItem>
 
-            <!-- Вкладка 4: Счета -->
+            <!-- вкладка 4: счета -->
             <TabItem Header="УПРАВЛЕНИЕ СЧЕТАМИ">
                 <Grid Margin="0,10,0,0">
                     <Grid.RowDefinitions>
@@ -170,9 +162,9 @@
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="ВЛАДЕЛЕЦ" Binding="{Binding User.Login}" Width="120"/>
                                 <DataGridTextColumn Header="НОМЕР СЧЕТА" Binding="{Binding AccountNumber}" Width="*"/>
-                                <DataGridTextColumn Header="ТИП" Binding="{Binding Type}" Width="100"/>
-                                <DataGridTextColumn Header="БАЛАНС" Binding="{Binding Balance, StringFormat={}{0:N2} ₽}" Width="120"/>
-                                <DataGridTemplateColumn Header="СТАТУС" Width="100">
+                                <DataGridTextColumn Header="ТИП" Binding="{Binding Type}" Width="150"/>
+                                <DataGridTextColumn Header="БАЛАНС" Binding="{Binding Balance, StringFormat={}{0:N2} ₽}" Width="150"/>
+                                <DataGridTemplateColumn Header="СТАТУС" Width="150">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
                                             <TextBlock Text="{Binding IsBlocked, Converter={StaticResource BlockStatusConverter}}" 
@@ -192,7 +184,6 @@
                 </Grid>
             </TabItem>
 
-            <!-- Вставьте это после вкладки "ВЫПЛАТЫ" -->
             <TabItem Header="ПРЕДПРИЯТИЯ И ШТАТ">
                 <Border Style="{StaticResource CardStyle}" Margin="0,10,0,0">
                     <Grid>
@@ -210,17 +201,14 @@
                       IsReadOnly="True" 
                       Style="{StaticResource ModernDataGridStyle}">
                             <DataGrid.Columns>
-                                <!-- Название предприятия -->
                                 <DataGridTextColumn Header="ОРГАНИЗАЦИЯ" 
                                         Binding="{Binding Enterprise.Name}" 
                                         Width="2*"/>
 
-                                <!-- Логин сотрудника -->
                                 <DataGridTextColumn Header="ЛОГИН СОТРУДНИКА" 
                                         Binding="{Binding Login}" 
                                         Width="*"/>
 
-                                <!-- Дополнительная информация (например, ID или Роль) -->
                                 <DataGridTextColumn Header="ID ПОЛЬЗОВАТЕЛЯ" 
                                         Binding="{Binding Id}" 
                                         Width="120"/>

@@ -9,24 +9,20 @@
     <Grid Margin="30">
         <Border Style="{StaticResource CardStyle}">
             <StackPanel>
-                <!-- Заголовок с иконкой -->
                 <TextBlock Text="🚀" FontSize="30" HorizontalAlignment="Center" Margin="0,0,0,10"/>
                 <TextBlock Text="ПЕРЕВОД СРЕДСТВ" Style="{StaticResource HeaderStyle}" 
                            FontSize="18" HorizontalAlignment="Center" Margin="0,0,0,25"/>
 
-                <!-- Номер счета получателя -->
                 <TextBlock Text="НОМЕР СЧЕТА ПОЛУЧАТЕЛЯ" Foreground="{StaticResource TextSecondary}" 
                            FontSize="10" FontWeight="Bold" Margin="0,0,0,5"/>
                 <TextBox x:Name="ToAccountTextBox" Margin="0,0,0,20" Height="40" 
                          VerticalContentAlignment="Center" Padding="10,0" Tag="Напр. 40817810..."/>
 
-                <!-- Сумма -->
                 <TextBlock Text="СУММА ПЕРЕВОДА (₽)" Foreground="{StaticResource TextSecondary}" 
                            FontSize="10" FontWeight="Bold" Margin="0,0,0,5"/>
                 <TextBox x:Name="AmountTextBox" Margin="0,0,0,30" Height="40" 
                          VerticalContentAlignment="Center" Padding="10,0" FontSize="16" FontWeight="Bold"/>
 
-                <!-- Кнопка отправки -->
                 <Button Content="ОТПРАВИТЬ ДЕНЬГИ" Click="Transfer_Click" 
                         Style="{StaticResource EmeraldButtonStyle}" Height="45"/>
 

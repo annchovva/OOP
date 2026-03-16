@@ -11,8 +11,6 @@ namespace FinancialSystem.Infrastructure
         public DbSet<BankAccount> BankAccounts { get; set; }
         public DbSet<TransactionRecord> Transactions { get; set; }
         public DbSet<ActionLog> ActionLogs { get; set; }
-
-        // Добавляем таблицу для заявок на зарплатные проекты
         public DbSet<SalaryRequest> SalaryRequests { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -26,26 +24,23 @@ namespace FinancialSystem.Infrastructure
         {
             base.OnModelCreating(modelBuilder);
 
-            // Уникальный логин (оставляем как есть)
             modelBuilder.Entity<User>()
                 .HasIndex(u => u.Login)
                 .IsUnique();
 
-            // НАСТРОЙКА ТРАНЗАКЦИЙ (ОБНОВЛЕННАЯ)
             modelBuilder.Entity<TransactionRecord>(entity =>
             {
-                // Связь для отправителя
-                entity.HasOne(t => t.FromAccount) // Указываем на свойство-объект
-                      .WithMany()                 // У одного счета может быть много исходящих транзакций
+                entity.HasOne(t => t.FromAccount) 
+                      .WithMany()                 
                       .HasForeignKey(t => t.FromAccountId)
                       .OnDelete(DeleteBehavior.Restrict);
 
-                // Связь для получателя
-                entity.HasOne(t => t.ToAccount)   // Указываем на свойство-объект
-                      .WithMany()                 // У одного счета может быть много входящих транзакций
+                entity.HasOne(t => t.ToAccount)  
+                      .WithMany()                
                       .HasForeignKey(t => t.ToAccountId)
                       .OnDelete(DeleteBehavior.Restrict);
             });
         }
     }
 }
+

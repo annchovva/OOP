@@ -8,7 +8,7 @@ namespace FinancialSystem.Domain.Enums
 {
     public enum AccountType
     {
-        Current = 1, 
-        Deposit = 2
+        Current = 1,
+        Deposit = 2 
     }
 }

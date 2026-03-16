@@ -35,22 +35,22 @@ namespace FinancialSystem.UI
             {
                 _db.ChangeTracker.Clear();
 
-                // 1. Новые пользователи
-                PendingUsersGrid.ItemsSource = _db.Users.Where(u => u.Status == UserStatus.Pending).ToList();
+                // новые пользователи
+                PendingUsersGrid.ItemsSource = _db.Users.Where(u => u.IsApproved == false).ToList();
 
-                // 2. Заявки на трудоустройство
+                // заявки на трудоустройство
                 JoinRequestsGrid.ItemsSource = _enterpriseService.GetPendingJoinRequests();
 
-                // 3. Заявки на выплату
+                // заявки на выплату
                 SalaryRequestsGrid.ItemsSource = _enterpriseService.GetPendingPaymentRequests();
 
-                // 4. Список штата
+                // список штата
                 EnterpriseStaffGrid.ItemsSource = _db.Users
                     .Include(u => u.Enterprise)
                     .Where(u => u.EnterpriseId != null)
                     .ToList();
 
-                // 5. Все счета
+                // все счета
                 if (AllAccountsGrid != null)
                 {
                     AllAccountsGrid.ItemsSource = _bankService.GetAllAccounts();
@@ -78,7 +78,6 @@ namespace FinancialSystem.UI
                 var dbUser = _db.Users.Find(user.Id);
                 if (dbUser != null)
                 {
-                    dbUser.Status = UserStatus.Active;
                     dbUser.IsApproved = true;
                     _db.SaveChanges();
 
@@ -113,8 +112,6 @@ namespace FinancialSystem.UI
             }
         }
 
-        // ... (остальной код ManagerWindow) ...
-
         private void ToggleBlock_Click(object sender, RoutedEventArgs e)
         {
             if (AllAccountsGrid.SelectedItem is BankAccount selectedAccount)
@@ -122,12 +119,6 @@ namespace FinancialSystem.UI
                 try
                 {
                     _bankService.ToggleBlock(selectedAccount.Id);
-
-                    // ЛОГ: Переключение блокировки
-                    var logService = new LogService(_db);
-                    logService.Log(selectedAccount.UserId, "ToggleBlock",
-                        $"Статус счета {selectedAccount.AccountNumber} изменен (Блок: {!selectedAccount.IsBlocked})",
-                        selectedAccount.Id.ToString());
 
                     RefreshAll();
                     string status = !selectedAccount.IsBlocked ? "заблокирован" : "разблокирован";
@@ -155,9 +146,8 @@ namespace FinancialSystem.UI
                         var dbUser = _db.Users.Find(employee.Id);
                         if (dbUser != null && dbUser.EnterpriseId != null)
                         {
-                            int oldEntId = dbUser.EnterpriseId.Value; // Сохраняем для лога
+                            int oldEntId = dbUser.EnterpriseId.Value; 
 
-                            // ЛОГ: Увольнение менеджером
                             var logService = new LogService(_db);
                             logService.Log(dbUser.Id, "Resign",
                                 $"Сотрудник {dbUser.Login} уволен менеджером",
@@ -165,7 +155,6 @@ namespace FinancialSystem.UI
 
                             dbUser.EnterpriseId = null;
 
-                            // Удаляем текущие заявки, которые еще не выплачены
                             var pendingRequests = _db.SalaryRequests
                                 .Where(r => r.UserId == employee.Id && r.Status != SalaryRequestStatus.Completed);
                             _db.SalaryRequests.RemoveRange(pendingRequests);

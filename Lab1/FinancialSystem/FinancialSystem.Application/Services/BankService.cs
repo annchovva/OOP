@@ -6,14 +6,14 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Globalization; // Важно для корректной записи сумм в логи
+using System.Globalization; 
 
 namespace FinancialSystem.Application.Services
 {
     public class BankService : IBankService
     {
         private readonly FinanceDbContext _db;
-        private readonly ILogService _logService; // Добавили сервис логов
+        private readonly ILogService _logService;
 
         public BankService(FinanceDbContext db, ILogService logService)
         {
@@ -48,8 +48,31 @@ namespace FinancialSystem.Application.Services
             _db.BankAccounts.Add(account);
             _db.SaveChanges();
 
-            // ЛОГ: Тип OpenAccount, ТехДанные: ID нового счета
             _logService.Log(userId, "OpenAccount", $"Открытие счета {account.AccountNumber}", account.Id.ToString());
+        }
+
+        public void CloseAccount(int accountId)
+        {
+            var account = _db.BankAccounts.FirstOrDefault(a => a.Id == accountId);
+            if (account == null) return;
+
+            // сохраняем данные для лога
+            string oldAccNumber = account.AccountNumber;
+            int userId = account.UserId;
+
+            var transactions = _db.Transactions
+                .Where(t => t.FromAccountId == accountId || t.ToAccountId == accountId)
+                .ToList();
+
+            if (transactions.Any())
+            {
+                _db.Transactions.RemoveRange(transactions);
+            }
+
+            _db.BankAccounts.Remove(account);
+            _db.SaveChanges();
+
+            _logService.Log(userId, "CloseAccount", $"Закрытие счета {oldAccNumber}", accountId.ToString());
         }
 
         public bool TransferMoney(int fromAccountId, string toAccountNumber, decimal amount)
@@ -57,24 +80,16 @@ namespace FinancialSystem.Application.Services
             var fromAccount = _db.BankAccounts.Find(fromAccountId);
             var toAccount = _db.BankAccounts.FirstOrDefault(a => a.AccountNumber == toAccountNumber);
 
-            // 1. Проверка существования
             if (fromAccount == null || toAccount == null) return false;
 
-            // 2. Проверка перевода самому себе
             if (fromAccountId == toAccount.Id) return false;
 
-            // 3. Проверка отправителя
-            if (fromAccount.IsBlocked)
-                throw new Exception("Операция невозможна: ваш счет заблокирован.");
+            if (fromAccount.IsBlocked) throw new Exception("Операция невозможна: ваш счет заблокирован.");
 
-            // 4. ДОБАВЛЕНО: Проверка получателя
-            if (toAccount.IsBlocked)
-                throw new Exception("Операция невозможна: счет получателя заблокирован и не может принимать средства.");
+            if (toAccount.IsBlocked) throw new Exception("Операция невозможна: счет получателя заблокирован.");
 
-            // 5. Проверка баланса
             if (fromAccount.Balance < amount) return false;
 
-            // Проведение транзакции
             fromAccount.Balance -= amount;
             toAccount.Balance += amount;
 
@@ -89,15 +104,12 @@ namespace FinancialSystem.Application.Services
 
             _db.SaveChanges();
 
-            // ЛОГ: Тип Transfer, ТехДанные: ОтКого;Кому;Сумма
             _logService.Log(fromAccount.UserId, "Transfer",
                 $"Перевод {amount} на счет {toAccountNumber}",
                 $"{fromAccount.Id};{toAccount.Id};{amount.ToString(System.Globalization.CultureInfo.InvariantCulture)}");
 
             return true;
         }
-
-
 
         public void OpenDeposit(int userId, int bankId, decimal initialAmount, decimal interestRate)
         {
@@ -126,7 +138,6 @@ namespace FinancialSystem.Application.Services
 
             _db.SaveChanges();
 
-            // ЛОГ: Используем OpenAccount для вклада, чтобы админ мог его закрыть отменой
             _logService.Log(userId, "OpenAccount", $"Открытие вклада {account.AccountNumber}", account.Id.ToString());
         }
 
@@ -152,37 +163,10 @@ namespace FinancialSystem.Application.Services
 
                 _db.SaveChanges();
 
-                // ЛОГ: Тип AccrueInterest, ТехДанные: ID счета;СуммаПроцентов
                 _logService.Log(account.UserId, "AccrueInterest",
                     $"Начисление процентов {interest} на счет {account.AccountNumber}",
                     $"{account.Id};{interest.ToString(CultureInfo.InvariantCulture)}");
             }
-        }
-
-        public void CloseAccount(int accountId)
-        {
-            var account = _db.BankAccounts.FirstOrDefault(a => a.Id == accountId);
-            if (account == null) return;
-
-            string oldAccNumber = account.AccountNumber;
-            int userId = account.UserId;
-
-            // 1. Удаляем транзакции (связи Restrict)
-            var transactions = _db.Transactions
-                .Where(t => t.FromAccountId == accountId || t.ToAccountId == accountId)
-                .ToList();
-
-            if (transactions.Any())
-            {
-                _db.Transactions.RemoveRange(transactions);
-            }
-
-            // 2. Удаляем счет
-            _db.BankAccounts.Remove(account);
-            _db.SaveChanges();
-
-            // ЛОГ: Тип CloseAccount, ТехДанные: ID счета (в истории останется для справки)
-            _logService.Log(userId, "CloseAccount", $"Закрытие счета {oldAccNumber}", accountId.ToString());
         }
 
         public void ToggleBlock(int accountId)
@@ -193,14 +177,11 @@ namespace FinancialSystem.Application.Services
                 account.IsBlocked = !account.IsBlocked;
                 _db.SaveChanges();
 
-                // ЛОГ: Тип ToggleBlock
                 _logService.Log(account.UserId, "ToggleBlock",
                     $"Изменение блокировки счета {account.AccountNumber} (Статус: {account.IsBlocked})",
                     account.Id.ToString());
             }
         }
-
-        // --- Вспомогательные методы получения данных ---
 
         public List<BankAccount> GetAllAccounts()
         {
@@ -208,24 +189,6 @@ namespace FinancialSystem.Application.Services
                 .AsNoTracking()
                 .Include(a => a.User)
                 .Include(a => a.Bank)
-                .ToList();
-        }
-
-        public List<TransactionRecord> GetTransactionHistory(int userId)
-        {
-            var userAccountIds = _db.BankAccounts
-                .AsNoTracking()
-                .Where(a => a.UserId == userId)
-                .Select(a => a.Id)
-                .ToList();
-
-            return _db.Transactions
-                .AsNoTracking()
-                .Include(t => t.FromAccount)
-                .Include(t => t.ToAccount)
-                .Where(t => (t.FromAccountId != null && userAccountIds.Contains(t.FromAccountId.Value)) ||
-                            (t.ToAccountId != null && userAccountIds.Contains(t.ToAccountId.Value)))
-                .OrderByDescending(t => t.Date)
                 .ToList();
         }
 

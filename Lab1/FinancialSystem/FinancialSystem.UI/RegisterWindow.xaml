@@ -8,12 +8,13 @@
 
     <Grid Margin="30">
         <StackPanel VerticalAlignment="Center">
-            <!-- Исправленная строка (Margin был с ошибкой) -->
+            <!-- заголовок -->
             <TextBlock Text="НОВЫЙ АККАУНТ" 
                        Style="{StaticResource HeaderStyle}" 
                        HorizontalAlignment="Center" 
                        Margin="0,0,0,20"/>
 
+            <!-- карточка регистрации -->
             <Border Style="{StaticResource CardStyle}" Padding="20">
                 <StackPanel>
                     <TextBlock Text="ЛОГИН" FontSize="10" FontWeight="Bold" 
@@ -24,18 +25,18 @@
                                Foreground="{StaticResource TextSecondary}" Margin="0,0,0,5"/>
 
                     <Grid Margin="0,0,0,25">
-                        <!-- Поле для скрытого ввода -->
+                        <!-- поле для скрытого ввода -->
                         <PasswordBox x:Name="RegPasswordBox" 
                                      VerticalContentAlignment="Center" 
                                      Padding="5,0,35,0"/>
 
-                        <!-- Поле для видимого ввода -->
+                        <!-- поле для видимого ввода -->
                         <TextBox x:Name="RegPasswordVisibleBox" 
                                  VerticalContentAlignment="Center" 
                                  Padding="5,0,35,0" 
                                  Visibility="Collapsed"/>
 
-                        <!-- Кнопка-глазик с нашим новым стилем -->
+                        <!-- кнопка-глазик -->
                         <Button Content="👁" 
                                 Style="{StaticResource EyeButtonStyle}"
                                 Width="30" Height="25" 

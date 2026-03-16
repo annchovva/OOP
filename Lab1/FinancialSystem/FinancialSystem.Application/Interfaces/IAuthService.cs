@@ -9,10 +9,8 @@ namespace FinancialSystem.Application.Interfaces
 {
     public interface IAuthService
     {
-        // Метод возвращает пользователя, если логин/пароль верны
-        User? Login(string login, string password);
-
-        // Регистрация нового клиента
-        bool Register(string login, string password);
+        User? Login(string login, string password); 
+        bool Register(string login, string password); 
     }
 }
+

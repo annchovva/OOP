@@ -16,8 +16,6 @@ namespace FinancialSystem.UI
         {
             if (history == null || !history.Any())
             {
-                // Вместо простого MessageBox можно вывести текст прямо в окне, 
-                // но пока оставим логику для простоты
                 HistoryGrid.ItemsSource = null;
                 return;
             }

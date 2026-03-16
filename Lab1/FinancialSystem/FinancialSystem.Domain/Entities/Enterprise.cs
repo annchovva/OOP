@@ -13,3 +13,4 @@ namespace FinancialSystem.Domain.Entities
         public virtual ICollection<User> Employees { get; set; } = new List<User>();
     }
 }
+

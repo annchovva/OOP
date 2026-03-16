@@ -18,18 +18,13 @@ namespace FinancialSystem.UI
             string login = RegLoginBox.Text.Trim();
             string pass = RegPasswordBox.Password;
 
-            // 1. Валидация входных данных
             if (string.IsNullOrWhiteSpace(login) || pass.Length < 4)
             {
-                CustomMessageBox.Show(
-                    "Логин не может быть пустым, а пароль должен содержать минимум 4 символа.",
-                    "Ошибка валидации",
-                    this
-                );
+                CustomMessageBox.Show("Логин не может быть пустым, а пароль должен содержать минимум 4 символа.",
+                    "Ошибка валидации", this);
                 return;
             }
 
-            // 2. Попытка регистрации
             if (_authService.Register(login, pass))
             {
                 CustomMessageBox.Show(
@@ -41,16 +36,11 @@ namespace FinancialSystem.UI
             }
             else
             {
-                // Если логин занят
-                CustomMessageBox.Show(
-                    "Этот логин уже занят. Пожалуйста, попробуйте другой вариант.",
-                    "Внимание",
-                    this
-                );
+                CustomMessageBox.Show("Этот логин уже занят. Пожалуйста, попробуйте другой вариант.",
+                    "Внимание", this);
             }
         }
 
-        // Логика "глазика" (показать пароль)
         private void BtnShowPass_PreviewMouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             RegPasswordVisibleBox.Text = RegPasswordBox.Password;
@@ -58,7 +48,6 @@ namespace FinancialSystem.UI
             RegPasswordVisibleBox.Visibility = Visibility.Visible;
         }
 
-        // Логика "глазика" (скрыть пароль)
         private void BtnShowPass_PreviewMouseUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             RegPasswordVisibleBox.Visibility = Visibility.Collapsed;

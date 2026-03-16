@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <!-- ПАЛИТРА ЦВЕТОВ -->
+        <!-- основные цвета -->
         <SolidColorBrush x:Key="BackgroundDark" Color="#121212"/>
         <SolidColorBrush x:Key="SurfaceDark" Color="#1E1E1E"/>
         <SolidColorBrush x:Key="EmeraldAccent" Color="#2ECC71"/>
@@ -12,7 +12,7 @@
         <SolidColorBrush x:Key="TextSecondary" Color="#B0B0B0"/>
         <SolidColorBrush x:Key="BorderBrush" Color="#333333"/>
 
-        <!-- ГЛОБАЛЬНЫЙ СТИЛЬ ТЕКСТА -->
+        <!-- стиль текста -->
         <Style TargetType="TextBlock">
             <Setter Property="Foreground" Value="{StaticResource TextPrimary}"/>
             <Setter Property="FontFamily" Value="Segoe UI"/>
@@ -25,7 +25,7 @@
             <Setter Property="Foreground" Value="{StaticResource EmeraldAccent}"/>
         </Style>
 
-        <!-- СТИЛЬ ДЛЯ ПОЛЕЙ ВВОДА (TextBox / PasswordBox) -->
+        <!-- стиль для полей ввода -->
         <Style TargetType="Control" x:Key="InputBaseStyle">
             <Setter Property="Background" Value="#252525"/>
             <Setter Property="Foreground" Value="White"/>
@@ -55,7 +55,7 @@
         <Style TargetType="TextBox" BasedOn="{StaticResource InputBaseStyle}"/>
         <Style TargetType="PasswordBox" BasedOn="{StaticResource InputBaseStyle}"/>
 
-        <!-- КРУТАЯ ИЗУМРУДНАЯ КНОПКА -->
+        <!-- изумрудная кнопка -->
         <Style x:Key="EmeraldButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="{StaticResource EmeraldAccent}"/>
             <Setter Property="Foreground" Value="#121212"/>
@@ -90,7 +90,7 @@
             </Setter>
         </Style>
 
-        <!-- ВТОРОСТЕПЕННАЯ КНОПКА (Контурная) -->
+        <!-- кнопка с контуром -->
         <Style x:Key="SecondaryButtonStyle" TargetType="Button">
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="Foreground" Value="{StaticResource EmeraldAccent}"/>
@@ -117,7 +117,7 @@
             </Setter>
         </Style>
 
-        <!-- СТИЛЬ ДЛЯ ДИЗАЙНА КАРТОЧЕК -->
+        <!-- стиль карточек -->
         <Style x:Key="CardStyle" TargetType="Border">
             <Setter Property="Background" Value="{StaticResource SurfaceDark}"/>
             <Setter Property="CornerRadius" Value="10"/>
@@ -133,7 +133,6 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
-                        <!-- Убираем все рамки и фоны, оставляем только контент -->
                         <Border Background="Transparent" BorderThickness="0">
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
@@ -146,7 +145,8 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
-        <!-- 1. СТИЛЬ ДЛЯ ПУНКТОВ ВЫПАДАЮЩЕГО СПИСКА -->
+        
+        <!-- стиль для списков -->
         <Style x:Key="ModernComboBoxItemStyle" TargetType="ComboBoxItem">
             <Setter Property="Padding" Value="10"/>
             <Setter Property="Foreground" Value="White"/>
@@ -172,7 +172,7 @@
             </Setter>
         </Style>
 
-        <!-- 2. СТИЛЬ ДЛЯ САМОГО COMBOBOX -->
+        <!-- стиль для combobox -->
         <Style x:Key="ModernComboBoxStyle" TargetType="ComboBox">
             <Setter Property="Background" Value="#252525"/>
             <Setter Property="Foreground" Value="White"/>
@@ -232,7 +232,7 @@
             </Setter>
         </Style>
 
-        <!-- КРАСИВЫЙ СТИЛЬ ДЛЯ ТАБЛИЦ -->
+        <!-- стиль таблиц -->
         <Style x:Key="ModernDataGridStyle" TargetType="DataGrid">
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="0"/>
@@ -245,13 +245,11 @@
             <Setter Property="IsReadOnly" Value="True"/>
             <Setter Property="AutoGenerateColumns" Value="False"/>
 
-            <!-- Переопределение цветов выделения на системном уровне для этой таблицы -->
             <Style.Resources>
                 <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="#1A2ECC71"/>
                 <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="White"/>
                 <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="#0D2ECC71"/>
                 <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightTextBrushKey}" Color="White"/>
-                <!-- Заголовки столбцов -->
                 <Style TargetType="DataGridColumnHeader">
                     <Setter Property="Background" Value="Transparent"/>
                     <Setter Property="Foreground" Value="{StaticResource EmeraldAccent}"/>
@@ -261,8 +259,7 @@
                     <Setter Property="BorderThickness" Value="0,0,0,1"/>
                     <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}"/>
                 </Style>
-
-                <!-- Сами ячейки -->
+                
                 <Style TargetType="DataGridCell">
                     <Setter Property="Padding" Value="10,0"/>
                     <Setter Property="Template">
@@ -277,7 +274,6 @@
                         </Setter.Value>
                     </Setter>
                     <Style.Triggers>
-                        <!-- Убираем пунктирную рамку вокруг ячейки при клике -->
                         <Trigger Property="IsSelected" Value="True">
                             <Setter Property="Background" Value="#1A2ECC71"/>
                             <Setter Property="Foreground" Value="White"/>
@@ -285,12 +281,10 @@
                     </Style.Triggers>
                 </Style>
 
-                <!-- Строки -->
                 <Style TargetType="DataGridRow">
                     <Setter Property="Background" Value="Transparent"/>
                     <Setter Property="BorderThickness" Value="0,0,0,1"/>
                     <Setter Property="BorderBrush" Value="#0DFFFFFF"/>
-                    <!-- Тонкая линия между строками -->
                     <Style.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter Property="Background" Value="#0DFFFFFF"/>
@@ -300,7 +294,9 @@
                         </Trigger>
                     </Style.Triggers>
                 </Style>
+                
             </Style.Resources>
+            
         </Style>
 
     </Application.Resources>

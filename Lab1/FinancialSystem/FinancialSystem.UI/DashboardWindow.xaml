@@ -12,12 +12,12 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <!-- ЛЕВАЯ ПАНЕЛЬ НАВИГАЦИИ -->
+        <!-- левая панель -->
         <Border Grid.Column="0" Background="{StaticResource SurfaceDark}" 
                 BorderBrush="{StaticResource BorderBrush}" BorderThickness="0,0,1,0">
             <DockPanel Margin="20">
                 <StackPanel DockPanel.Dock="Top">
-                    <!-- Логотип -->
+                    <!-- логотип -->
                     <StackPanel Orientation="Horizontal" Margin="0,0,0,30">
                         <Border Width="35" Height="35" CornerRadius="8" Background="{StaticResource EmeraldAccent}">
                             <TextBlock Text="$" Foreground="Black" FontWeight="Bold" 
@@ -29,7 +29,7 @@
                                    VerticalAlignment="Center" Margin="2,0,0,0"/>
                     </StackPanel>
 
-                    <!-- Информация о юзере в карточке -->
+                    <!-- карточка информации -->
                     <Border Style="{StaticResource CardStyle}" Margin="0,0,0,25" Background="#252525">
                         <StackPanel>
                             <TextBlock x:Name="UserInfoLabel" Text="Пользователь: ..." FontWeight="Bold" FontSize="14"/>
@@ -38,7 +38,7 @@
                         </StackPanel>
                     </Border>
 
-                    <!-- Кнопки меню -->
+                    <!-- кнопки меню -->
                     <TextBlock Text="ОСНОВНОЕ" FontSize="10" FontWeight="Bold" Foreground="#555" Margin="5,0,0,10"/>
 
                     <Button x:Name="AccountsBtn" Content="🏠 Мои счета" 
@@ -51,7 +51,7 @@
 
                     <Separator Background="{StaticResource BorderBrush}" Margin="0,10"/>
 
-                    <!-- Панели управления (Админ/Менеджер) -->
+                    <!-- панели управления (админ/менеджер) -->
                     <TextBlock x:Name="AdminSectionHeader" Text="АДМИНИСТРИРОВАНИЕ" FontSize="10" FontWeight="Bold" Foreground="#555" Margin="5,10,0,10" Visibility="Collapsed"/>
 
                     <Button x:Name="ManagerPanelBtn" Content="🛠 Панель Менеджера" 
@@ -65,7 +65,7 @@
                             Margin="0,0,0,10" Click="AdminPanelBtn_Click" Visibility="Collapsed"/>
                 </StackPanel>
 
-                <!-- Выход -->
+                <!-- выход -->
                 <Button Content="Выйти из системы" DockPanel.Dock="Bottom" 
                         Style="{StaticResource SecondaryButtonStyle}" 
                         BorderBrush="#555" Foreground="#999"
@@ -73,16 +73,15 @@
             </DockPanel>
         </Border>
 
-        <!-- ОСНОВНАЯ ОБЛАСТЬ КОНТЕНТА -->
+        <!-- основная область -->
         <Grid Grid.Column="1" Margin="30">
 
-            <!-- ПРИВЕТСТВИЕ -->
             <StackPanel x:Name="WelcomeArea" VerticalAlignment="Center" HorizontalAlignment="Center">
                 <TextBlock Text="Добро пожаловать в систему" FontSize="32" FontWeight="Light" Opacity="0.5" HorizontalAlignment="Center"/>
                 <TextBlock Text="Выберите раздел в меню слева для начала работы" Foreground="{StaticResource TextSecondary}" Margin="0,10,0,0" HorizontalAlignment="Center"/>
             </StackPanel>
 
-            <!-- ПАНЕЛЬ СЧЕТОВ -->
+            <!-- счета -->
             <Grid x:Name="AccountsPanel" Visibility="Collapsed">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -90,14 +89,13 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-                <!-- Верхние действия -->
                 <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,20">
                     <Button Content="+ Новый счет" Style="{StaticResource EmeraldButtonStyle}" Click="OpenAccountBtn_Click" Margin="0,0,12,0"/>
                     <Button Content="💰 Открыть вклад" Style="{StaticResource EmeraldButtonStyle}" Click="OpenDepositBtn_Click" Margin="0,0,12,0"/>
                     <Button Content="📊 Список банков" Style="{StaticResource SecondaryButtonStyle}" Click="ViewBanksBtn_Click"/>
                 </StackPanel>
 
-                <!-- Список счетов -->
+                <!-- список счетов -->
                 <Border Grid.Row="1" Style="{StaticResource CardStyle}">
                     <DataGrid x:Name="AccountsList" 
                               Style="{StaticResource ModernDataGridStyle}"
@@ -153,7 +151,6 @@
                     </DataGrid>
                 </Border>
 
-                <!-- Нижние действия над выбранным счетом -->
                 <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,20,0,0">
                     <Button Content="💸 Перевести" Style="{StaticResource EmeraldButtonStyle}" Click="TransferBtn_Click" Margin="0,0,12,0"/>
                     <Button Content="📈 Начислить %" Style="{StaticResource SecondaryButtonStyle}" Click="AccrueBtn_Click" Margin="0,0,12,0"/>

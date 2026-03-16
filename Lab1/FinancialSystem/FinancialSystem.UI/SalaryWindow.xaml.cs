@@ -4,7 +4,6 @@ using System.Windows;
 using FinancialSystem.Application.Interfaces;
 using FinancialSystem.Application.Services;
 using FinancialSystem.Domain.Entities;
-using FinancialSystem.Domain.Enums; // Добавлено для статусов
 using FinancialSystem.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,7 +14,7 @@ namespace FinancialSystem.UI
         private readonly User _user;
         private readonly IEnterpriseService _enterpriseService;
         private readonly IBankService _bankService;
-        private readonly ILogService _logService; // Вынес в поле
+        private readonly ILogService _logService; 
         private readonly FinanceDbContext _db;
 
         public SalaryWindow(User user)
@@ -24,7 +23,6 @@ namespace FinancialSystem.UI
             _user = user;
             _db = new FinanceDbContext();
 
-            // Инициализируем сервисы
             _logService = new LogService(_db);
             _enterpriseService = new EnterpriseService(_db, _logService);
             _bankService = new BankService(_db, _logService);
@@ -75,7 +73,6 @@ namespace FinancialSystem.UI
                 {
                     _enterpriseService.SendJoinRequest(_user.Id, selected.Id);
 
-                    // Ищем созданную заявку, чтобы получить её ID для лога
                     var request = _db.SalaryRequests
                         .OrderByDescending(r => r.Id)
                         .FirstOrDefault(r => r.UserId == _user.Id);
@@ -109,7 +106,6 @@ namespace FinancialSystem.UI
             {
                 _enterpriseService.SendSalaryPaymentRequest(_user.Id);
 
-                // Ищем созданную заявку на выплату
                 var request = _db.SalaryRequests
                     .OrderByDescending(r => r.Id)
                     .FirstOrDefault(r => r.UserId == _user.Id);
@@ -142,12 +138,6 @@ namespace FinancialSystem.UI
                     {
                         if (_enterpriseService.ClaimSalary(request.Id, targetAcc.Id))
                         {
-                            // ЛОГ: Зачисление зарплаты (для отмены)
-                            // ТехДанные: ID_Счета;Сумма;ID_Заявки
-                            _logService.Log(_user.Id, "ClaimSalary",
-                                $"Зачисление зарплаты {request.Amount} на счет {targetAcc.AccountNumber}",
-                                $"{targetAcc.Id};{request.Amount.ToString(System.Globalization.CultureInfo.InvariantCulture)};{request.Id}");
-
                             CustomMessageBox.Show("Средства успешно зачислены!", "Успех", this);
                             RefreshUI();
                         }
@@ -180,11 +170,6 @@ namespace FinancialSystem.UI
                     if (oldEntId != null)
                     {
                         _enterpriseService.ResignFromEnterprise(_user.Id);
-
-                        // ЛОГ: Увольнение
-                        _logService.Log(_user.Id, "Resign",
-                            "Пользователь уволился по собственному желанию",
-                            $"{_user.Id};{oldEntId}");
 
                         CustomMessageBox.Show("Вы успешно уволились.", "Готово", this);
                         RefreshUI();

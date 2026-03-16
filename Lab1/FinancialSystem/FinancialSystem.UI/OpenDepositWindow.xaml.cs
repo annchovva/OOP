@@ -36,14 +36,12 @@ namespace FinancialSystem.UI
 
         private void OpenDeposit_Click(object sender, RoutedEventArgs e)
         {
-            // 1. Валидация выбора банка
             if (BankComboBox.SelectedItem is not Bank selectedBank)
             {
                 CustomMessageBox.Show("Пожалуйста, выберите банк из списка.", "Внимание", this);
                 return;
             }
 
-            // 2. Валидация суммы (заменяем точку на запятую для корректного парсинга)
             string amountText = AmountBox.Text.Replace(".", ",");
             if (!decimal.TryParse(amountText, out decimal amount) || amount <= 0)
             {
@@ -54,7 +52,6 @@ namespace FinancialSystem.UI
 
             try
             {
-                // 3. Вызов сервиса открытия вклада
                 _bankService.OpenDeposit(_userId, selectedBank.Id, amount, (decimal)RateSlider.Value);
 
                 CustomMessageBox.Show(
@@ -63,11 +60,10 @@ namespace FinancialSystem.UI
                     "Успех",
                     this);
 
-                this.DialogResult = true; // Закрываем окно с успехом
+                this.DialogResult = true; 
             }
             catch (Exception ex)
             {
-                // ИСПРАВЛЕНО: Заменен стандартный MessageBox на CustomMessageBox
                 CustomMessageBox.Show("Не удалось открыть вклад: " + ex.Message, "Ошибка", this);
             }
         }

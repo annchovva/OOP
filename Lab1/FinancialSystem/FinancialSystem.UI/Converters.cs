@@ -6,12 +6,11 @@ using System.Windows.Media;
 
 namespace FinancialSystem.UI
 {
-    // 1. Скрывает кнопку, если действие уже отменено
+    // сокрытие кнопки "отмена" после отмены действия
     public class InverseBoolToVisConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            // Если IsReversed == true, возвращаем Collapsed (скрываем)
             if (value is bool isReversed && isReversed)
                 return Visibility.Collapsed;
             return Visibility.Visible;
@@ -19,7 +18,7 @@ namespace FinancialSystem.UI
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) => throw new NotImplementedException();
     }
 
-    // 2. Текст для логов администратора
+    // статус логов из bool в надпись
     public class StatusTextConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -31,7 +30,7 @@ namespace FinancialSystem.UI
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) => throw new NotImplementedException();
     }
 
-    // 3. Текст для статуса блокировки счета (для окна менеджера)
+    // статус блокировки
     public class BlockStatusConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -43,7 +42,6 @@ namespace FinancialSystem.UI
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) => throw new NotImplementedException();
     }
 
-    // 4. Цвет для статуса блокировки
     public class BlockColorConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)

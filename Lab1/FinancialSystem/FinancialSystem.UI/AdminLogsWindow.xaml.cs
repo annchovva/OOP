@@ -4,7 +4,7 @@ using System.Windows.Controls;
 using FinancialSystem.Application.Services;
 using FinancialSystem.Domain.Entities;
 using FinancialSystem.Application.Interfaces;
-using FinancialSystem.Infrastructure; // Не забываем
+using FinancialSystem.Infrastructure;
 
 namespace FinancialSystem.UI
 {
@@ -17,7 +17,6 @@ namespace FinancialSystem.UI
         {
             InitializeComponent();
 
-            // Инициализируем базу
             _db = new FinanceDbContext();
             _logService = new LogService(_db);
 
@@ -28,7 +27,6 @@ namespace FinancialSystem.UI
         {
             try
             {
-                // Очищаем кэш, чтобы видеть новые логи
                 _db.ChangeTracker.Clear();
                 LogsGrid.ItemsSource = _logService.GetAllLogs();
             }
@@ -42,7 +40,6 @@ namespace FinancialSystem.UI
         {
             if (!((sender as Button).DataContext is ActionLog log)) return;
 
-            // Используем наше новое исправленное окно сообщений!
             bool confirm = CustomMessageBox.ShowQuestion(
                 $"Вы уверены, что хотите отменить действие: {log.Details}?",
                 "Подтверждение отмены", this);

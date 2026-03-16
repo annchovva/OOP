@@ -21,17 +21,16 @@ namespace FinancialSystem.UI
             InitializeComponent();
             _user = user;
 
-            // ИНИЦИАЛИЗАЦИЯ: Создаем ОДИН контекст и ОДИН сервис на все окно
             _db = new FinanceDbContext();
             var logService = new LogService(_db);
             _bankService = new BankService(_db, logService);
 
-            // 1. Настройка информации о пользователе
+            // информация
             UserInfoLabel.Text = $"Привет, {_user.Login}";
             UserRoleLabel.Text = $"Ваша роль: {_user.Role}";
-            UserStatusText.Text = $"Статус: {_user.Status}";
+            string statusDisplay = _user.IsApproved ? "Активен" : "Ожидает подтверждения менеджером";
+            UserStatusText.Text = $"Статус: {statusDisplay}";
 
-            // 2. Разделение доступа к кнопкам
             SetupAccess();
         }
 
@@ -39,9 +38,8 @@ namespace FinancialSystem.UI
         {
             SalaryBtn.Visibility = _user.Role == UserRole.Client ? Visibility.Visible : Visibility.Collapsed;
 
-            if (_user.Role == UserRole.Manager || _user.Role == UserRole.Admin)
+            if (_user.Role == UserRole.Manager)
             {
-                AdminSectionHeader.Visibility = Visibility.Visible;
                 ManagerPanelBtn.Visibility = Visibility.Visible;
             }
 
@@ -121,7 +119,7 @@ namespace FinancialSystem.UI
         {
             if (!(AccountsList.SelectedItem is BankAccount selected))
             {
-                CustomMessageBox.Show("Пожалуйста, выберите счет в списке для начисления.", "Внимание", this);
+                CustomMessageBox.Show("Пожалуйста, выберите вклад в списке для начисления.", "Внимание", this);
                 return;
             }
 
@@ -147,7 +145,6 @@ namespace FinancialSystem.UI
                 return;
             }
 
-            // ИСПОЛЬЗУЕМ ShowQuestion для подтверждения
             bool confirm = CustomMessageBox.ShowQuestion(
                 "Вы действительно хотите навсегда закрыть этот счет?",
                 "Подтверждение закрытия",

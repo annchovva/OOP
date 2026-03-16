@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace FinancialSystem.Infrastructure // или ваш неймспейс
+namespace FinancialSystem.Infrastructure 
 {
     public static class PasswordHasher
     {
@@ -12,11 +12,8 @@ namespace FinancialSystem.Infrastructure // или ваш неймспейс
 
             using (var sha256 = SHA256.Create())
             {
-                // Преобразуем строку пароля в массив байт
                 var bytes = Encoding.UTF8.GetBytes(password);
-                // Вычисляем хэш
                 var hash = sha256.ComputeHash(bytes);
-                // Превращаем байты в красивую строку (hex)
                 return BitConverter.ToString(hash).Replace("-", "").ToLower();
             }
         }

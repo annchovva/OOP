@@ -15,7 +15,6 @@ namespace FinancialSystem.UI
         {
             InitializeComponent();
 
-            // Инициализация БД и сервисов
             var db = new FinanceDbContext();
             DbInitializer.Initialize(db);
             _authService = new AuthService(db);
@@ -24,7 +23,7 @@ namespace FinancialSystem.UI
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
             StatusLabel.Text = "";
-            string login = LoginBox.Text.Trim(); // Добавил Trim для чистоты данных
+            string login = LoginBox.Text.Trim(); // без учета пробелов
             string password = PasswordBox.Password;
 
             try
@@ -33,33 +32,33 @@ namespace FinancialSystem.UI
 
                 if (user != null)
                 {
-                    // Переход в личный кабинет
-                    DashboardWindow dashboard = new DashboardWindow(user);
-                    dashboard.Show();
+                    new DashboardWindow(user).Show();
                     this.Close();
                 }
                 else
                 {
-                    // Ошибка ввода (выводим текст в StatusLabel)
-                    StatusLabel.Foreground = new SolidColorBrush(Color.FromRgb(231, 76, 60));
+                    StatusLabel.Foreground = Brushes.Red;
                     StatusLabel.Text = "Неверный логин или пароль.";
                 }
             }
+            catch (InvalidOperationException ex) when (ex.Message == "NOT_APPROVED")
+            {
+                StatusLabel.Foreground = Brushes.Orange; 
+                StatusLabel.Text = "Аккаунт еще не подтвержден менеджером.";
+            }
             catch (Exception ex)
             {
-                // Техническая ошибка (выводим через CustomMessageBox)
-                CustomMessageBox.Show("Ошибка при попытке входа: " + ex.Message, "Системная ошибка", this);
+                CustomMessageBox.Show("Ошибка системы: " + ex.Message, "Ошибка", this);
             }
         }
 
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
             RegisterWindow regWindow = new RegisterWindow(_authService);
-            regWindow.Owner = this; // Чтобы окно регистрации открылось ровно по центру этого окна
+            regWindow.Owner = this; 
             regWindow.ShowDialog();
         }
 
-        // Логика "глазика" для показа пароля
         private void BtnShowPass_PreviewMouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             PasswordVisibleBox.Text = PasswordBox.Password;
@@ -74,7 +73,6 @@ namespace FinancialSystem.UI
             PasswordBox.Focus();
         }
 
-        // Полезное дополнение: если мышка ушла с кнопки, пароль должен снова скрыться
         private void BtnShowPass_MouseLeave(object sender, System.Windows.Input.MouseEventArgs e)
         {
             PasswordVisibleBox.Visibility = Visibility.Collapsed;

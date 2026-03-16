@@ -12,14 +12,14 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <!-- Заголовок -->
+        <!-- заголовок -->
         <StackPanel Grid.Row="0" Margin="0,0,0,20">
             <TextBlock Text="ПОЛНАЯ ИСТОРИЯ ОПЕРАЦИЙ" Style="{StaticResource HeaderStyle}"/>
             <TextBlock Text="Все входящие и исходящие переводы по вашим счетам" 
                        Foreground="{StaticResource TextSecondary}" FontSize="12" Margin="0,-15,0,0"/>
         </StackPanel>
 
-        <!-- Таблица в карточке -->
+        <!-- таблица в карточке -->
         <Border Grid.Row="1" Style="{StaticResource CardStyle}">
             <DataGrid x:Name="HistoryGrid" 
                       AutoGenerateColumns="False" 
@@ -33,7 +33,6 @@
                       HeadersVisibility="Column">
 
                 <DataGrid.Resources>
-                    <!-- Стиль заголовков -->
                     <Style TargetType="DataGridColumnHeader">
                         <Setter Property="Background" Value="Transparent"/>
                         <Setter Property="Foreground" Value="{StaticResource EmeraldAccent}"/>
@@ -44,7 +43,6 @@
                         <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}"/>
                     </Style>
 
-                    <!-- Стиль ячеек -->
                     <Style TargetType="DataGridCell">
                         <Setter Property="Padding" Value="10"/>
                         <Setter Property="BorderThickness" Value="0"/>
@@ -58,11 +56,9 @@
                 </DataGrid.Resources>
 
                 <DataGrid.Columns>
-                    <!-- Дата -->
                     <DataGridTextColumn Header="ДАТА И ВРЕМЯ" 
                                         Binding="{Binding Date, StringFormat={}{0:dd.MM.yyyy HH:mm}}" 
                                         Width="150"/>
-                    <!-- Отправитель -->
                     <DataGridTemplateColumn Header="ОТКУДА" Width="*">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
@@ -72,9 +68,8 @@
                        VerticalAlignment="Center"/>
 
                                 <DataTemplate.Triggers>
-                                    <!-- Если FromAccount == null, значит это системная операция (Зарплата/Проценты) -->
                                     <DataTrigger Binding="{Binding FromAccount}" Value="{x:Null}">
-                                        <Setter TargetName="FromText" Property="Text" Value="💳 ЗАРПЛАТА / СИСТЕМА"/>
+                                        <Setter TargetName="FromText" Property="Text" Value="ЗАРПЛАТА // СИСТЕМА"/>
                                         <Setter TargetName="FromText" Property="Foreground" Value="{StaticResource EmeraldAccent}"/>
                                         <Setter TargetName="FromText" Property="FontWeight" Value="Bold"/>
                                     </DataTrigger>
@@ -83,8 +78,6 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
 
-
-                    <!-- Стрелочка -->
                     <DataGridTemplateColumn Width="40">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
@@ -94,7 +87,6 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
 
-                    <!-- Получатель -->
                     <DataGridTemplateColumn Header="КУДА" Width="*">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
@@ -105,7 +97,6 @@
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
 
-                    <!-- Сумма -->
                     <DataGridTemplateColumn Header="СУММА" Width="140">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
@@ -122,7 +113,6 @@
             </DataGrid>
         </Border>
 
-        <!-- Кнопка закрытия -->
         <Button Content="Закрыть" 
                 Grid.Row="2" 
                 Style="{StaticResource SecondaryButtonStyle}" 

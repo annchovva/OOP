@@ -9,21 +9,17 @@
     <Grid Margin="25">
         <Border Style="{StaticResource CardStyle}">
             <StackPanel>
-                <!-- Заголовок -->
                 <TextBlock Text="ОТКРЫТИЕ ВКЛАДА" Style="{StaticResource HeaderStyle}" 
                            FontSize="18" HorizontalAlignment="Center" Margin="0,0,0,20"/>
 
-                <!-- Выбор банка -->
                 <TextBlock Text="ВЫБЕРИТЕ БАНК" Foreground="{StaticResource TextSecondary}" FontSize="10" FontWeight="Bold" Margin="0,0,0,5"/>
                 <ComboBox x:Name="BankComboBox" DisplayMemberPath="Name" Style="{StaticResource ModernComboBoxStyle}" Margin="0,0,0,15" Height="35"
                           VerticalContentAlignment="Center" Padding="10,0"/>
 
-                <!-- Сумма -->
                 <TextBlock Text="СУММА ВКЛАДА (₽)" Foreground="{StaticResource TextSecondary}" FontSize="10" FontWeight="Bold" Margin="0,0,0,5"/>
                 <TextBox x:Name="AmountBox" Text="1000" Margin="0,0,0,15" Height="35" 
                          VerticalContentAlignment="Center" Padding="10,0"/>
 
-                <!-- Ставка -->
                 <TextBlock Text="ПРОЦЕНТНАЯ СТАВКА" Foreground="{StaticResource TextSecondary}" FontSize="10" FontWeight="Bold" Margin="0,0,0,5"/>
                 <Grid Margin="0,0,0,10">
                     <Slider x:Name="RateSlider" Minimum="1" Maximum="20" Value="8" 
@@ -36,7 +32,6 @@
                     <TextBlock Text=" % годовых" VerticalAlignment="Bottom" Margin="5,0,0,4" Foreground="{StaticResource TextSecondary}"/>
                 </StackPanel>
 
-                <!-- Кнопка -->
                 <Button Content="ОТКРЫТЬ ДЕПОЗИТ" Click="OpenDeposit_Click" 
                         Style="{StaticResource EmeraldButtonStyle}" Height="45"/>
             </StackPanel>

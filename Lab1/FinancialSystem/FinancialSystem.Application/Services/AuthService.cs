@@ -3,7 +3,7 @@ using System.Linq;
 using FinancialSystem.Application.Interfaces;
 using FinancialSystem.Domain.Entities;
 using FinancialSystem.Domain.Enums;
-using FinancialSystem.Infrastructure; // Не забудьте подключить неймспейс, где лежит Hasher
+using FinancialSystem.Infrastructure; // тут хэшер
 using Microsoft.EntityFrameworkCore;
 
 namespace FinancialSystem.Application.Services
@@ -12,38 +12,41 @@ namespace FinancialSystem.Application.Services
     {
         private readonly FinanceDbContext _db;
 
-        public AuthService(FinanceDbContext context)
+        public AuthService(FinanceDbContext db)
         {
-            _db = context;
+            _db = db;
         }
 
         public User Login(string login, string password)
         {
-            // Хэшируем то, что ввел пользователь прямо сейчас
             string enteredHash = PasswordHasher.HashPassword(password);
+            var user = _db.Users.FirstOrDefault(u => u.Login == login && u.PasswordHash == enteredHash);
 
-            // Ищем в базе пользователя, у которого совпадает логин И хэш
-            return _db.Users.FirstOrDefault(u =>
-                u.Login == login &&
-                u.PasswordHash == enteredHash &&
-                u.IsApproved);
+            if (user == null) return null;
+
+            // клиент не одобрен менеджером
+            if (!user.IsApproved)
+            {
+                throw new InvalidOperationException("NOT_APPROVED");
+            }
+
+            return user;
         }
-
 
         public bool Register(string login, string password)
         {
+            // проверка на существование логина
             if (_db.Users.Any(u => u.Login == login))
-                return false; // Логин занят
+                return false; 
 
-            // 1. Хэшируем пароль ПЕРЕД сохранением в базу
             string hashedPassword = PasswordHasher.HashPassword(password);
 
             var newUser = new User
             {
                 Login = login,
-                PasswordHash = hashedPassword, // Сохраняем уже зашифрованный вид
+                PasswordHash = hashedPassword,
                 Role = UserRole.Client,
-                Status = UserStatus.Pending
+                IsApproved = false
             };
 
             _db.Users.Add(newUser);
@@ -52,3 +55,4 @@ namespace FinancialSystem.Application.Services
         }
     }
 }
+

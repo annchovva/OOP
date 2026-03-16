@@ -6,7 +6,6 @@
         WindowStartupLocation="CenterScreen">
 
     <Window.Resources>
-        <!-- Тот самый стиль, который ищет система -->
         <Style x:Key="ModernDataGridStyle" TargetType="DataGrid">
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="0"/>
@@ -55,16 +54,14 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- Заголовок -->
         <StackPanel Grid.Row="0" Margin="0,0,0,20">
             <TextBlock Text="WORK &amp; SALARY" Foreground="{StaticResource EmeraldAccent}" FontSize="12" FontWeight="Bold"/>
             <TextBlock Text="УПРАВЛЕНИЕ ЗАРПЛАТОЙ" Style="{StaticResource HeaderStyle}" Margin="0,-5,0,0"/>
         </StackPanel>
 
-        <!-- Основной контент -->
         <Grid Grid.Row="1">
 
-            <!-- СЕКЦИЯ 1: Если пользователь еще НЕ в штате -->
+            <!-- пользователь еще НЕ в штате -->
             <Border x:Name="NotEmployedPanel" Style="{StaticResource CardStyle}" Visibility="Collapsed" VerticalAlignment="Top">
                 <StackPanel>
                     <TextBlock Text="ВЫ ЕЩЕ НЕ ТРУДОУСТРОЕНЫ" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
@@ -79,15 +76,14 @@
                 </StackPanel>
             </Border>
 
-            <!-- СЕКЦИЯ 2: Если пользователь уже сотрудник -->
+            <!-- пользователь уже сотрудник -->
             <Grid x:Name="EmployedPanel" Visibility="Visible">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-
-                <!-- Инфо о работе -->
+                
                 <Border Grid.Row="0" Style="{StaticResource CardStyle}" Margin="0,0,0,15">
                     <Grid>
                         <StackPanel>
@@ -96,7 +92,6 @@
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                            <!-- Новая кнопка увольнения -->
                             <Button Content="УВОЛИТЬСЯ" Click="Resign_Click" 
                     Style="{StaticResource SecondaryButtonStyle}" 
                     Foreground="#E74C3C" BorderBrush="#E74C3C" 
@@ -111,7 +106,6 @@
                     </Grid>
                 </Border>
 
-                <!-- Список выплат -->
                 <Border Grid.Row="1" Style="{StaticResource CardStyle}">
                     <Grid>
                         <Grid.RowDefinitions>
@@ -138,7 +132,6 @@
                     </Grid>
                 </Border>
 
-                <!-- Выбор счета для зачисления -->
                 <Border Grid.Row="2" Style="{StaticResource CardStyle}" Margin="0,15,0,0" Padding="15,10">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="СЧЕТ ДЛЯ ЗАЧИСЛЕНИЯ:" VerticalAlignment="Center" Margin="0,0,15,0" 
