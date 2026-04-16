@@ -1,0 +1,16 @@
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Plugins.BasicShapes\obj\Debug\net8.0-windows\VectorEditor.Plugins.BasicShapes.csproj.AssemblyReference.cache
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Plugins.BasicShapes\obj\Debug\net8.0-windows\VectorEditor.Plugins.BasicShapes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Plugins.BasicShapes\obj\Debug\net8.0-windows\VectorEditor.Plugins.BasicShapes.AssemblyInfoInputs.cache
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Plugins.BasicShapes\obj\Debug\net8.0-windows\VectorEditor.Plugins.BasicShapes.AssemblyInfo.cs
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Plugins.BasicShapes\obj\Debug\net8.0-windows\VectorEditor.Plugins.BasicShapes.csproj.CoreCompileInputs.cache
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Plugins.BasicShapes\obj\Debug\net8.0-windows\VectorEditor.Plugins.BasicShapes.sourcelink.json
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Plugins.BasicShapes\bin\Debug\net8.0-windows\VectorEditor.Plugins.BasicShapes.deps.json
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Plugins.BasicShapes\bin\Debug\net8.0-windows\VectorEditor.Plugins.BasicShapes.dll
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Plugins.BasicShapes\bin\Debug\net8.0-windows\VectorEditor.Plugins.BasicShapes.pdb
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Plugins.BasicShapes\bin\Debug\net8.0-windows\VectorEditor.Core.dll
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Plugins.BasicShapes\bin\Debug\net8.0-windows\VectorEditor.Core.pdb
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Plugins.BasicShapes\obj\Debug\net8.0-windows\VectorEd.68E143CF.Up2Date
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Plugins.BasicShapes\obj\Debug\net8.0-windows\VectorEditor.Plugins.BasicShapes.dll
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Plugins.BasicShapes\obj\Debug\net8.0-windows\refint\VectorEditor.Plugins.BasicShapes.dll
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Plugins.BasicShapes\obj\Debug\net8.0-windows\VectorEditor.Plugins.BasicShapes.pdb
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Plugins.BasicShapes\obj\Debug\net8.0-windows\ref\VectorEditor.Plugins.BasicShapes.dll

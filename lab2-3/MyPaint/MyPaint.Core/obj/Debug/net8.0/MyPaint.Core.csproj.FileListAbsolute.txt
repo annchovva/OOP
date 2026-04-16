@@ -1,0 +1,5 @@
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\MyPaint\MyPaint.Core\obj\Debug\net8.0\MyPaint.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\MyPaint\MyPaint.Core\obj\Debug\net8.0\MyPaint.Core.AssemblyInfoInputs.cache
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\MyPaint\MyPaint.Core\obj\Debug\net8.0\MyPaint.Core.AssemblyInfo.cs
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\MyPaint\MyPaint.Core\obj\Debug\net8.0\MyPaint.Core.csproj.CoreCompileInputs.cache
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\MyPaint\MyPaint.Core\obj\Debug\net8.0\MyPaint.Core.sourcelink.json

@@ -1,0 +1,13 @@
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Core\obj\Debug\net8.0-windows\VectorEditor.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Core\obj\Debug\net8.0-windows\VectorEditor.Core.AssemblyInfoInputs.cache
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Core\obj\Debug\net8.0-windows\VectorEditor.Core.AssemblyInfo.cs
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Core\obj\Debug\net8.0-windows\VectorEditor.Core.csproj.CoreCompileInputs.cache
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Core\obj\Debug\net8.0-windows\VectorEditor.Core.sourcelink.json
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Core\bin\Debug\net8.0-windows\VectorEditor.Core.deps.json
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Core\bin\Debug\net8.0-windows\VectorEditor.Core.dll
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Core\bin\Debug\net8.0-windows\VectorEditor.Core.pdb
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Core\obj\Debug\net8.0-windows\VectorEditor.Core.dll
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Core\obj\Debug\net8.0-windows\refint\VectorEditor.Core.dll
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Core\obj\Debug\net8.0-windows\VectorEditor.Core.pdb
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Core\obj\Debug\net8.0-windows\ref\VectorEditor.Core.dll
+C:\Users\annch\Documents\4 СЕМЕСТР\ООП\lab2-3\VectorEditor\VectorEditor.Core\obj\Debug\net8.0-windows\VectorEditor.Core.csproj.AssemblyReference.cache

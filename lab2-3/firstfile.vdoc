@@ -1,0 +1,73 @@
+{
+  "$type": "VectorEditor.Core.EditorDocument, VectorEditor.Core",
+  "Layers": {
+    "$type": "System.Collections.ObjectModel.ObservableCollection`1[[VectorEditor.Core.Layer, VectorEditor.Core]], System.ObjectModel",
+    "$values": [
+      {
+        "$type": "VectorEditor.Core.Layer, VectorEditor.Core",
+        "Name": "Слой 1",
+        "IsVisible": true,
+        "Shapes": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[VectorEditor.Core.IShape, VectorEditor.Core]], System.ObjectModel",
+          "$values": [
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.RectangleShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "db5906d5-7350-4469-a6b0-866f9f387845",
+              "StrokeColor": "#FFFF00FF",
+              "FillColor": "#FFFFD700",
+              "StrokeThickness": 9.833333333333345,
+              "RotationAngle": 0.0,
+              "IsSelected": false,
+              "Point1": "160.5,166.54",
+              "Point2": "686,511.54"
+            },
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.RectangleShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "d9adffac-009b-43ef-a907-7435937287b3",
+              "StrokeColor": "#FFFF00FF",
+              "FillColor": "#FFFFD700",
+              "StrokeThickness": 9.833333333333345,
+              "RotationAngle": 0.0,
+              "IsSelected": false,
+              "Point1": "489,122.53999999999999",
+              "Point2": "849.5,383.04"
+            }
+          ]
+        }
+      },
+      {
+        "$type": "VectorEditor.Core.Layer, VectorEditor.Core",
+        "Name": "Слой 2",
+        "IsVisible": true,
+        "Shapes": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[VectorEditor.Core.IShape, VectorEditor.Core]], System.ObjectModel",
+          "$values": []
+        }
+      },
+      {
+        "$type": "VectorEditor.Core.Layer, VectorEditor.Core",
+        "Name": "Слой 3",
+        "IsVisible": true,
+        "Shapes": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[VectorEditor.Core.IShape, VectorEditor.Core]], System.ObjectModel",
+          "$values": [
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.TrapezoidShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "66d01f41-d2e8-48d2-a850-931aa29a6c60",
+              "StrokeColor": "#FF008000",
+              "FillColor": "#FFFFFFFF",
+              "StrokeThickness": 4.55555555555555,
+              "RotationAngle": 0.0,
+              "IsSelected": true,
+              "Point1": "230,79.03999999999999",
+              "Point2": "826.5,615.04"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "CurrentStrokeColor": "#FF008000",
+  "CurrentFillColor": "#FFFFFFFF",
+  "CurrentStrokeThickness": 4.55555555555555
+}
