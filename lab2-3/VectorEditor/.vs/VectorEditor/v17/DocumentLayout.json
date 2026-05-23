@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D43D1F25-E497-46F2-B92A-2F147CC9E920}|VectorEditor.Plugins.BasicShapes\\VectorEditor.Plugins.BasicShapes.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab2-3\\vectoreditor\\vectoreditor.plugins.basicshapes\\shapes\\polygonshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D43D1F25-E497-46F2-B92A-2F147CC9E920}|VectorEditor.Plugins.BasicShapes\\VectorEditor.Plugins.BasicShapes.csproj|solutionrelative:vectoreditor.plugins.basicshapes\\shapes\\polygonshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D43D1F25-E497-46F2-B92A-2F147CC9E920}|VectorEditor.Plugins.BasicShapes\\VectorEditor.Plugins.BasicShapes.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab2-3\\vectoreditor\\vectoreditor.plugins.basicshapes\\shapes\\ellipseshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D43D1F25-E497-46F2-B92A-2F147CC9E920}|VectorEditor.Plugins.BasicShapes\\VectorEditor.Plugins.BasicShapes.csproj|solutionrelative:vectoreditor.plugins.basicshapes\\shapes\\ellipseshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8692A2A8-D5A0-425A-9BF2-1E9FAA520A3B}|VectorEditor.Core\\VectorEditor.Core.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab2-3\\vectoreditor\\vectoreditor.core\\commands\\resizeshapecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8692A2A8-D5A0-425A-9BF2-1E9FAA520A3B}|VectorEditor.Core\\VectorEditor.Core.csproj|solutionrelative:vectoreditor.core\\commands\\resizeshapecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8692A2A8-D5A0-425A-9BF2-1E9FAA520A3B}|VectorEditor.Core\\VectorEditor.Core.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab2-3\\vectoreditor\\vectoreditor.core\\commands\\moveshapecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8692A2A8-D5A0-425A-9BF2-1E9FAA520A3B}|VectorEditor.Core\\VectorEditor.Core.csproj|solutionrelative:vectoreditor.core\\commands\\moveshapecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8692A2A8-D5A0-425A-9BF2-1E9FAA520A3B}|VectorEditor.Core\\VectorEditor.Core.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab2-3\\vectoreditor\\vectoreditor.core\\commands\\ieditorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8692A2A8-D5A0-425A-9BF2-1E9FAA520A3B}|VectorEditor.Core\\VectorEditor.Core.csproj|solutionrelative:vectoreditor.core\\commands\\ieditorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D43D1F25-E497-46F2-B92A-2F147CC9E920}|VectorEditor.Plugins.BasicShapes\\VectorEditor.Plugins.BasicShapes.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab2-3\\vectoreditor\\vectoreditor.plugins.basicshapes\\tools\\trapezoidtool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D43D1F25-E497-46F2-B92A-2F147CC9E920}|VectorEditor.Plugins.BasicShapes\\VectorEditor.Plugins.BasicShapes.csproj|solutionrelative:vectoreditor.plugins.basicshapes\\tools\\trapezoidtool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -55,10 +75,6 @@
       "RelativeMoniker": "D:0:0:{8692A2A8-D5A0-425A-9BF2-1E9FAA520A3B}|VectorEditor.Core\\VectorEditor.Core.csproj|solutionrelative:vectoreditor.core\\selectiontool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8692A2A8-D5A0-425A-9BF2-1E9FAA520A3B}|VectorEditor.Core\\VectorEditor.Core.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab2-3\\vectoreditor\\vectoreditor.core\\commands\\moveshapecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8692A2A8-D5A0-425A-9BF2-1E9FAA520A3B}|VectorEditor.Core\\VectorEditor.Core.csproj|solutionrelative:vectoreditor.core\\commands\\moveshapecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8692A2A8-D5A0-425A-9BF2-1E9FAA520A3B}|VectorEditor.Core\\VectorEditor.Core.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab2-3\\vectoreditor\\vectoreditor.core\\commands\\movelayercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8692A2A8-D5A0-425A-9BF2-1E9FAA520A3B}|VectorEditor.Core\\VectorEditor.Core.csproj|solutionrelative:vectoreditor.core\\commands\\movelayercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -71,10 +87,6 @@
       "RelativeMoniker": "D:0:0:{8692A2A8-D5A0-425A-9BF2-1E9FAA520A3B}|VectorEditor.Core\\VectorEditor.Core.csproj|solutionrelative:vectoreditor.core\\commands\\rotateshapecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8692A2A8-D5A0-425A-9BF2-1E9FAA520A3B}|VectorEditor.Core\\VectorEditor.Core.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab2-3\\vectoreditor\\vectoreditor.core\\commands\\resizeshapecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8692A2A8-D5A0-425A-9BF2-1E9FAA520A3B}|VectorEditor.Core\\VectorEditor.Core.csproj|solutionrelative:vectoreditor.core\\commands\\resizeshapecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8692A2A8-D5A0-425A-9BF2-1E9FAA520A3B}|VectorEditor.Core\\VectorEditor.Core.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab2-3\\vectoreditor\\vectoreditor.core\\commands\\moveshapesbyboundscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8692A2A8-D5A0-425A-9BF2-1E9FAA520A3B}|VectorEditor.Core\\VectorEditor.Core.csproj|solutionrelative:vectoreditor.core\\commands\\moveshapesbyboundscommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -83,16 +95,8 @@
       "RelativeMoniker": "D:0:0:{D43D1F25-E497-46F2-B92A-2F147CC9E920}|VectorEditor.Plugins.BasicShapes\\VectorEditor.Plugins.BasicShapes.csproj|solutionrelative:vectoreditor.plugins.basicshapes\\shapes\\polylineshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D43D1F25-E497-46F2-B92A-2F147CC9E920}|VectorEditor.Plugins.BasicShapes\\VectorEditor.Plugins.BasicShapes.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab2-3\\vectoreditor\\vectoreditor.plugins.basicshapes\\shapes\\polygonshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D43D1F25-E497-46F2-B92A-2F147CC9E920}|VectorEditor.Plugins.BasicShapes\\VectorEditor.Plugins.BasicShapes.csproj|solutionrelative:vectoreditor.plugins.basicshapes\\shapes\\polygonshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D43D1F25-E497-46F2-B92A-2F147CC9E920}|VectorEditor.Plugins.BasicShapes\\VectorEditor.Plugins.BasicShapes.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab2-3\\vectoreditor\\vectoreditor.plugins.basicshapes\\shapes\\lineshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D43D1F25-E497-46F2-B92A-2F147CC9E920}|VectorEditor.Plugins.BasicShapes\\VectorEditor.Plugins.BasicShapes.csproj|solutionrelative:vectoreditor.plugins.basicshapes\\shapes\\lineshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D43D1F25-E497-46F2-B92A-2F147CC9E920}|VectorEditor.Plugins.BasicShapes\\VectorEditor.Plugins.BasicShapes.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab2-3\\vectoreditor\\vectoreditor.plugins.basicshapes\\shapes\\ellipseshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D43D1F25-E497-46F2-B92A-2F147CC9E920}|VectorEditor.Plugins.BasicShapes\\VectorEditor.Plugins.BasicShapes.csproj|solutionrelative:vectoreditor.plugins.basicshapes\\shapes\\ellipseshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D43D1F25-E497-46F2-B92A-2F147CC9E920}|VectorEditor.Plugins.BasicShapes\\VectorEditor.Plugins.BasicShapes.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab2-3\\vectoreditor\\vectoreditor.plugins.basicshapes\\tools\\polylinetool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -131,10 +135,6 @@
       "RelativeMoniker": "D:0:0:{8692A2A8-D5A0-425A-9BF2-1E9FAA520A3B}|VectorEditor.Core\\VectorEditor.Core.csproj|solutionrelative:vectoreditor.core\\commands\\movetolayercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8692A2A8-D5A0-425A-9BF2-1E9FAA520A3B}|VectorEditor.Core\\VectorEditor.Core.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab2-3\\vectoreditor\\vectoreditor.core\\commands\\ieditorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8692A2A8-D5A0-425A-9BF2-1E9FAA520A3B}|VectorEditor.Core\\VectorEditor.Core.csproj|solutionrelative:vectoreditor.core\\commands\\ieditorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8692A2A8-D5A0-425A-9BF2-1E9FAA520A3B}|VectorEditor.Core\\VectorEditor.Core.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab2-3\\vectoreditor\\vectoreditor.core\\commands\\changepropertycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8692A2A8-D5A0-425A-9BF2-1E9FAA520A3B}|VectorEditor.Core\\VectorEditor.Core.csproj|solutionrelative:vectoreditor.core\\commands\\changepropertycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -170,89 +170,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TrapezoidShape.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\TrapezoidShape.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Shapes\\TrapezoidShape.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\TrapezoidShape.cs",
-              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Shapes\\TrapezoidShape.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAADwv4gAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T08:24:55.31Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "TrapezoidTool.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\TrapezoidTool.cs",
               "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Tools\\TrapezoidTool.cs",
               "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\TrapezoidTool.cs",
               "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Tools\\TrapezoidTool.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-16T08:25:31.169Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RectangleTool.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\RectangleTool.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Tools\\RectangleTool.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\RectangleTool.cs",
-              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Tools\\RectangleTool.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAowEgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T12:05:20.405Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RectangleShape.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\RectangleShape.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Shapes\\RectangleShape.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\RectangleShape.cs",
-              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Shapes\\RectangleShape.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAkwG8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T12:04:09.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BasicShapesPlugin.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\BasicShapesPlugin.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\BasicShapesPlugin.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\BasicShapesPlugin.cs",
-              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\BasicShapesPlugin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T11:12:58.973Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "VectorEditor.WPF.csproj",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.WPF\\VectorEditor.WPF.csproj",
-              "RelativeDocumentMoniker": "VectorEditor.WPF\\VectorEditor.WPF.csproj",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.WPF\\VectorEditor.WPF.csproj",
-              "RelativeToolTip": "VectorEditor.WPF\\VectorEditor.WPF.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-10T05:21:25.398Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "IShape.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\IShape.cs",
               "RelativeDocumentMoniker": "VectorEditor.Core\\IShape.cs",
@@ -260,336 +195,11 @@
               "RelativeToolTip": "VectorEditor.Core\\IShape.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T05:22:08.756Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T05:22:08.756Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RemoveLayerCommand.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\RemoveLayerCommand.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Core\\Commands\\RemoveLayerCommand.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\RemoveLayerCommand.cs",
-              "RelativeToolTip": "VectorEditor.Core\\Commands\\RemoveLayerCommand.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAkwDMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T19:19:04.057Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EditorDocument.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\EditorDocument.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Core\\EditorDocument.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\EditorDocument.cs",
-              "RelativeToolTip": "VectorEditor.Core\\EditorDocument.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAswGYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T07:33:04.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IPlugin.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\IPlugin.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Core\\IPlugin.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\IPlugin.cs",
-              "RelativeToolTip": "VectorEditor.Core\\IPlugin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T05:23:05.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ITool.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\ITool.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Core\\ITool.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\ITool.cs",
-              "RelativeToolTip": "VectorEditor.Core\\ITool.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T05:22:38.894Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Layer.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Layer.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Core\\Layer.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Layer.cs",
-              "RelativeToolTip": "VectorEditor.Core\\Layer.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAQwDIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T07:32:19.414Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "SelectionTool.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\SelectionTool.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Core\\SelectionTool.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\SelectionTool.cs",
-              "RelativeToolTip": "VectorEditor.Core\\SelectionTool.cs",
-              "ViewState": "AgIAAPcBAAAAAAAAAADwvysCAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:28:42.7Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MoveShapeCommand.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\MoveShapeCommand.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Core\\Commands\\MoveShapeCommand.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\MoveShapeCommand.cs",
-              "RelativeToolTip": "VectorEditor.Core\\Commands\\MoveShapeCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:25:06.398Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MoveLayerCommand.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\MoveLayerCommand.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Core\\Commands\\MoveLayerCommand.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\MoveLayerCommand.cs",
-              "RelativeToolTip": "VectorEditor.Core\\Commands\\MoveLayerCommand.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAswEsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T19:19:41.988Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CommandManager.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\CommandManager.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Core\\Commands\\CommandManager.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\CommandManager.cs",
-              "RelativeToolTip": "VectorEditor.Core\\Commands\\CommandManager.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCYAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T07:31:16.483Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "RotateShapeCommand.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\RotateShapeCommand.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Core\\Commands\\RotateShapeCommand.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\RotateShapeCommand.cs",
-              "RelativeToolTip": "VectorEditor.Core\\Commands\\RotateShapeCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:34:38.126Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ResizeShapeCommand.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\ResizeShapeCommand.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Core\\Commands\\ResizeShapeCommand.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\ResizeShapeCommand.cs",
-              "RelativeToolTip": "VectorEditor.Core\\Commands\\ResizeShapeCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T18:02:14.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "MoveShapesByBoundsCommand.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\MoveShapesByBoundsCommand.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Core\\Commands\\MoveShapesByBoundsCommand.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\MoveShapesByBoundsCommand.cs",
-              "RelativeToolTip": "VectorEditor.Core\\Commands\\MoveShapesByBoundsCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T19:52:12.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "PolylineShape.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\PolylineShape.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Shapes\\PolylineShape.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\PolylineShape.cs",
-              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Shapes\\PolylineShape.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAADwv4MAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:57:51.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "PolygonShape.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\PolygonShape.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Shapes\\PolygonShape.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\PolygonShape.cs",
-              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Shapes\\PolygonShape.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAADwv48AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T14:22:18.362Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "LineShape.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\LineShape.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Shapes\\LineShape.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\LineShape.cs",
-              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Shapes\\LineShape.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAA4wGsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T11:16:40.523Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "EllipseShape.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\EllipseShape.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Shapes\\EllipseShape.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\EllipseShape.cs",
-              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Shapes\\EllipseShape.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAADwv2sAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:26:24.476Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "PolylineTool.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\PolylineTool.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Tools\\PolylineTool.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\PolylineTool.cs",
-              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Tools\\PolylineTool.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAowFoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T14:23:13.019Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "PolygonTool.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\PolygonTool.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Tools\\PolygonTool.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\PolygonTool.cs",
-              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Tools\\PolygonTool.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAwwGsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T14:28:53.142Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "LineTool.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\LineTool.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Tools\\LineTool.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\LineTool.cs",
-              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Tools\\LineTool.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAkwEIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T11:16:42.082Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "EllipsTool.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\EllipsTool.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Tools\\EllipsTool.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\EllipsTool.cs",
-              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Tools\\EllipsTool.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAswFEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:42:55.78Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "EditorCanvas.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.WPF\\EditorCanvas.cs",
-              "RelativeDocumentMoniker": "VectorEditor.WPF\\EditorCanvas.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.WPF\\EditorCanvas.cs",
-              "RelativeToolTip": "VectorEditor.WPF\\EditorCanvas.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAmwFoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T11:02:10.828Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.WPF\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "VectorEditor.WPF\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.WPF\\MainWindow.xaml.cs",
-              "RelativeToolTip": "VectorEditor.WPF\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAE0CAAAAAAAAAAAkwH4CAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T05:21:03.383Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.WPF\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "VectorEditor.WPF\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.WPF\\MainWindow.xaml",
-              "RelativeToolTip": "VectorEditor.WPF\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-10T05:21:03.647Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "RemoveShapeCommand.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\RemoveShapeCommand.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Core\\Commands\\RemoveShapeCommand.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\RemoveShapeCommand.cs",
-              "RelativeToolTip": "VectorEditor.Core\\Commands\\RemoveShapeCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:33:58.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "MoveToLayerCommand.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\MoveToLayerCommand.cs",
-              "RelativeDocumentMoniker": "VectorEditor.Core\\Commands\\MoveToLayerCommand.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\MoveToLayerCommand.cs",
-              "RelativeToolTip": "VectorEditor.Core\\Commands\\MoveToLayerCommand.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAkwDMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T14:25:28.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 4,
               "Title": "IEditorCommand.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\IEditorCommand.cs",
               "RelativeDocumentMoniker": "VectorEditor.Core\\Commands\\IEditorCommand.cs",
@@ -602,6 +212,369 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MoveShapeCommand.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\MoveShapeCommand.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Core\\Commands\\MoveShapeCommand.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\MoveShapeCommand.cs",
+              "RelativeToolTip": "VectorEditor.Core\\Commands\\MoveShapeCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T11:25:06.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ResizeShapeCommand.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\ResizeShapeCommand.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Core\\Commands\\ResizeShapeCommand.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\ResizeShapeCommand.cs",
+              "RelativeToolTip": "VectorEditor.Core\\Commands\\ResizeShapeCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T18:02:14.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EllipseShape.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\EllipseShape.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Shapes\\EllipseShape.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\EllipseShape.cs",
+              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Shapes\\EllipseShape.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAADwv2sAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T11:26:24.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PolygonShape.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\PolygonShape.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Shapes\\PolygonShape.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\PolygonShape.cs",
+              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Shapes\\PolygonShape.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAAAI8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T14:22:18.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "VectorEditor.WPF.csproj",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.WPF\\VectorEditor.WPF.csproj",
+              "RelativeDocumentMoniker": "VectorEditor.WPF\\VectorEditor.WPF.csproj",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.WPF\\VectorEditor.WPF.csproj",
+              "RelativeToolTip": "VectorEditor.WPF\\VectorEditor.WPF.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-10T05:21:25.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BasicShapesPlugin.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\BasicShapesPlugin.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\BasicShapesPlugin.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\BasicShapesPlugin.cs",
+              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\BasicShapesPlugin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T11:12:58.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RectangleShape.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\RectangleShape.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Shapes\\RectangleShape.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\RectangleShape.cs",
+              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Shapes\\RectangleShape.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAkwG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T12:04:09.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RectangleTool.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\RectangleTool.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Tools\\RectangleTool.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\RectangleTool.cs",
+              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Tools\\RectangleTool.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAowEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T12:05:20.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TrapezoidShape.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\TrapezoidShape.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Shapes\\TrapezoidShape.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\TrapezoidShape.cs",
+              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Shapes\\TrapezoidShape.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAADwv4gAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T08:24:55.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RemoveLayerCommand.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\RemoveLayerCommand.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Core\\Commands\\RemoveLayerCommand.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\RemoveLayerCommand.cs",
+              "RelativeToolTip": "VectorEditor.Core\\Commands\\RemoveLayerCommand.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:19:04.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EditorDocument.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\EditorDocument.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Core\\EditorDocument.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\EditorDocument.cs",
+              "RelativeToolTip": "VectorEditor.Core\\EditorDocument.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAswGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T07:33:04.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IPlugin.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\IPlugin.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Core\\IPlugin.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\IPlugin.cs",
+              "RelativeToolTip": "VectorEditor.Core\\IPlugin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:23:05.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ITool.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\ITool.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Core\\ITool.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\ITool.cs",
+              "RelativeToolTip": "VectorEditor.Core\\ITool.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:22:38.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Layer.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Layer.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Core\\Layer.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Layer.cs",
+              "RelativeToolTip": "VectorEditor.Core\\Layer.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T07:32:19.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SelectionTool.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\SelectionTool.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Core\\SelectionTool.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\SelectionTool.cs",
+              "RelativeToolTip": "VectorEditor.Core\\SelectionTool.cs",
+              "ViewState": "AgIAAPcBAAAAAAAAAADwvysCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T11:28:42.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MoveLayerCommand.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\MoveLayerCommand.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Core\\Commands\\MoveLayerCommand.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\MoveLayerCommand.cs",
+              "RelativeToolTip": "VectorEditor.Core\\Commands\\MoveLayerCommand.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAswEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:19:41.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CommandManager.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\CommandManager.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Core\\Commands\\CommandManager.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\CommandManager.cs",
+              "RelativeToolTip": "VectorEditor.Core\\Commands\\CommandManager.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T07:31:16.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RotateShapeCommand.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\RotateShapeCommand.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Core\\Commands\\RotateShapeCommand.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\RotateShapeCommand.cs",
+              "RelativeToolTip": "VectorEditor.Core\\Commands\\RotateShapeCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T11:34:38.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MoveShapesByBoundsCommand.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\MoveShapesByBoundsCommand.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Core\\Commands\\MoveShapesByBoundsCommand.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\MoveShapesByBoundsCommand.cs",
+              "RelativeToolTip": "VectorEditor.Core\\Commands\\MoveShapesByBoundsCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:52:12.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PolylineShape.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\PolylineShape.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Shapes\\PolylineShape.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\PolylineShape.cs",
+              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Shapes\\PolylineShape.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAADwv4MAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T11:57:51.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LineShape.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\LineShape.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Shapes\\LineShape.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Shapes\\LineShape.cs",
+              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Shapes\\LineShape.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAA4wGsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T11:16:40.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PolylineTool.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\PolylineTool.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Tools\\PolylineTool.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\PolylineTool.cs",
+              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Tools\\PolylineTool.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAowFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T14:23:13.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PolygonTool.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\PolygonTool.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Tools\\PolygonTool.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\PolygonTool.cs",
+              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Tools\\PolygonTool.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAwwGsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T14:28:53.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "LineTool.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\LineTool.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Tools\\LineTool.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\LineTool.cs",
+              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Tools\\LineTool.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAkwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T11:16:42.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "EllipsTool.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\EllipsTool.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Tools\\EllipsTool.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\EllipsTool.cs",
+              "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Tools\\EllipsTool.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAswFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T11:42:55.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "EditorCanvas.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.WPF\\EditorCanvas.cs",
+              "RelativeDocumentMoniker": "VectorEditor.WPF\\EditorCanvas.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.WPF\\EditorCanvas.cs",
+              "RelativeToolTip": "VectorEditor.WPF\\EditorCanvas.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAmwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T11:02:10.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.WPF\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "VectorEditor.WPF\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.WPF\\MainWindow.xaml.cs",
+              "RelativeToolTip": "VectorEditor.WPF\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAE0CAAAAAAAAAAAkwH4CAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T05:21:03.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.WPF\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "VectorEditor.WPF\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.WPF\\MainWindow.xaml",
+              "RelativeToolTip": "VectorEditor.WPF\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-10T05:21:03.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "RemoveShapeCommand.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\RemoveShapeCommand.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Core\\Commands\\RemoveShapeCommand.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\RemoveShapeCommand.cs",
+              "RelativeToolTip": "VectorEditor.Core\\Commands\\RemoveShapeCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T11:33:58.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "MoveToLayerCommand.cs",
+              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\MoveToLayerCommand.cs",
+              "RelativeDocumentMoniker": "VectorEditor.Core\\Commands\\MoveToLayerCommand.cs",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\MoveToLayerCommand.cs",
+              "RelativeToolTip": "VectorEditor.Core\\Commands\\MoveToLayerCommand.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T14:25:28.479Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 33,
               "Title": "ChangePropertyCommand.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Core\\Commands\\ChangePropertyCommand.cs",
@@ -610,8 +583,7 @@
               "RelativeToolTip": "VectorEditor.Core\\Commands\\ChangePropertyCommand.cs",
               "ViewState": "AgIAAEwAAAAAAAAAAAAswH8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:25:25.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T11:25:25.327Z"
             },
             {
               "$type": "Document",
@@ -623,8 +595,7 @@
               "RelativeToolTip": "VectorEditor.Core\\Commands\\AddShapeCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T11:06:49.333Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T11:06:49.333Z"
             },
             {
               "$type": "Document",
@@ -636,8 +607,7 @@
               "RelativeToolTip": "VectorEditor.Core\\Commands\\AddLayerCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T19:18:40.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T19:18:40.114Z"
             },
             {
               "$type": "Document",
@@ -649,8 +619,7 @@
               "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\VectorEditor.Plugins.BasicShapes.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-10T11:12:33.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T11:12:33.779Z"
             },
             {
               "$type": "Document",
@@ -662,8 +631,7 @@
               "RelativeToolTip": "VectorEditor.Core\\VectorEditor.Core.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-10T05:20:01.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T05:20:01.237Z"
             },
             {
               "$type": "Document",
@@ -686,8 +654,7 @@
               "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.WPF\\App.xaml",
               "RelativeToolTip": "VectorEditor.WPF\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-14T08:39:17.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T08:39:17.295Z"
             }
           ]
         }

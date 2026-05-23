@@ -1,0 +1,355 @@
+{
+  "$type": "VectorEditor.Core.EditorDocument, VectorEditor.Core",
+  "Layers": {
+    "$type": "System.Collections.ObjectModel.ObservableCollection`1[[VectorEditor.Core.Layer, VectorEditor.Core]], System.ObjectModel",
+    "$values": [
+      {
+        "$type": "VectorEditor.Core.Layer, VectorEditor.Core",
+        "Name": "Слой 1",
+        "IsVisible": true,
+        "Shapes": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[VectorEditor.Core.IShape, VectorEditor.Core]], System.ObjectModel",
+          "$values": [
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.PolylineShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "1110db5d-aaa2-4b8c-81f5-b5ce3190420b",
+              "StrokeColor": "#FF32CD32",
+              "FillColor": "#FFFFA500",
+              "StrokeThickness": 5.88888888888888,
+              "RotationAngle": 0.0,
+              "IsSelected": false,
+              "Points": {
+                "$type": "System.Collections.Generic.List`1[[System.Windows.Point, WindowsBase]], System.Private.CoreLib",
+                "$values": [
+                  "827.5,139.04",
+                  "949.5,210.04",
+                  "733,322.04",
+                  "912.5,388.54",
+                  "800.5,506.53999999999996"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "$type": "VectorEditor.Core.Layer, VectorEditor.Core",
+        "Name": "Слой 2",
+        "IsVisible": true,
+        "Shapes": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[VectorEditor.Core.IShape, VectorEditor.Core]], System.ObjectModel",
+          "$values": [
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.RectangleShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "a7f34141-5b31-40ed-a17f-b7121ad24176",
+              "StrokeColor": "#FFFF00FF",
+              "FillColor": "#FFFFA500",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 30.5263157894737,
+              "IsSelected": false,
+              "Point1": "292,317.54",
+              "Point2": "305.5,410.04"
+            },
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.PolygonShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "5f5bdc40-5a2b-4daf-888c-87e761e7b2e9",
+              "StrokeColor": "#FF0000CD",
+              "FillColor": "#FF00BFFF",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 0.0,
+              "IsSelected": false,
+              "Points": {
+                "$type": "System.Collections.Generic.List`1[[System.Windows.Point, WindowsBase]], System.Private.CoreLib",
+                "$values": [
+                  "549,502.03999999999996",
+                  "585.5,462.0400000000001",
+                  "589,536.54"
+                ]
+              }
+            },
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.PolygonShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "7fb038f4-b99b-493a-965f-cd93d98576e7",
+              "StrokeColor": "#FFFF00FF",
+              "FillColor": "#FFFFA500",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 0.0,
+              "IsSelected": false,
+              "Points": {
+                "$type": "System.Collections.Generic.List`1[[System.Windows.Point, WindowsBase]], System.Private.CoreLib",
+                "$values": [
+                  "151,165.54",
+                  "189.5,125.03999999999999",
+                  "142,82.03999999999999",
+                  "142,82.03999999999999"
+                ]
+              }
+            },
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.EllipseShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "2f92aaa2-68b8-46c9-9757-bce31f9f8896",
+              "Center": "191.5,180.54",
+              "RadiusX": 6.0,
+              "RadiusY": 6.5,
+              "StrokeColor": "#FFFF00FF",
+              "FillColor": "#FFFFA500",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 0.0,
+              "IsSelected": false
+            }
+          ]
+        }
+      },
+      {
+        "$type": "VectorEditor.Core.Layer, VectorEditor.Core",
+        "Name": "Слой 1",
+        "IsVisible": true,
+        "Shapes": {
+          "$type": "System.Collections.ObjectModel.ObservableCollection`1[[VectorEditor.Core.IShape, VectorEditor.Core]], System.ObjectModel",
+          "$values": [
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.EllipseShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "86ea6d82-896e-4fe4-89f9-76c1d4ff95d7",
+              "Center": "226,195.79000000000002",
+              "RadiusX": 81.5,
+              "RadiusY": 74.75000000000001,
+              "StrokeColor": "#FFFF00FF",
+              "FillColor": "#FFFFA500",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 0.0,
+              "IsSelected": false
+            },
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.TrapezoidShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "e0b08540-c41b-40fc-945e-fca0d07110a7",
+              "StrokeColor": "#FF800080",
+              "FillColor": "#FFFFC0CB",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 0.0,
+              "IsSelected": false,
+              "Point1": "167.5,269.54",
+              "Point2": "284.5,454.54"
+            },
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.EllipseShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "613f6462-f1ec-4630-961c-dee1f3efefbd",
+              "Center": "201.25,473.79",
+              "RadiusX": 18.75,
+              "RadiusY": 18.25,
+              "StrokeColor": "#FFFF00FF",
+              "FillColor": "#FFFFA500",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 0.0,
+              "IsSelected": false
+            },
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.EllipseShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "5841edab-f231-4877-85f8-d3a466dcda78",
+              "Center": "606.25,447.54",
+              "RadiusX": 16.75,
+              "RadiusY": 18.0,
+              "StrokeColor": "#FF0000CD",
+              "FillColor": "#FFFFFFFF",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 0.0,
+              "IsSelected": false
+            },
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.EllipseShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "f90eb86f-2f71-4354-a384-055426bacb8a",
+              "Center": "195.5,171.54",
+              "RadiusX": 4.5,
+              "RadiusY": 8.0,
+              "StrokeColor": "#FF000000",
+              "FillColor": "#FF000000",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 0.0,
+              "IsSelected": false
+            },
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.EllipseShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "40e578d1-5ae8-4bda-a287-96dc70ff3cc9",
+              "Center": "251,170.04",
+              "RadiusX": 4.0,
+              "RadiusY": 7.5,
+              "StrokeColor": "#FF000000",
+              "FillColor": "#FF000000",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 0.0,
+              "IsSelected": false
+            },
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.PolygonShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "a9606b2e-aec1-43ec-a089-56530d7bb99b",
+              "StrokeColor": "#FFA52A2A",
+              "FillColor": "#FFFFC0CB",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 0.0,
+              "IsSelected": false,
+              "Points": {
+                "$type": "System.Collections.Generic.List`1[[System.Windows.Point, WindowsBase]], System.Private.CoreLib",
+                "$values": [
+                  "213.5,187.54",
+                  "233,188.54",
+                  "222.5,201.54"
+                ]
+              }
+            },
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.PolylineShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "a8193c29-3bc6-4ebd-a4f1-8db3bf1ce618",
+              "StrokeColor": "#FFA52A2A",
+              "FillColor": "#00FFFFFF",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 0.0,
+              "IsSelected": false,
+              "Points": {
+                "$type": "System.Collections.Generic.List`1[[System.Windows.Point, WindowsBase]], System.Private.CoreLib",
+                "$values": [
+                  "224,202.04",
+                  "212.5,215.04",
+                  "197,216.04",
+                  "188,207.04"
+                ]
+              }
+            },
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.PolylineShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "7c411c1e-8cee-4273-b0ee-19421044b6b9",
+              "StrokeColor": "#FFA52A2A",
+              "FillColor": "#00FFFFFF",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 0.0,
+              "IsSelected": false,
+              "Points": {
+                "$type": "System.Collections.Generic.List`1[[System.Windows.Point, WindowsBase]], System.Private.CoreLib",
+                "$values": [
+                  "222.5,203.54",
+                  "232.5,218.04",
+                  "249.5,216.54",
+                  "253,208.04"
+                ]
+              }
+            },
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.LineShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "65ba761b-c6e8-4d48-bc9c-712e4b22508a",
+              "StartPoint": "279.5,186.04",
+              "EndPoint": "342,166.04",
+              "StrokeColor": "#FFA52A2A",
+              "FillColor": "#00FFFFFF",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 0.0,
+              "IsSelected": false
+            },
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.LineShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "9539ed3a-65d9-4305-bf48-0b6cabc075a3",
+              "StartPoint": "271,200.54",
+              "EndPoint": "357,212.04",
+              "StrokeColor": "#FFA52A2A",
+              "FillColor": "#00FFFFFF",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 0.0,
+              "IsSelected": false
+            },
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.LineShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "cc4ec3e3-fdfc-474e-93c5-5dab43bb5aaa",
+              "StartPoint": "271,212.54",
+              "EndPoint": "338,258.54",
+              "StrokeColor": "#FFA52A2A",
+              "FillColor": "#00FFFFFF",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 0.0,
+              "IsSelected": false
+            },
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.LineShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "4a5e7a0f-34a4-4c6f-be8e-7261bc0f8c0f",
+              "StartPoint": "166.5,186.54",
+              "EndPoint": "77.5,174.54",
+              "StrokeColor": "#FFA52A2A",
+              "FillColor": "#00FFFFFF",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 0.0,
+              "IsSelected": false
+            },
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.LineShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "dcb63699-080b-4512-ac80-4330a925afc8",
+              "StartPoint": "161.5,199.04",
+              "EndPoint": "90,209.04",
+              "StrokeColor": "#FFA52A2A",
+              "FillColor": "#00FFFFFF",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 0.0,
+              "IsSelected": false
+            },
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.LineShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "c3f53b5f-522c-47bc-8826-b80a39885826",
+              "StartPoint": "164.5,217.04",
+              "EndPoint": "110,250.04",
+              "StrokeColor": "#FFA52A2A",
+              "FillColor": "#00FFFFFF",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 0.0,
+              "IsSelected": false
+            },
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.EllipseShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "12323e5a-e69b-403f-bc19-6222217dacc6",
+              "Center": "168.5,310.79",
+              "RadiusX": 20.5,
+              "RadiusY": 18.25,
+              "StrokeColor": "#FFFF00FF",
+              "FillColor": "#FFFFA500",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 0.0,
+              "IsSelected": false
+            },
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.EllipseShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "de2df776-2a62-463f-8f61-c9a92d3b537d",
+              "Center": "269.5,313.54",
+              "RadiusX": 19.0,
+              "RadiusY": 17.0,
+              "StrokeColor": "#FFFF00FF",
+              "FillColor": "#FFFFA500",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 0.0,
+              "IsSelected": false
+            },
+            {
+              "$type": "VectorEditor.Plugins.BasicShapes.Shapes.PolylineShape, VectorEditor.Plugins.BasicShapes",
+              "Id": "fd0ffc3b-c0e1-49c0-8f46-f83686b28c7a",
+              "StrokeColor": "#FFFF0000",
+              "FillColor": "#00FFFFFF",
+              "StrokeThickness": 2.0,
+              "RotationAngle": 0.0,
+              "IsSelected": false,
+              "Points": {
+                "$type": "System.Collections.Generic.List`1[[System.Windows.Point, WindowsBase]], System.Private.CoreLib",
+                "$values": [
+                  "226.5,348.54",
+                  "233.5,334.54",
+                  "254,336.54",
+                  "259,345.04",
+                  "226.5,376.54",
+                  "194,345.04",
+                  "200.5,334.04",
+                  "218.5,333.54",
+                  "226,343.54"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "CurrentStrokeColor": "#FF808080",
+  "CurrentFillColor": "#FF00BFFF",
+  "CurrentStrokeThickness": 5.88888888888888
+}

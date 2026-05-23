@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyPaint.WPF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4c151cd886f555f51daca6491c2c4d8bc3861ef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c65cd27db8109f498dba81138e313e5c4eb74d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyPaint.WPF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyPaint.WPF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

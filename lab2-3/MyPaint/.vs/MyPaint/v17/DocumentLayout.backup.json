@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{87E5376D-1B03-4AF4-9B28-57AD0D437D7B}|MyPaint.WPF\\MyPaint.WPF.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab2-3\\mypaint\\mypaint.wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87E5376D-1B03-4AF4-9B28-57AD0D437D7B}|MyPaint.WPF\\MyPaint.WPF.csproj|solutionrelative:mypaint.wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{87E5376D-1B03-4AF4-9B28-57AD0D437D7B}|MyPaint.WPF\\MyPaint.WPF.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab2-3\\mypaint\\mypaint.wpf\\mypaint.wpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{87E5376D-1B03-4AF4-9B28-57AD0D437D7B}|MyPaint.WPF\\MyPaint.WPF.csproj|solutionrelative:mypaint.wpf\\mypaint.wpf.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87E5376D-1B03-4AF4-9B28-57AD0D437D7B}|MyPaint.WPF\\MyPaint.WPF.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab2-3\\mypaint\\mypaint.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{87E5376D-1B03-4AF4-9B28-57AD0D437D7B}|MyPaint.WPF\\MyPaint.WPF.csproj|solutionrelative:mypaint.wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{87E5376D-1B03-4AF4-9B28-57AD0D437D7B}|MyPaint.WPF\\MyPaint.WPF.csproj|c:\\users\\annch\\documents\\4 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043E\u043E\u043F\\lab2-3\\mypaint\\mypaint.wpf\\\u0441ore\\editordocuments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -262,24 +254,11 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MyPaint.WPF\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "MyPaint.WPF\\MainWindow.xaml.cs*",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAowJEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T12:36:07.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "MyPaint.WPF.csproj",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\MyPaint.WPF.csproj",
               "RelativeDocumentMoniker": "MyPaint.WPF\\MyPaint.WPF.csproj",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\MyPaint.WPF.csproj*",
-              "RelativeToolTip": "MyPaint.WPF\\MyPaint.WPF.csproj*",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\MyPaint.WPF.csproj",
+              "RelativeToolTip": "MyPaint.WPF\\MyPaint.WPF.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-04-15T12:50:28.622Z",
@@ -287,19 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MyPaint.WPF\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\MainWindow.xaml*",
-              "RelativeToolTip": "MyPaint.WPF\\MainWindow.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-15T12:36:08.27Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "EditorDocuments.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\EditorDocuments.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\EditorDocuments.cs",
@@ -312,12 +279,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "DrawingStyle.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\Models\\DrawingStyle.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\Models\\DrawingStyle.cs",
-              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\Models\\DrawingStyle.cs*",
-              "RelativeToolTip": "MyPaint.WPF\\Models\\DrawingStyle.cs*",
+              "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\Models\\DrawingStyle.cs",
+              "RelativeToolTip": "MyPaint.WPF\\Models\\DrawingStyle.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-15T16:25:48.216Z",
@@ -325,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "DrawingSurface.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\DrawingSurface.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\DrawingSurface.cs",
@@ -338,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "LineTool.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\Tools\\LineTool.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\Tools\\LineTool.cs",
@@ -351,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "EllipseTool.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\Tools\\EllipseTool.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\Tools\\EllipseTool.cs",
@@ -364,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "RectangleTool.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\Tools\\RectangleTool.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\Tools\\RectangleTool.cs",
@@ -377,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "IShapeTool.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\Tools\\IShapeTool.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\Tools\\IShapeTool.cs",
@@ -390,7 +357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "LineFigure.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\Figures\\LineFigure.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\Figures\\LineFigure.cs",
@@ -403,7 +370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "EllipseFigure.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\Figures\\EllipseFigure.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\Figures\\EllipseFigure.cs",
@@ -416,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "RectangleFigure.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\Figures\\RectangleFigure.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\Figures\\RectangleFigure.cs",
@@ -429,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "ToolContext.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\Tools\\ToolContext.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\Tools\\ToolContext.cs",
@@ -442,7 +409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 15,
               "Title": "PolylineTool.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\Tools\\PolylineTool.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\Tools\\PolylineTool.cs",
@@ -455,7 +422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "SelectionState.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\SelectionState.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\SelectionState.cs",
@@ -468,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "IFigure.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\Models\\IFigure.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\Models\\IFigure.cs",
@@ -481,7 +448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "FigureBase.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\Models\\FigureBase.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\Models\\FigureBase.cs",
@@ -494,7 +461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 16,
               "Title": "PolygonTool.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\Tools\\PolygonTool.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\Tools\\PolygonTool.cs",
@@ -507,7 +474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 17,
               "Title": "LayerDto.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\Serialization\\LayerDto.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\Serialization\\LayerDto.cs",
@@ -520,7 +487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 18,
               "Title": "JsonDocumentSerializer.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\Serialization\\JsonDocumentSerializer.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\Serialization\\JsonDocumentSerializer.cs",
@@ -533,7 +500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 19,
               "Title": "FigureDto.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\Serialization\\FigureDto.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\Serialization\\FigureDto.cs",
@@ -546,7 +513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 20,
               "Title": "DocumentDto.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\Serialization\\DocumentDto.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\Serialization\\DocumentDto.cs",
@@ -559,7 +526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 21,
               "Title": "PluginLoader.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\Plugins\\PluginLoader.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\Plugins\\PluginLoader.cs",
@@ -572,7 +539,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 22,
               "Title": "IFigurePlugin.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\Plugins\\IFigurePlugin.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\Plugins\\IFigurePlugin.cs",
@@ -585,7 +552,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 23,
               "Title": "FigureRegistry.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\Plugins\\FigureRegistry.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\Plugins\\FigureRegistry.cs",
@@ -598,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 24,
               "Title": "CommandManager.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\History\\CommandManager.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\History\\CommandManager.cs",
@@ -611,7 +578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 25,
               "Title": "MoveFiguresCommand.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\History\\Commands\\MoveFiguresCommand.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\History\\Commands\\MoveFiguresCommand.cs",
@@ -624,7 +591,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 26,
               "Title": "DeleteFigureCommand.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\History\\Commands\\DeleteFigureCommand.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\History\\Commands\\DeleteFigureCommand.cs",
@@ -637,7 +604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 27,
               "Title": "ChangeStyleCommand.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\History\\Commands\\ChangeStyleCommand.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\History\\Commands\\ChangeStyleCommand.cs",
@@ -650,7 +617,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 28,
               "Title": "AddFigureCommand.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\History\\Commands\\AddFigureCommand.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\History\\Commands\\AddFigureCommand.cs",
@@ -663,7 +630,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 29,
               "Title": "SelectionState.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\Models\\SelectionState.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\Models\\SelectionState.cs",
@@ -676,7 +643,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 30,
               "Title": "Layer.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\Models\\Layer.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\Models\\Layer.cs",
@@ -689,7 +656,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 31,
               "Title": "IFigureFactory.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\Models\\IFigureFactory.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\Models\\IFigureFactory.cs",
@@ -702,7 +669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 32,
               "Title": "FigureDto.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\Models\\FigureDto.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\Models\\FigureDto.cs",
@@ -715,7 +682,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 33,
               "Title": "PointFEx.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\Models\\Geometry\\PointFEx.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\Models\\Geometry\\PointFEx.cs",
@@ -728,7 +695,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 34,
               "Title": "HistoryManager.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\History\\HistoryManager.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\History\\HistoryManager.cs",
@@ -741,7 +708,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 35,
               "Title": "IUndoableCommand.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\History\\IUndoableCommand.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\History\\IUndoableCommand.cs",
@@ -754,7 +721,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 36,
               "Title": "PolygonFigure.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\Figures\\PolygonFigure.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\Figures\\PolygonFigure.cs",
@@ -767,7 +734,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 37,
               "Title": "PolylineFigure.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\Figures\\PolylineFigure.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\Figures\\PolylineFigure.cs",
@@ -780,7 +747,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 38,
               "Title": "LayerCommands.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\History\\Commands\\LayerCommands.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\History\\Commands\\LayerCommands.cs",
@@ -793,7 +760,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 39,
               "Title": "MoveFigureToLayerCommand.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\History\\Commands\\MoveFigureToLayerCommand.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\History\\Commands\\MoveFigureToLayerCommand.cs",
@@ -806,7 +773,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 40,
               "Title": "RotateFiguresCommand.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\History\\Commands\\RotateFiguresCommand.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\History\\Commands\\RotateFiguresCommand.cs",
@@ -819,7 +786,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 41,
               "Title": "ResizeFiguresCommand.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\\u0421ore\\History\\Commands\\ResizeFiguresCommand.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\\u0421ore\\History\\Commands\\ResizeFiguresCommand.cs",
@@ -832,7 +799,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 44,
               "Title": "Square.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\a665e548-641d-4fdd-9d74-a69224d5efb4_Paint.rar.fb4\\Paint\\MyPaint\\Plugins\\Square.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\a665e548-641d-4fdd-9d74-a69224d5efb4_Paint.rar.fb4\\Paint\\MyPaint\\Plugins\\Square.cs",
@@ -845,7 +812,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 43,
               "Title": "Triangle.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\c46e3adc-1998-4b00-bba6-4a920511fe27_Paint.rar.e27\\Paint\\MyPaint\\Plugins\\Triangle.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\c46e3adc-1998-4b00-bba6-4a920511fe27_Paint.rar.e27\\Paint\\MyPaint\\Plugins\\Triangle.cs",
@@ -858,7 +825,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 42,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\c5dfdfd7-f59b-4af4-8df8-16d90ee0961f_Paint.rar.61f\\Paint\\MyPaint\\WpfPaint\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\c5dfdfd7-f59b-4af4-8df8-16d90ee0961f_Paint.rar.61f\\Paint\\MyPaint\\WpfPaint\\MainWindow.xaml.cs",
@@ -871,7 +838,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 45,
               "Title": "Rectangle.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\27862a90-2e8b-4858-8831-553311a9490b_Paint.rar.90b\\Paint\\MyPaint\\Plugins\\Rectangle.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\27862a90-2e8b-4858-8831-553311a9490b_Paint.rar.90b\\Paint\\MyPaint\\Plugins\\Rectangle.cs",
@@ -884,7 +851,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 46,
               "Title": "Line.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\48abf4cb-1cbc-44e3-83ee-c6a2946365cf_Paint.rar.5cf\\Paint\\MyPaint\\Plugins\\Line.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\48abf4cb-1cbc-44e3-83ee-c6a2946365cf_Paint.rar.5cf\\Paint\\MyPaint\\Plugins\\Line.cs",
@@ -897,7 +864,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 47,
               "Title": "Heart.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\9c4addea-3867-4ca7-aafd-748ee2bb0e08_Paint.rar.e08\\Paint\\MyPaint\\Plugins\\Heart.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\9c4addea-3867-4ca7-aafd-748ee2bb0e08_Paint.rar.e08\\Paint\\MyPaint\\Plugins\\Heart.cs",
@@ -910,7 +877,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 48,
               "Title": "Ellipse.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\53ee6a6c-6b7f-4615-a978-61af9b5e9d8c_Paint.rar.d8c\\Paint\\MyPaint\\Plugins\\Ellipse.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\53ee6a6c-6b7f-4615-a978-61af9b5e9d8c_Paint.rar.d8c\\Paint\\MyPaint\\Plugins\\Ellipse.cs",
@@ -923,7 +890,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 49,
               "Title": "IFigure.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\58cb62f8-8295-4e28-91cd-3d605c9f664b_Paint.rar.64b\\Paint\\MyPaint\\Contracts\\IFigure.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\58cb62f8-8295-4e28-91cd-3d605c9f664b_Paint.rar.64b\\Paint\\MyPaint\\Contracts\\IFigure.cs",
@@ -936,7 +903,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 50,
               "Title": "Action.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\8cc338fd-6704-4b8b-87ce-cfde18e31461_Paint.rar.461\\Paint\\MyPaint\\WpfPaint\\Entities\\Action.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\8cc338fd-6704-4b8b-87ce-cfde18e31461_Paint.rar.461\\Paint\\MyPaint\\WpfPaint\\Entities\\Action.cs",
@@ -949,7 +916,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 51,
               "Title": "Layer.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\c11c8d50-f0a9-4218-9ad9-432f4a524adc_Paint.rar.adc\\Paint\\MyPaint\\WpfPaint\\Entities\\Layer.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\c11c8d50-f0a9-4218-9ad9-432f4a524adc_Paint.rar.adc\\Paint\\MyPaint\\WpfPaint\\Entities\\Layer.cs",
@@ -962,7 +929,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 52,
               "Title": "Layer.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\833883c4-bee6-4a2a-b2b3-192ff7f7b699_Paint.rar.699\\Paint\\MyPaint\\WpfPaint\\Entities\\Layer.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\833883c4-bee6-4a2a-b2b3-192ff7f7b699_Paint.rar.699\\Paint\\MyPaint\\WpfPaint\\Entities\\Layer.cs",
@@ -975,7 +942,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 53,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\2f2506e8-a5e3-4c8b-9b54-d15ae94161d6_Paint.rar.1d6\\Paint\\MyPaint\\WpfPaint\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\2f2506e8-a5e3-4c8b-9b54-d15ae94161d6_Paint.rar.1d6\\Paint\\MyPaint\\WpfPaint\\MainWindow.xaml.cs",
@@ -988,7 +955,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 54,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\3d959a71-da0f-4857-afe5-6a91bacb4c28_Paint.rar.c28\\Paint\\MyPaint\\WpfPaint\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\3d959a71-da0f-4857-afe5-6a91bacb4c28_Paint.rar.c28\\Paint\\MyPaint\\WpfPaint\\AssemblyInfo.cs",
@@ -1001,7 +968,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 55,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\5be55c61-ba5a-443f-8871-d614d2b9cdd6_Paint.rar.dd6\\Paint\\MyPaint\\WpfPaint\\App.xaml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\5be55c61-ba5a-443f-8871-d614d2b9cdd6_Paint.rar.dd6\\Paint\\MyPaint\\WpfPaint\\App.xaml.cs",
@@ -1014,7 +981,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 56,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\App.xaml.cs",
               "RelativeDocumentMoniker": "MyPaint.WPF\\App.xaml.cs",
@@ -1026,7 +993,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 57,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\ec44f586-817b-41bd-9a2a-4152c893592c_Paint.rar.92c\\Paint\\MyPaint\\WpfPaint\\App.xaml.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\ec44f586-817b-41bd-9a2a-4152c893592c_Paint.rar.92c\\Paint\\MyPaint\\WpfPaint\\App.xaml.cs",
@@ -1039,7 +1006,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 58,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\App.xaml",
               "RelativeDocumentMoniker": "MyPaint.WPF\\App.xaml",
@@ -1051,7 +1018,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 59,
               "Title": "Triangle.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\31d0077e-4b68-47d1-bbc9-962f5c4efe1f_Paint.rar.e1f\\Paint\\MyPaint\\Plugins\\Triangle.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\31d0077e-4b68-47d1-bbc9-962f5c4efe1f_Paint.rar.e1f\\Paint\\MyPaint\\Plugins\\Triangle.cs",
@@ -1064,7 +1031,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 60,
               "Title": "Square.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\1ac27053-5ae2-4b0b-a348-f42cdee78f80_Paint.rar.f80\\Paint\\MyPaint\\Plugins\\Square.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\1ac27053-5ae2-4b0b-a348-f42cdee78f80_Paint.rar.f80\\Paint\\MyPaint\\Plugins\\Square.cs",
@@ -1077,7 +1044,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 61,
               "Title": "Rectangle.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\1a65218e-afc7-4a81-b886-d5d02647fa4d_Paint.rar.a4d\\Paint\\MyPaint\\Plugins\\Rectangle.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\1a65218e-afc7-4a81-b886-d5d02647fa4d_Paint.rar.a4d\\Paint\\MyPaint\\Plugins\\Rectangle.cs",
@@ -1090,7 +1057,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 62,
               "Title": "Line.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\da40d1cb-ad45-4745-88ea-159b5d5adafd_Paint.rar.afd\\Paint\\MyPaint\\Plugins\\Line.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\da40d1cb-ad45-4745-88ea-159b5d5adafd_Paint.rar.afd\\Paint\\MyPaint\\Plugins\\Line.cs",
@@ -1103,7 +1070,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 63,
               "Title": "Ellipse.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\f9101012-ce3b-453f-9643-ec5d9c8b96c2_Paint.rar.6c2\\Paint\\MyPaint\\Plugins\\Ellipse.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\f9101012-ce3b-453f-9643-ec5d9c8b96c2_Paint.rar.6c2\\Paint\\MyPaint\\Plugins\\Ellipse.cs",
@@ -1116,7 +1083,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 64,
               "Title": "IFigure.cs",
               "DocumentMoniker": "C:\\Users\\annch\\AppData\\Local\\Temp\\f637bf4e-6f12-4a3c-bc65-d053ccd34b05_Paint.rar.b05\\Paint\\MyPaint\\Contracts\\IFigure.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\f637bf4e-6f12-4a3c-bc65-d053ccd34b05_Paint.rar.b05\\Paint\\MyPaint\\Contracts\\IFigure.cs",

@@ -274,8 +274,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\EditorDocuments.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:18:19.678Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:18:19.678Z"
             },
             {
               "$type": "Document",
@@ -287,8 +286,7 @@
               "RelativeToolTip": "MyPaint.WPF\\Models\\DrawingStyle.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:25:48.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:25:48.216Z"
             },
             {
               "$type": "Document",
@@ -300,8 +298,7 @@
               "RelativeToolTip": "MyPaint.WPF\\DrawingSurface.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:45:52.156Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:45:52.156Z"
             },
             {
               "$type": "Document",
@@ -313,8 +310,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\Tools\\LineTool.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAIwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:22:08.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:22:08.153Z"
             },
             {
               "$type": "Document",
@@ -326,8 +322,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\Tools\\EllipseTool.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAIwEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:22:28.652Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:22:28.652Z"
             },
             {
               "$type": "Document",
@@ -339,8 +334,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\Tools\\RectangleTool.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAIwEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:43:50.972Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:43:50.972Z"
             },
             {
               "$type": "Document",
@@ -352,8 +346,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\Tools\\IShapeTool.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:21:42.256Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:21:42.256Z"
             },
             {
               "$type": "Document",
@@ -365,8 +358,7 @@
               "RelativeToolTip": "MyPaint.WPF\\Figures\\LineFigure.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAIwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:27:02.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:27:02.356Z"
             },
             {
               "$type": "Document",
@@ -378,8 +370,7 @@
               "RelativeToolTip": "MyPaint.WPF\\Figures\\EllipseFigure.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAIwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:27:21.742Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:27:21.742Z"
             },
             {
               "$type": "Document",
@@ -391,8 +382,7 @@
               "RelativeToolTip": "MyPaint.WPF\\Figures\\RectangleFigure.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:27:11.431Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:27:11.431Z"
             },
             {
               "$type": "Document",
@@ -404,8 +394,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\Tools\\ToolContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:21:53.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:21:53.322Z"
             },
             {
               "$type": "Document",
@@ -417,8 +406,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\Tools\\PolylineTool.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:22:38.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:22:38.983Z"
             },
             {
               "$type": "Document",
@@ -430,8 +418,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\SelectionState.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:18:45.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:18:45.918Z"
             },
             {
               "$type": "Document",
@@ -443,8 +430,7 @@
               "RelativeToolTip": "MyPaint.WPF\\Models\\IFigure.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:06:52.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:06:52.72Z"
             },
             {
               "$type": "Document",
@@ -456,8 +442,7 @@
               "RelativeToolTip": "MyPaint.WPF\\Models\\FigureBase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:25:59.113Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:25:59.113Z"
             },
             {
               "$type": "Document",
@@ -469,8 +454,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\Tools\\PolygonTool.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:22:54.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:22:54.128Z"
             },
             {
               "$type": "Document",
@@ -482,8 +466,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\Serialization\\LayerDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:24:20.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:24:20.37Z"
             },
             {
               "$type": "Document",
@@ -495,8 +478,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\Serialization\\JsonDocumentSerializer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:24:39.898Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:24:39.898Z"
             },
             {
               "$type": "Document",
@@ -508,8 +490,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\Serialization\\FigureDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:24:30.378Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:24:30.378Z"
             },
             {
               "$type": "Document",
@@ -521,8 +502,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\Serialization\\DocumentDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:24:08.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:24:08.483Z"
             },
             {
               "$type": "Document",
@@ -534,8 +514,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\Plugins\\PluginLoader.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:23:25.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:23:25.696Z"
             },
             {
               "$type": "Document",
@@ -547,8 +526,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\Plugins\\IFigurePlugin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:23:15.997Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:23:15.997Z"
             },
             {
               "$type": "Document",
@@ -560,8 +538,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\Plugins\\FigureRegistry.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:23:35.635Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:23:35.635Z"
             },
             {
               "$type": "Document",
@@ -573,8 +550,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\History\\CommandManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:19:37.284Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:19:37.284Z"
             },
             {
               "$type": "Document",
@@ -586,8 +562,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\History\\Commands\\MoveFiguresCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:20:09.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:20:09.821Z"
             },
             {
               "$type": "Document",
@@ -599,8 +574,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\History\\Commands\\DeleteFigureCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:19:58.652Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:19:58.652Z"
             },
             {
               "$type": "Document",
@@ -612,8 +586,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\History\\Commands\\ChangeStyleCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:20:48.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:20:48.254Z"
             },
             {
               "$type": "Document",
@@ -625,8 +598,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\History\\Commands\\AddFigureCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:19:48.284Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:19:48.284Z"
             },
             {
               "$type": "Document",
@@ -638,8 +610,7 @@
               "RelativeToolTip": "MyPaint.WPF\\Models\\SelectionState.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:29:34.613Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:29:34.613Z"
             },
             {
               "$type": "Document",
@@ -651,8 +622,7 @@
               "RelativeToolTip": "MyPaint.WPF\\Models\\Layer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:07:40.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:07:40.73Z"
             },
             {
               "$type": "Document",
@@ -664,8 +634,7 @@
               "RelativeToolTip": "MyPaint.WPF\\Models\\IFigureFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:26:07.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:26:07.815Z"
             },
             {
               "$type": "Document",
@@ -677,8 +646,7 @@
               "RelativeToolTip": "MyPaint.WPF\\Models\\FigureDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:36:50.85Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:36:50.85Z"
             },
             {
               "$type": "Document",
@@ -690,8 +658,7 @@
               "RelativeToolTip": "MyPaint.WPF\\Models\\Geometry\\PointFEx.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:26:26.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:26:26.501Z"
             },
             {
               "$type": "Document",
@@ -703,8 +670,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\History\\HistoryManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:19:13.286Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:19:13.286Z"
             },
             {
               "$type": "Document",
@@ -716,8 +682,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\History\\IUndoableCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:19:26.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:19:26.573Z"
             },
             {
               "$type": "Document",
@@ -729,8 +694,7 @@
               "RelativeToolTip": "MyPaint.WPF\\Figures\\PolygonFigure.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:27:45.312Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:27:45.312Z"
             },
             {
               "$type": "Document",
@@ -742,8 +706,7 @@
               "RelativeToolTip": "MyPaint.WPF\\Figures\\PolylineFigure.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:27:30.27Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:27:30.27Z"
             },
             {
               "$type": "Document",
@@ -755,8 +718,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\History\\Commands\\LayerCommands.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:21:10.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:21:10.497Z"
             },
             {
               "$type": "Document",
@@ -768,8 +730,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\History\\Commands\\MoveFigureToLayerCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:20:59.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:20:59.476Z"
             },
             {
               "$type": "Document",
@@ -781,8 +742,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\History\\Commands\\RotateFiguresCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:20:31.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:20:31.984Z"
             },
             {
               "$type": "Document",
@@ -794,8 +754,7 @@
               "RelativeToolTip": "MyPaint.WPF\\\u0421ore\\History\\Commands\\ResizeFiguresCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:20:20.823Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T16:20:20.823Z"
             },
             {
               "$type": "Document",
@@ -1013,8 +972,7 @@
               "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\MyPaint\\MyPaint.WPF\\App.xaml",
               "RelativeToolTip": "MyPaint.WPF\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-15T12:47:05.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T12:47:05.584Z"
             },
             {
               "$type": "Document",

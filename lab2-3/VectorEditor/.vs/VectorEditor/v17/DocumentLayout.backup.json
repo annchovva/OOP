@@ -182,8 +182,7 @@
               "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Shapes\\TrapezoidShape.cs",
               "ViewState": "AgIAAFQAAAAAAAAAAADwv4gAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T08:24:55.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T08:24:55.31Z"
             },
             {
               "$type": "Document",
@@ -193,7 +192,7 @@
               "RelativeDocumentMoniker": "VectorEditor.Plugins.BasicShapes\\Tools\\TrapezoidTool.cs",
               "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.Plugins.BasicShapes\\Tools\\TrapezoidTool.cs",
               "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Tools\\TrapezoidTool.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAADwv2YAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-16T08:25:31.169Z",
               "EditorCaption": ""
@@ -208,8 +207,7 @@
               "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Tools\\RectangleTool.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAowEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T12:05:20.405Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T12:05:20.405Z"
             },
             {
               "$type": "Document",
@@ -221,8 +219,7 @@
               "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Shapes\\RectangleShape.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAAAkwG8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T12:04:09.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T12:04:09.311Z"
             },
             {
               "$type": "Document",
@@ -234,8 +231,7 @@
               "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\BasicShapesPlugin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T11:12:58.973Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T11:12:58.973Z"
             },
             {
               "$type": "Document",
@@ -247,8 +243,7 @@
               "RelativeToolTip": "VectorEditor.WPF\\VectorEditor.WPF.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-10T05:21:25.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T05:21:25.398Z"
             },
             {
               "$type": "Document",
@@ -260,8 +255,7 @@
               "RelativeToolTip": "VectorEditor.Core\\IShape.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T05:22:08.756Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T05:22:08.756Z"
             },
             {
               "$type": "Document",
@@ -273,8 +267,7 @@
               "RelativeToolTip": "VectorEditor.Core\\Commands\\RemoveLayerCommand.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAkwDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T19:19:04.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T19:19:04.057Z"
             },
             {
               "$type": "Document",
@@ -286,8 +279,7 @@
               "RelativeToolTip": "VectorEditor.Core\\EditorDocument.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAswGYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T07:33:04.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T07:33:04.109Z"
             },
             {
               "$type": "Document",
@@ -299,8 +291,7 @@
               "RelativeToolTip": "VectorEditor.Core\\IPlugin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T05:23:05.002Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T05:23:05.002Z"
             },
             {
               "$type": "Document",
@@ -312,8 +303,7 @@
               "RelativeToolTip": "VectorEditor.Core\\ITool.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T05:22:38.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T05:22:38.894Z"
             },
             {
               "$type": "Document",
@@ -325,8 +315,7 @@
               "RelativeToolTip": "VectorEditor.Core\\Layer.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAQwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T07:32:19.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T07:32:19.414Z"
             },
             {
               "$type": "Document",
@@ -338,8 +327,7 @@
               "RelativeToolTip": "VectorEditor.Core\\SelectionTool.cs",
               "ViewState": "AgIAAPcBAAAAAAAAAADwvysCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:28:42.7Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T11:28:42.7Z"
             },
             {
               "$type": "Document",
@@ -351,8 +339,7 @@
               "RelativeToolTip": "VectorEditor.Core\\Commands\\MoveShapeCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:25:06.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T11:25:06.398Z"
             },
             {
               "$type": "Document",
@@ -364,8 +351,7 @@
               "RelativeToolTip": "VectorEditor.Core\\Commands\\MoveLayerCommand.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAswEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T19:19:41.988Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T19:19:41.988Z"
             },
             {
               "$type": "Document",
@@ -377,8 +363,7 @@
               "RelativeToolTip": "VectorEditor.Core\\Commands\\CommandManager.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAYwCYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T07:31:16.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T07:31:16.483Z"
             },
             {
               "$type": "Document",
@@ -390,8 +375,7 @@
               "RelativeToolTip": "VectorEditor.Core\\Commands\\RotateShapeCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:34:38.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T11:34:38.126Z"
             },
             {
               "$type": "Document",
@@ -403,8 +387,7 @@
               "RelativeToolTip": "VectorEditor.Core\\Commands\\ResizeShapeCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T18:02:14.778Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T18:02:14.778Z"
             },
             {
               "$type": "Document",
@@ -416,8 +399,7 @@
               "RelativeToolTip": "VectorEditor.Core\\Commands\\MoveShapesByBoundsCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T19:52:12.465Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T19:52:12.465Z"
             },
             {
               "$type": "Document",
@@ -429,8 +411,7 @@
               "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Shapes\\PolylineShape.cs",
               "ViewState": "AgIAAE8AAAAAAAAAAADwv4MAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:57:51.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T11:57:51.557Z"
             },
             {
               "$type": "Document",
@@ -442,8 +423,7 @@
               "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Shapes\\PolygonShape.cs",
               "ViewState": "AgIAAFsAAAAAAAAAAADwv48AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T14:22:18.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T14:22:18.362Z"
             },
             {
               "$type": "Document",
@@ -455,8 +435,7 @@
               "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Shapes\\LineShape.cs",
               "ViewState": "AgIAAGAAAAAAAAAAAAA4wGsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T11:16:40.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T11:16:40.523Z"
             },
             {
               "$type": "Document",
@@ -468,8 +447,7 @@
               "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Shapes\\EllipseShape.cs",
               "ViewState": "AgIAADcAAAAAAAAAAADwv2sAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:26:24.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T11:26:24.476Z"
             },
             {
               "$type": "Document",
@@ -481,8 +459,7 @@
               "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Tools\\PolylineTool.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAowFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T14:23:13.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T14:23:13.019Z"
             },
             {
               "$type": "Document",
@@ -494,8 +471,7 @@
               "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Tools\\PolygonTool.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAwwGsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T14:28:53.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T14:28:53.142Z"
             },
             {
               "$type": "Document",
@@ -507,8 +483,7 @@
               "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Tools\\LineTool.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAkwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T11:16:42.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T11:16:42.082Z"
             },
             {
               "$type": "Document",
@@ -520,8 +495,7 @@
               "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\Tools\\EllipsTool.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAswFEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:42:55.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T11:42:55.78Z"
             },
             {
               "$type": "Document",
@@ -533,8 +507,7 @@
               "RelativeToolTip": "VectorEditor.WPF\\EditorCanvas.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAmwFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T11:02:10.828Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T11:02:10.828Z"
             },
             {
               "$type": "Document",
@@ -546,8 +519,7 @@
               "RelativeToolTip": "VectorEditor.WPF\\MainWindow.xaml.cs",
               "ViewState": "AgIAAE0CAAAAAAAAAAAkwH4CAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T05:21:03.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T05:21:03.383Z"
             },
             {
               "$type": "Document",
@@ -558,8 +530,7 @@
               "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.WPF\\MainWindow.xaml",
               "RelativeToolTip": "VectorEditor.WPF\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-10T05:21:03.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T05:21:03.647Z"
             },
             {
               "$type": "Document",
@@ -571,8 +542,7 @@
               "RelativeToolTip": "VectorEditor.Core\\Commands\\RemoveShapeCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:33:58.024Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T11:33:58.024Z"
             },
             {
               "$type": "Document",
@@ -584,8 +554,7 @@
               "RelativeToolTip": "VectorEditor.Core\\Commands\\MoveToLayerCommand.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAkwDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T14:25:28.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T14:25:28.479Z"
             },
             {
               "$type": "Document",
@@ -597,8 +566,7 @@
               "RelativeToolTip": "VectorEditor.Core\\Commands\\IEditorCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T07:30:50.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T07:30:50.079Z"
             },
             {
               "$type": "Document",
@@ -610,8 +578,7 @@
               "RelativeToolTip": "VectorEditor.Core\\Commands\\ChangePropertyCommand.cs",
               "ViewState": "AgIAAEwAAAAAAAAAAAAswH8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T11:25:25.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T11:25:25.327Z"
             },
             {
               "$type": "Document",
@@ -623,8 +590,7 @@
               "RelativeToolTip": "VectorEditor.Core\\Commands\\AddShapeCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T11:06:49.333Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T11:06:49.333Z"
             },
             {
               "$type": "Document",
@@ -636,8 +602,7 @@
               "RelativeToolTip": "VectorEditor.Core\\Commands\\AddLayerCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T19:18:40.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-15T19:18:40.114Z"
             },
             {
               "$type": "Document",
@@ -649,8 +614,7 @@
               "RelativeToolTip": "VectorEditor.Plugins.BasicShapes\\VectorEditor.Plugins.BasicShapes.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-10T11:12:33.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T11:12:33.779Z"
             },
             {
               "$type": "Document",
@@ -662,8 +626,7 @@
               "RelativeToolTip": "VectorEditor.Core\\VectorEditor.Core.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-10T05:20:01.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T05:20:01.237Z"
             },
             {
               "$type": "Document",
@@ -686,8 +649,7 @@
               "ToolTip": "C:\\Users\\annch\\Documents\\4 \u0421\u0415\u041C\u0415\u0421\u0422\u0420\\\u041E\u041E\u041F\\lab2-3\\VectorEditor\\VectorEditor.WPF\\App.xaml",
               "RelativeToolTip": "VectorEditor.WPF\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-14T08:39:17.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T08:39:17.295Z"
             }
           ]
         }
